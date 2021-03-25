@@ -1,0 +1,22 @@
+{
+  "type": "origins:prevent_item_use",
+  "condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:food_level",
+        "comparison": "<=",
+        "compare_to": 4
+      },
+      {
+        "type": "origins:relative_health",
+        "comparison": ">=",
+        "compare_to": 1
+      }
+    ]
+  },
+  "item_condition": {
+    "type": "origins:food"
+  },
+  "hidden": true
+}

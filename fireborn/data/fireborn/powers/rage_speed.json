@@ -1,0 +1,15 @@
+{
+  "type": "origins:conditioned_attribute",
+  "condition": {
+    "type": "origins:food_level",
+    "comparison": "<=",
+    "compare_to": 4
+  },
+  "modifier": {
+    "attribute": "generic.movement_speed",
+    "name": "Rage speed bonus",
+    "value": 0.07,
+    "operation": "addition"
+  },
+  "hidden": true
+}

@@ -1,0 +1,80 @@
+{
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions":[
+            {
+                "type": "origins:execute_command",
+                "command": "fill ~1 ~-1 ~1 ~-1 ~-1 ~-1 minecraft:snow_block replace minecraft:air",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "fill ~1 ~2 ~1 ~-1 ~2 ~-1 minecraft:snow_block replace minecraft:air",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "fill ~2 ~ ~-1 ~2 ~1 ~1 minecraft:snow_block replace minecraft:air",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "fill ~-1 ~ ~2 ~1 ~1 ~2 minecraft:snow_block replace minecraft:air",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "fill ~-2 ~ ~-1 ~-2 ~1 ~1 minecraft:snow_block replace minecraft:air",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "fill ~-1 ~ ~-2 ~1 ~1 ~-2 minecraft:snow_block replace minecraft:air",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "fill ~1 ~-1 ~1 ~-1 ~-1 ~-1 minecraft:snow_block replace minecraft:cave_air",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "fill ~1 ~2 ~1 ~-1 ~2 ~-1 minecraft:snow_block replace minecraft:cave_air",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "fill ~2 ~ ~-1 ~2 ~1 ~1 minecraft:snow_block replace minecraft:cave_air",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "fill ~-1 ~ ~2 ~1 ~1 ~2 minecraft:snow_block replace minecraft:cave_air",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "fill ~-2 ~ ~-1 ~-2 ~1 ~1 minecraft:snow_block replace minecraft:cave_air",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "fill ~-1 ~ ~-2 ~1 ~1 ~-2 minecraft:snow_block replace minecraft:cave_air",
+                "permission_level": 4
+            }
+        ]
+    },
+    "cooldown": 2400,
+    "hud_render":{
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+        "bar_index": 6
+    },
+    "key":{
+        "key": "key.origins.primary_active",
+        "continuous": "false"
+    },
+    "name": "Snow Blanket",
+    "description": "Create a protective snow blanket around you."
+}

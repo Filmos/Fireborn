@@ -1,0 +1,19 @@
+{
+  "type": "origins:modify_break_speed",
+  "condition": {
+    "type": "origins:food_level",
+    "comparison": "<=",
+    "compare_to": 4
+  },
+  "block_condition": {
+    "type": "origins:in_tag",
+    "tag": "wither_immune",
+    "inverted": true
+  },
+  "modifier": {
+    "name": "Rage break speed bonus",
+    "value": 0.015,
+    "operation": "addition"
+  },
+  "hidden": true
+}

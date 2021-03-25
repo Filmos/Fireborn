@@ -1,0 +1,12 @@
+{
+  "type": "origins:prevent_sleep",
+  "message": "You can only sleep in deep caves",
+  "block_condition": {
+    "type":"origins:height",
+    "comparison": ">",
+    "compare_to": 50
+  },
+  "name": "Miner's Insomnia",
+  "description": "You can only sleep in deep caves.",
+  "hidden": true
+}

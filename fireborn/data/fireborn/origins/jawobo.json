@@ -1,0 +1,16 @@
+{
+	"powers": [
+		"fireborn:dwarven_hunger",
+		"fireborn:dwarven_brewery",
+		"fireborn:deep_pockets",
+		"fireborn:miners_insomnia",
+		"fireborn:miners_haste",
+		"origins-classes:no_mining_exhaustion"
+	],
+	"icon": "minecraft:writable_book",
+	"order": 4,
+	"impact": 2,
+	"unchoosable": true,
+	"name": "Your story",
+	"description": "This is your story. How will it end?"
+}

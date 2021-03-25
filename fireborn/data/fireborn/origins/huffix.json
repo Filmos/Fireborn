@@ -1,0 +1,14 @@
+{
+    "powers": [
+        "fireborn:lord_of_the_skies",
+        "fireborn:snow_blanket",
+        "fireborn:fresh_air",
+        "origins:fall_immunity"
+    ],
+  	"icon": "minecraft:writable_book",
+    "order": 15,
+    "impact": 3,
+  	"unchoosable": true,
+  	"name": "Your story",
+  	"description": "This is your story. How will it end?"
+}

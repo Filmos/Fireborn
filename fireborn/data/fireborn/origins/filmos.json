@@ -1,0 +1,26 @@
+{
+	"powers": [
+		"fireborn:calm_pacifist",
+		"fireborn:calm_throw_ender_pearl",
+		"fireborn:calm_healing_beacon",
+		"fireborn:calm_corrupted_beacon",
+		"origins:fresh_air",
+		"fireborn:rage_shake",
+		"fireborn:rage_vision",
+		"fireborn:rage_insomnia",
+		"fireborn:rage_hunger",
+		"fireborn:rage_hunger_heal",
+		"fireborn:rage_endurance",
+		"fireborn:rage_destruction",
+		"fireborn:rage_haste",
+		"fireborn:rage_strength",
+		"fireborn:rage_knockback_resistance",
+		"fireborn:rage_speed"
+	],
+	"icon": "minecraft:writable_book",
+	"order": 4,
+	"impact": 2,
+	"unchoosable": true,
+	"name": "Your story",
+	"description": "This is your story. How will it end?"
+}

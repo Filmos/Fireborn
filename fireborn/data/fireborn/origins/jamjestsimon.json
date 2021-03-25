@@ -1,0 +1,14 @@
+{
+	"powers": [
+        "fireborn:student",
+        "fireborn:phantom_stealth",
+        "fireborn:recruit",
+        "fireborn:last_surprise"
+	],
+	"icon": "minecraft:writable_book",
+	"order": 4,
+  "impact": 2,
+	"unchoosable": true,
+  "name": "Your story",
+  "description": "This is your story. How will it end?"
+}

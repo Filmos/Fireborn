@@ -1,0 +1,16 @@
+{
+	"powers": [
+		"fireborn:vampire_attack",
+		"fireborn:sun_weakness",
+		"fireborn:day_speed",
+		"origins:water_vulnerability",
+		"origins:fire_immunity",
+		"origins:nether_spawn"
+	],
+	"icon": "minecraft:writable_book",
+	"order": 4,
+	"impact": 3,
+	"unchoosable": true,
+	"name": "Your story",
+	"description": "This is your story. How will it end?"
+}

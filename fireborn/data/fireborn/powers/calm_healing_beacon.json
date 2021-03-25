@@ -1,0 +1,16 @@
+{
+  "type": "origins:action_over_time",
+  "entity_action": {
+    "type": "origins:execute_command",
+    "command": "execute at @s as @a[distance=0.001..32] run effect give @s minecraft:regeneration 4 0 true",
+    "permission_level": 4
+  },
+  "interval": 60,
+  "condition": {
+    "type": "origins:food_level",
+    "comparison": ">",
+    "compare_to": 4
+  },
+  "name": "Healing Beacon",
+  "description": "Nearby players have regeneration."
+}

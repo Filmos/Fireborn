@@ -1,0 +1,39 @@
+{
+  "type": "origins:active_self",
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:execute_command",
+        "command": "execute at @s as @e[distance=0.001..16,type=!player] run effect give @s minecraft:wither 5 2 true",
+        "permission_level": 4
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "effect give @s minecraft:wither 5 1 true",
+        "permission_level": 4
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "function fireborn:lifeforce_reservoir",
+        "permission_level": 4
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "function fireborn:decay_small_radius",
+        "permission_level": 4
+      }
+    ]
+  },
+  "condition": {
+    "type": "origins:predicate",
+    "predicate": "fireborn:holds_water_bottle"
+  },
+  "cooldown": 80,
+  "hud_render": {
+    "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+    "bar_index": 12
+  },
+  "name": "Lifeforce Reservoir",
+  "description": "When holding a water bottle in your hand, you can use your active ability to change it into a lifeforce reservoir."
+}

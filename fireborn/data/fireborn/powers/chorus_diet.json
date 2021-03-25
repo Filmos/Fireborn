@@ -1,0 +1,32 @@
+{
+    "type": "origins:multiple",
+    "prevent_eating":{
+        "type": "origins:prevent_item_use",
+        "item_condition": {
+          "type": "origins:and",
+          "conditions": [
+            {
+              "type": "origins:food"
+            },
+            {
+              "type": "origins:ingredient",
+              "ingredient": {"item":"minecraft:chorus_fruit"},
+              "inverted": true
+            }
+          ]
+        }
+    },
+    "levitation":{
+      "type": "origins:modify_food",
+      "entity_action": {
+        "type": "origins:apply_effect",
+        "effect": {
+          "effect": "minecraft:levitation",
+          "duration": 80,
+          "amplifier": 2
+        }
+      }
+    },
+    "name": "Chorus Diet",
+    "description": "You can only eat chorus fruit, and even those have some side effects."
+}

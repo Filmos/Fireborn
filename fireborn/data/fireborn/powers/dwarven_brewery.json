@@ -1,0 +1,55 @@
+{
+  "type": "origins:action_over_time",
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:execute_command",
+        "command": "function fireborn:prebrew",
+        "permission_level": 4
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "clear @s minecraft:glistering_melon_slice 1",
+        "permission_level": 4
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "effect give @s minecraft:nausea 7",
+        "permission_level": 4
+      }
+    ]
+  },
+  "interval": 20,
+  "condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:equipped_item",
+        "equipment_slot": "offhand",
+        "item_condition": {
+          "type": "origins:ingredient",
+          "ingredient": {"item":"minecraft:glistering_melon_slice"}
+        }
+      },
+      {
+        "type": "origins:equipped_item",
+        "equipment_slot": "mainhand",
+        "item_condition": {
+          "type": "origins:ingredient",
+          "ingredient": [{"item":"minecraft:potion"},{"item":"minecraft:splash_potion"},{"item":"minecraft:lingering_potion"}]
+        }
+      },
+      {
+        "type": "origins:predicate",
+        "predicate": "fireborn:holds_dwarven_brew",
+        "inverted": true
+      },
+      {
+        "type": "origins:sneaking"
+      }
+    ]
+  },
+  "name": "Darven Brewery",
+  "description": "You can enhance any potion by sneaking while holding it in your main hand and holding a glistering melon in your offhand."
+}

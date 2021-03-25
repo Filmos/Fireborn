@@ -1,0 +1,14 @@
+{
+	"powers": [
+		"fireborn:lifeforce_steal",
+		"fireborn:lifeforce_reservoir",
+		"fireborn:chorus_diet",
+		"fireborn:speed_on_kill"
+	],
+	"icon": "minecraft:writable_book",
+	"order": 4,
+	"impact": 2,
+	"unchoosable": true,
+	"name": "Your story",
+	"description": "This is your story. How will it end?"
+}

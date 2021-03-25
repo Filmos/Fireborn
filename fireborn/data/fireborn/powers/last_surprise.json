@@ -1,0 +1,23 @@
+{
+    "type": "origins:conditioned_attribute",
+    "modifiers": [
+        {
+            "attribute": "minecraft:generic.movement_speed",
+            "operation": "multiply_base",
+            "value": 0.2
+        },
+        {
+            "attribute": "minecraft:generic.armor",
+            "operation": "addition",
+            "value": 4
+        }
+    ],
+    "tick_rate": 5,
+    "name": "Last Surprise",
+    "description": "Your resolve strenghtens your body allowing you to withstand more powerful hits while on low health.",
+    "condition":{
+        "type": "origins:health",
+        "comparison": "<",
+        "compare_to": 6
+    }
+}

@@ -1,0 +1,125 @@
+{
+    "type": "minecraft:entity",
+    
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "conditions":[
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "predicate": {
+                                "nbt": "{SelectedItem:{id:\"minecraft:potion\"}}"
+                            },
+                            "entity": "this"
+                        }
+                    ],
+                    "functions": [
+                        {
+                            "function": "minecraft:copy_nbt",
+                            "source": "this",
+                            "ops": [
+                                    {
+                                    "source": "SelectedItem.tag",
+                                    "target": "{}",
+                                    "op": "merge"
+                                }
+                                
+                            ]
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{DwarvenPotion:1b,CustomPotionEffects:[{Id:10,Duration:900},{Id:9,Duration:400}]}",
+                            "entity": "this"
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [{"text":"Dwarven brew","color":"gold","italic":false}],
+                            "replace": false,
+                            "entity": "this"
+                        }
+                    ],
+                    "name": "minecraft:potion"
+                },
+                {
+                    "type": "minecraft:item",
+                    "conditions":[
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "predicate": {
+                                "nbt": "{SelectedItem:{id:\"minecraft:splash_potion\"}}"
+                            },
+                            "entity": "this"
+                        }
+                    ],
+                    "functions": [
+                        {
+                            "function": "minecraft:copy_nbt",
+                            "source": "this",
+                            "ops": [
+                                    {
+                                    "source": "SelectedItem.tag",
+                                    "target": "{}",
+                                    "op": "merge"
+                                }
+                                
+                            ]
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{DwarvenPotion:1b,CustomPotionEffects:[{Id:10,Duration:900},{Id:9,Duration:400}]}",
+                            "entity": "this"
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [{"text":"Dwarven brew","color":"gold","italic":false}],
+                            "replace": false,
+                            "entity": "this"
+                        }
+                    ],
+                    "name": "minecraft:splash_potion"
+                },
+                {
+                    "type": "minecraft:item",
+                    "conditions":[
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "predicate": {
+                                "nbt": "{SelectedItem:{id:\"minecraft:lingering_potion\"}}"
+                            },
+                            "entity": "this"
+                        }
+                    ],
+                    "functions": [
+                        {
+                            "function": "minecraft:copy_nbt",
+                            "source": "this",
+                            "ops": [
+                                    {
+                                    "source": "SelectedItem.tag",
+                                    "target": "{}",
+                                    "op": "merge"
+                                }
+                                
+                            ]
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{DwarvenPotion:1b,CustomPotionEffects:[{Id:10,Duration:1600},{Id:9,Duration:800}]}",
+                            "entity": "this"
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [{"text":"Dwarven brew","color":"gold","italic":false}],
+                            "replace": false,
+                            "entity": "this"
+                        }
+                    ],
+                    "name": "minecraft:lingering_potion"
+                }
+            ]
+        }
+    ]
+}

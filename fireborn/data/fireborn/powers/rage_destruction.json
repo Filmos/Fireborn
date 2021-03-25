@@ -1,0 +1,10 @@
+{
+  "type": "origins:modify_harvest",
+  "condition": {
+    "type": "origins:food_level",
+    "comparison": "<=",
+    "compare_to": 4
+  },
+  "allow": false,
+  "hidden": true
+}

@@ -1,0 +1,22 @@
+{
+  "type": "origins:conditioned_attribute",
+  "condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:daytime"
+      },
+      {
+        "type": "origins:dimension",
+        "dimension": "minecraft:overworld"
+      }
+    ]
+  },
+  "modifier": {
+    "attribute": "generic.movement_speed",
+    "name": "Day speed debuff",
+    "value": -0.017,
+    "operation": "addition"
+  },
+  "hidden": true
+}

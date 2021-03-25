@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "010",
+        "121",
+        "010"
+    ],
+    "key": {
+        "1": {
+            "item": "minecraft:glass"
+        },
+        "2": {
+            "item": "minecraft:gold_ingot"
+        },
+        "0": {
+            "item": "minecraft:air"
+        }
+    },
+    "result": {
+        "item": "transparent_cosmetics:transparent_ingot",
+        "count": 1
+    }
+}

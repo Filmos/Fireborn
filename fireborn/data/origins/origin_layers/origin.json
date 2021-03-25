@@ -1,0 +1,15 @@
+{
+	"origins": [
+		"fireborn:null",
+    "fireborn:filmos",
+		"fireborn:kingudiavolo",
+		"fireborn:jawobo",
+		"fireborn:jamjestsimon",
+		"fireborn:vectr0",
+		"fireborn:huffix"
+	],
+  "exclude_random": [
+    "fireborn:null"
+  ],
+  "allow_random": false
+}

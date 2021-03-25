@@ -1,0 +1,10 @@
+{
+  "type": "origins:inventory",
+  "drop_on_death":true,
+  "key": {
+    "key": "key.origins.primary_active",
+    "continuous": false
+  },
+  "name": "Deep Pockets",
+  "description": "Extra inventory space."
+}
