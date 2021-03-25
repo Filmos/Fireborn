@@ -1,9 +1,9 @@
 {
 	"powers": [
-		"fireborn:lifeforce_steal",
-		"fireborn:lifeforce_reservoir",
-		"fireborn:chorus_diet",
-		"fireborn:speed_on_kill"
+		"fireborn:vectr0/lifeforce_steal",
+		"fireborn:vectr0/lifeforce_reservoir",
+		"fireborn:vectr0/chorus_diet",
+		"fireborn:vectr0/speed_on_kill"
 	],
 	"icon": "minecraft:writable_book",
 	"order": 4,

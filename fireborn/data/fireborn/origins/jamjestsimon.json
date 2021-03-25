@@ -1,9 +1,9 @@
 {
 	"powers": [
-        "fireborn:student",
-        "fireborn:phantom_stealth",
-        "fireborn:recruit",
-        "fireborn:last_surprise"
+        "fireborn:jamjestsimon/student",
+        "fireborn:jamjestsimon/phantom_stealth",
+        "fireborn:jamjestsimon/recruit",
+        "fireborn:jamjestsimon/last_surprise"
 	],
 	"icon": "minecraft:writable_book",
 	"order": 4,
