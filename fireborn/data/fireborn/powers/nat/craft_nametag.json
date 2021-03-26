@@ -1,0 +1,20 @@
+{
+    "type": "origins:recipe",
+    "recipe": {
+      "id": "origin-custom-classes:name_tag",
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "minecraft:string"
+        },
+        {
+          "item": "minecraft:paper"
+        }
+      ],
+      "result": {
+        "item": "minecraft:name_tag"
+      }
+    },
+    "name": "Nametag Crafting",
+    "description": "You can craft nametags by combining string and paper."
+}

@@ -8,5 +8,6 @@
 	"icon": "minecraft:feather",
 	"order": 0,
 	"impact": 1,
-	"unchoosable": true
+	"unchoosable": true,
+	"loading_priority": 10
 }

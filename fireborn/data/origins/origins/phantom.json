@@ -11,5 +11,6 @@
 	"icon": "minecraft:phantom_membrane",
 	"order": 2,
 	"impact": 3,
-	"unchoosable": true
+	"unchoosable": true,
+	"loading_priority": 10
 }

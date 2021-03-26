@@ -10,5 +10,6 @@
 	"icon": "minecraft:orange_wool",
 	"order": 0,
 	"impact": 2,
-	"unchoosable": true
+	"unchoosable": true,
+	"loading_priority": 10
 }

@@ -10,5 +10,6 @@
 	"icon": "minecraft:elytra",
 	"order": 3,
 	"impact": 1,
-	"unchoosable": true
+	"unchoosable": true,
+	"loading_priority": 10
 }

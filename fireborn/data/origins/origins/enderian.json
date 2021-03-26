@@ -9,5 +9,6 @@
 	"icon": "minecraft:ender_pearl",
 	"order": 1,
 	"impact": 2,
-	"unchoosable": true
+	"unchoosable": true,
+	"loading_priority": 10
 }

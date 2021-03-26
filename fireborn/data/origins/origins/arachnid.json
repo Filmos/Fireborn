@@ -9,5 +9,6 @@
 	"icon": "minecraft:cobweb",
 	"order": 1,
 	"impact": 1,
-	"unchoosable": true
+	"unchoosable": true,
+	"loading_priority": 10
 }

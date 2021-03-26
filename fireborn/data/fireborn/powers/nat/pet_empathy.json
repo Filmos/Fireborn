@@ -1,0 +1,43 @@
+{
+    "type": "origins:self_action_on_hit",
+    "entity_action":{
+        "type": "origins:apply_effect",
+        "effect": {
+            "effect": "minecraft:wither",
+            "duration": 80,
+            "amplifier": 1
+        }
+    },
+    "target_condition": {
+        "type": "origins:or",
+        "conditions": [
+            {
+                "type": "origins:entity_type",
+                "entity_type": "minecraft:wolf"
+            },
+            {
+                "type": "origins:entity_type",
+                "entity_type": "minecraft:ocelot"
+            },
+            {
+                "type": "origins:entity_type",
+                "entity_type": "minecraft:cat"
+            },
+            {
+                "type": "origins:entity_type",
+                "entity_type": "minecraft:horse"
+            },
+            {
+                "type": "origins:entity_type",
+                "entity_type": "minecraft:parrot"
+            },
+            {
+                "type": "origins:entity_type",
+                "entity_type": "minecraft:fox"
+            }
+        ]
+    },
+    "cooldown": 0,
+    "name": "Pet Empathy",
+    "description": "Dealing damage to pets will also hurt you."
+}

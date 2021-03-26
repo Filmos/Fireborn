@@ -4,5 +4,6 @@
 	"icon": "minecraft:player_head",
 	"order": 0,
 	"impact": 0,
-	"unchoosable": true
+	"unchoosable": true,
+	"loading_priority": 10
 }
