@@ -17,7 +17,7 @@
         },
         "condition":{
             "type": "origins:power_active",
-            "power": "fireborn:phantom_stealth_toggle"
+            "power": "fireborn:jamjestsimon/phantom_stealth_toggle"
         }
     },
     "light_level":{
@@ -40,7 +40,7 @@
                     },
                     "action": {
                         "type": "origins:change_resource",
-                        "resource": "fireborn:phantom_stealth_light_level",
+                        "resource": "fireborn:jamjestsimon/phantom_stealth_light_level",
                         "change": -3
                     }
                 },
@@ -55,39 +55,39 @@
                             {
                                 "condition": {
                                     "type": "origins:resource",
-                                    "resource": "fireborn:phantom_stealth_light_level",
+                                    "resource": "fireborn:jamjestsimon/phantom_stealth_light_level",
                                     "comparison": "==",
                                     "compare_to": 1
                                 },
                                 "action": {
                                     "type": "origins:change_resource",
-                                    "resource": "fireborn:phantom_stealth_light_level",
+                                    "resource": "fireborn:jamjestsimon/phantom_stealth_light_level",
                                     "change": 0
                                 }
                             },
                             {
                                 "condition": {
                                     "type": "origins:resource",
-                                    "resource": "fireborn:phantom_stealth_light_level",
+                                    "resource": "fireborn:jamjestsimon/phantom_stealth_light_level",
                                     "comparison": ">",
                                     "compare_to": 1
                                 },
                                 "action": {
                                     "type": "origins:change_resource",
-                                    "resource": "fireborn:phantom_stealth_light_level",
+                                    "resource": "fireborn:jamjestsimon/phantom_stealth_light_level",
                                     "change": -1
                                 }
                             },
                             {
                                 "condition": {
                                     "type": "origins:resource",
-                                    "resource": "fireborn:phantom_stealth_light_level",
+                                    "resource": "fireborn:jamjestsimon/phantom_stealth_light_level",
                                     "comparison": "<",
                                     "compare_to": 1
                                 },
                                 "action": {
                                     "type": "origins:change_resource",
-                                    "resource": "fireborn:phantom_stealth_light_level",
+                                    "resource": "fireborn:jamjestsimon/phantom_stealth_light_level",
                                     "change": 1
                                 }
                             }
@@ -106,39 +106,39 @@
                             {
                                 "condition": {
                                     "type": "origins:resource",
-                                    "resource": "fireborn:phantom_stealth_light_level",
+                                    "resource": "fireborn:jamjestsimon/phantom_stealth_light_level",
                                     "comparison": "==",
                                     "compare_to": 2
                                 },
                                 "action": {
                                     "type": "origins:change_resource",
-                                    "resource": "fireborn:phantom_stealth_light_level",
+                                    "resource": "fireborn:jamjestsimon/phantom_stealth_light_level",
                                     "change": 0
                                 }
                             },
                             {
                                 "condition": {
                                     "type": "origins:resource",
-                                    "resource": "fireborn:phantom_stealth_light_level",
+                                    "resource": "fireborn:jamjestsimon/phantom_stealth_light_level",
                                     "comparison": ">",
                                     "compare_to": 2
                                 },
                                 "action": {
                                     "type": "origins:change_resource",
-                                    "resource": "fireborn:phantom_stealth_light_level",
+                                    "resource": "fireborn:jamjestsimon/phantom_stealth_light_level",
                                     "change": -1
                                 }
                             },
                             {
                                 "condition": {
                                     "type": "origins:resource",
-                                    "resource": "fireborn:phantom_stealth_light_level",
+                                    "resource": "fireborn:jamjestsimon/phantom_stealth_light_level",
                                     "comparison": "<",
                                     "compare_to": 2
                                 },
                                 "action": {
                                     "type": "origins:change_resource",
-                                    "resource": "fireborn:phantom_stealth_light_level",
+                                    "resource": "fireborn:jamjestsimon/phantom_stealth_light_level",
                                     "change": 1
                                 }
                             }
@@ -153,7 +153,7 @@
                     },
                     "action": {
                         "type": "origins:change_resource",
-                        "resource": "fireborn:phantom_stealth_light_level",
+                        "resource": "fireborn:jamjestsimon/phantom_stealth_light_level",
                         "change": 3
                     }
                 }
@@ -169,11 +169,11 @@
             "conditions":[
                 {
                     "type": "origins:power_active",
-                    "power": "fireborn:phantom_stealth_toggle"
+                    "power": "fireborn:jamjestsimon/phantom_stealth_toggle"
                 },
                 {
                     "type": "origins:resource",
-                    "resource": "fireborn:phantom_stealth_light_level",
+                    "resource": "fireborn:jamjestsimon/phantom_stealth_light_level",
                     "comparison": "==",
                     "compare_to": 0
                 }
@@ -198,11 +198,11 @@
             "conditions":[
                 {
                     "type": "origins:power_active",
-                    "power": "fireborn:phantom_stealth_toggle"
+                    "power": "fireborn:jamjestsimon/phantom_stealth_toggle"
                 },
                 {
                     "type": "origins:resource",
-                    "resource": "fireborn:phantom_stealth_light_level",
+                    "resource": "fireborn:jamjestsimon/phantom_stealth_light_level",
                     "comparison": "==",
                     "compare_to": 0
                 }
@@ -220,11 +220,11 @@
             "conditions":[
                 {
                     "type": "origins:power_active",
-                    "power": "fireborn:phantom_stealth_toggle"
+                    "power": "fireborn:jamjestsimon/phantom_stealth_toggle"
                 },
                 {
                     "type": "origins:resource",
-                    "resource": "fireborn:phantom_stealth_light_level",
+                    "resource": "fireborn:jamjestsimon/phantom_stealth_light_level",
                     "comparison": "==",
                     "compare_to": 1
                 }
@@ -242,11 +242,11 @@
             "conditions":[
                 {
                     "type": "origins:power_active",
-                    "power": "fireborn:phantom_stealth_toggle"
+                    "power": "fireborn:jamjestsimon/phantom_stealth_toggle"
                 },
                 {
                     "type": "origins:resource",
-                    "resource": "fireborn:phantom_stealth_light_level",
+                    "resource": "fireborn:jamjestsimon/phantom_stealth_light_level",
                     "comparison": "==",
                     "compare_to": 2
                 }
@@ -263,7 +263,7 @@
         "interval": 40,
         "condition": {
             "type": "origins:power_active",
-            "power": "fireborn:phantom_stealth_toggle"
+            "power": "fireborn:jamjestsimon/phantom_stealth_toggle"
         }
     },
     "name": "Phantom Stealth",
