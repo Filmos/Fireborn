@@ -1,11 +1,11 @@
 {
 	"powers": [
 		"fireborn:nat/eternal_companion",
+		"fireborn:nat/wolf_vision",
 		"fireborn:nat/wolf_horde",
 		"fireborn:nat/pet_empathy",
 		"fireborn:nat/restrict_fireworks",
 		"fireborn:nat/craft_nametag",
-		"fireborn:nat/wolf_vision",
     "origins:vegetarian"
 	],
 	"icon": "minecraft:writable_book",

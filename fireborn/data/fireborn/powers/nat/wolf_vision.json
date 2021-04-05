@@ -1,5 +1,78 @@
 {
-    "type": "origins:shader",
-    "shader": "minecraft:shaders/post/pencil.json",
-    "hidden": true
+    "type": "origins:multiple",
+    "shift_time":{
+        "type": "origins:resource",
+        "min": 0,
+        "max": 7,
+        "hud_render": {
+            "should_render": false
+        }
+    },
+    "check_shift":{
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:if_else",
+            "condition": {
+                "type": "origins:sneaking"
+            },
+            "if_action": {
+                "type": "origins:change_resource",
+                "resource": "fireborn:nat/wolf_vision_shift_time",
+                "change": 1
+            },
+            "else_action": {
+                "type": "origins:change_resource",
+                "resource": "fireborn:nat/wolf_vision_shift_time",
+                "change": -1
+            }
+        },
+        "interval": 10
+    },
+    "bad_vision": {
+      "type": "origins:shader",
+      "condition": {
+        "type": "origins:resource",
+        "resource": "fireborn:nat/wolf_vision_shift_time",
+        "comparison": "<",
+        "compare_to": 6
+      },
+      "shader": "minecraft:shaders/post/pencil.json"
+    },
+    "better_vision": {
+      "type": "origins:night_vision",
+      "condition": {
+        "type": "origins:resource",
+        "resource": "fireborn:nat/wolf_vision_shift_time",
+        "comparison": "<",
+        "compare_to": 6
+      },
+      "strength": 0.04
+    },
+    "night_vision": {
+      "type": "origins:night_vision",
+      "condition": {
+        "type": "origins:resource",
+        "resource": "fireborn:nat/wolf_vision_shift_time",
+        "comparison": ">=",
+        "compare_to": 6
+      },
+      "strength": 0.12
+    },
+    "shift_slow": {
+      "type": "origins:conditioned_attribute",
+      "condition": {
+        "type": "origins:resource",
+        "resource": "fireborn:nat/wolf_vision_shift_time",
+        "comparison": ">=",
+        "compare_to": 4
+      },
+      "modifier": {
+        "attribute": "generic.movement_speed",
+        "name": "Vision focus speed debuff",
+        "value": -0.06,
+        "operation": "addition"
+      }
+    },
+    "name": "Wolf Vision",
+    "description": "Your sight is poor, but you may focus your vision by holding shift."
 }
