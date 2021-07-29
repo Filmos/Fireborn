@@ -1,0 +1,2193 @@
+{
+  "name": "The Journey",
+  "quests": [
+    {
+      "uuid": "5ad74c8a-c77b-49aa-913e-7ce7bdecf2bb",
+      "name": "Wood Collection",
+      "description": "Gather Wood",
+      "x": 158,
+      "y": 17,
+      "icon": {
+        "id": "minecraft:oak_log",
+        "Count": 1
+      },
+      "repeat": {
+        "type": "TIME",
+        "days": 3,
+        "hours": 0
+      },
+      "tasks": [
+        {
+          "type": "CONSUME_QDS",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:oak_log",
+                "Count": 2304
+              },
+              "required": 2304
+            },
+            {
+              "item": {
+                "id": "minecraft:spruce_log",
+                "Count": 2304
+              },
+              "required": 2304
+            },
+            {
+              "item": {
+                "id": "minecraft:birch_log",
+                "Count": 2304
+              },
+              "required": 2304
+            },
+            {
+              "item": {
+                "id": "minecraft:jungle_log",
+                "Count": 2304
+              },
+              "required": 2304
+            },
+            {
+              "item": {
+                "id": "minecraft:acacia_log",
+                "Count": 2304
+              },
+              "required": 2304
+            },
+            {
+              "item": {
+                "id": "minecraft:dark_oak_log",
+                "Count": 2304
+              },
+              "required": 2304
+            }
+          ]
+        }
+      ],
+      "prerequisites": [],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_dollar",
+          "Count": 3
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "e369739b-6e0f-467d-b13a-077fd2b4a2fb",
+      "name": "Cake Collection III",
+      "description": "Make Food",
+      "x": 233,
+      "y": 74,
+      "icon": {
+        "id": "pamhc2foodcore:chocolatecakeitem",
+        "Count": 1
+      },
+      "repeat": {
+        "type": "TIME",
+        "days": 3,
+        "hours": 0
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME_QDS",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:cake",
+                "Count": 10
+              },
+              "required": 10
+            },
+            {
+              "item": {
+                "id": "pamhc2foodcore:chocolatecakeitem",
+                "Count": 10
+              },
+              "required": 10
+            },
+            {
+              "item": {
+                "id": "pamhc2foodcore:cheesecakeitem",
+                "Count": 10
+              },
+              "required": 10
+            },
+            {
+              "item": {
+                "id": "pamhc2foodcore:pumpkincheesecakeitem",
+                "Count": 10
+              },
+              "required": 10
+            },
+            {
+              "item": {
+                "id": "pamhc2foodcore:carrotcakeitem",
+                "Count": 10
+              },
+              "required": 10
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "8e5e9be8-b57c-4e9d-a2cb-94a362659eb2"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_dollar",
+          "Count": 3
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "52e9aa60-3c7c-4482-afbc-27a3226bb4c8",
+      "name": "Netherite Collection I",
+      "description": "Collect Materials",
+      "x": 21,
+      "y": 96,
+      "icon": {
+        "id": "minecraft:netherite_ingot",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "CONSUME_QDS",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:netherite_ingot",
+                "Count": 256
+              },
+              "required": 256
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "0af61e81-e5fb-4a00-a769-c8be888946e5"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 80
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "779013a9-0b16-48ac-877a-4fe33f1c078b",
+      "name": "Gold Collection II",
+      "description": "Collect Materials",
+      "x": 46,
+      "y": 40,
+      "icon": {
+        "id": "minecraft:gold_ingot",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME_QDS",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:gold_ingot",
+                "Count": 1280
+              },
+              "required": 1280
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "b402ca5a-29f3-4cbb-85e1-bcab28e38f84"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_dollar",
+          "Count": 2
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "ec826afd-3d4c-4988-816f-3443087c2826",
+      "name": "Soup Collection III",
+      "description": "Make Food",
+      "x": 233,
+      "y": 161,
+      "icon": {
+        "id": "pamhc2foodextended:chickennoodlesoupitem",
+        "Count": 1
+      },
+      "repeat": {
+        "type": "TIME",
+        "days": 3,
+        "hours": 0
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME_QDS",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:beetroot_soup",
+                "Count": 10
+              },
+              "required": 10
+            },
+            {
+              "item": {
+                "id": "pamhc2foodcore:pumpkinsoupitem",
+                "Count": 10
+              },
+              "required": 10
+            },
+            {
+              "item": {
+                "id": "pamhc2foodcore:carrotsoupitem",
+                "Count": 10
+              },
+              "required": 10
+            },
+            {
+              "item": {
+                "id": "pamhc2foodcore:potatosoupitem",
+                "Count": 10
+              },
+              "required": 10
+            },
+            {
+              "item": {
+                "id": "pamhc2foodcore:noodlesoupitem",
+                "Count": 10
+              },
+              "required": 10
+            },
+            {
+              "item": {
+                "id": "pamhc2foodextended:chickennoodlesoupitem",
+                "Count": 10
+              },
+              "required": 10
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "1127f009-3642-4e13-98b6-cb4facd11179"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_dollar",
+          "Count": 3
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "8292187a-3aa1-4031-92fa-ce00226b4566",
+      "name": "Iron Collection II",
+      "description": "Collect Materials",
+      "x": 46,
+      "y": 12,
+      "icon": {
+        "id": "minecraft:iron_ingot",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME_QDS",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:iron_ingot",
+                "Count": 1280
+              },
+              "required": 1280
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "0b749c9b-bd9f-4e41-8361-72fac2dc162f"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_dollar",
+          "Count": 2
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "c9922690-2629-4733-bf9a-fdbf93fc0690",
+      "name": "Manyullyn Collection II",
+      "description": "Collect Materials",
+      "x": 46,
+      "y": 152,
+      "icon": {
+        "id": "tconstruct:manyullyn_ingot",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME_QDS",
+          "items": [
+            {
+              "item": {
+                "id": "tconstruct:manyullyn_ingot",
+                "Count": 640
+              },
+              "required": 640
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "c8cc0bb1-c6f5-4cf5-b720-d05829fb4545"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_dollar",
+          "Count": 2
+        },
+        {
+          "id": "kubejs:skill_point",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "703e0871-d0de-43ce-b92d-de7ae55ca6c5",
+      "name": "Burger Collection II",
+      "description": "Make Food",
+      "x": 259,
+      "y": 16,
+      "icon": {
+        "id": "pamhc2foodextended:deluxecheeseburgeritem",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME_QDS",
+          "items": [
+            {
+              "item": {
+                "id": "alexsmobs:kangaroo_burger",
+                "Count": 5
+              },
+              "required": 5
+            },
+            {
+              "item": {
+                "id": "pamhc2foodcore:baconcheeseburgeritem",
+                "Count": 5
+              },
+              "required": 5
+            },
+            {
+              "item": {
+                "id": "pamhc2foodcore:basiccheeseburgeritem",
+                "Count": 5
+              },
+              "required": 5
+            },
+            {
+              "item": {
+                "id": "pamhc2foodcore:basichamburgeritem",
+                "Count": 5
+              },
+              "required": 5
+            },
+            {
+              "item": {
+                "id": "pamhc2foodextended:deluxecheeseburgeritem",
+                "Count": 5
+              },
+              "required": 5
+            },
+            {
+              "item": {
+                "id": "pamhc2foodextended:baconmushroomburgeritem",
+                "Count": 5
+              },
+              "required": 5
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "a4cfe0ef-db36-4a9e-8e18-91043cb8e705"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_dollar",
+          "Count": 2
+        },
+        {
+          "id": "kubejs:skill_point",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "5d82b59e-dbb1-4c8b-98e2-f664ed8710b3",
+      "name": "Pizza Collection II",
+      "description": "Make Food",
+      "x": 259,
+      "y": 45,
+      "icon": {
+        "id": "pamhc2foodextended:supremepizzaitem",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME_QDS",
+          "items": [
+            {
+              "item": {
+                "id": "pamhc2foodextended:anchovypepperonipizzaitem",
+                "Count": 5
+              },
+              "required": 5
+            },
+            {
+              "item": {
+                "id": "pamhc2foodextended:hamandpineapplepizzaitem",
+                "Count": 5
+              },
+              "required": 5
+            },
+            {
+              "item": {
+                "id": "pamhc2foodextended:meatfeastpizzaitem",
+                "Count": 5
+              },
+              "required": 5
+            },
+            {
+              "item": {
+                "id": "pamhc2foodextended:supremepizzaitem",
+                "Count": 5
+              },
+              "required": 5
+            },
+            {
+              "item": {
+                "id": "pamhc2foodextended:pepperonipizzaitem",
+                "Count": 5
+              },
+              "required": 5
+            },
+            {
+              "item": {
+                "id": "pamhc2foodextended:bbqchickenpizzaitem",
+                "Count": 5
+              },
+              "required": 5
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "909d5868-ce6f-4131-b43e-57573df2271f"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_dollar",
+          "Count": 2
+        },
+        {
+          "id": "kubejs:skill_point",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "0b749c9b-bd9f-4e41-8361-72fac2dc162f",
+      "name": "Iron Collection I",
+      "description": "Collect Materials",
+      "x": 21,
+      "y": 12,
+      "icon": {
+        "id": "minecraft:iron_ingot",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "CONSUME_QDS",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:iron_ingot",
+                "Count": 320
+              },
+              "required": 320
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "0af61e81-e5fb-4a00-a769-c8be888946e5"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 80
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "19f12a55-933d-4965-9369-9a429f79c573",
+      "name": "Mexican Collection II",
+      "description": "Make Food",
+      "x": 259,
+      "y": 103,
+      "icon": {
+        "id": "pamhc2foodextended:enchiladaitem",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME_QDS",
+          "items": [
+            {
+              "item": {
+                "id": "pamhc2foodextended:tacoitem",
+                "Count": 5
+              },
+              "required": 5
+            },
+            {
+              "item": {
+                "id": "pamhc2foodextended:deluxenachoesitem",
+                "Count": 5
+              },
+              "required": 5
+            },
+            {
+              "item": {
+                "id": "pamhc2foodextended:chilidogitem",
+                "Count": 5
+              },
+              "required": 5
+            },
+            {
+              "item": {
+                "id": "pamhc2foodextended:enchiladaitem",
+                "Count": 5
+              },
+              "required": 5
+            },
+            {
+              "item": {
+                "id": "pamhc2foodextended:chimichangaitem",
+                "Count": 5
+              },
+              "required": 5
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "ae1f5002-38d8-4269-9d20-86b8671693da"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_dollar",
+          "Count": 2
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "fb64e685-768f-4c7a-abf6-d727483884a3",
+      "name": "Diamond Collection I",
+      "description": "Collect Materials",
+      "x": 21,
+      "y": 68,
+      "icon": {
+        "id": "minecraft:diamond",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "CONSUME_QDS",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:diamond",
+                "Count": 256
+              },
+              "required": 256
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "0af61e81-e5fb-4a00-a769-c8be888946e5"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 80
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "ca1b7da9-4e8c-47a6-99bf-14a6f680cd5e",
+      "name": "Hepatizon Collection III",
+      "description": "Collect Materials",
+      "x": 71,
+      "y": 124,
+      "icon": {
+        "id": "tconstruct:hepatizon_ingot",
+        "Count": 1
+      },
+      "repeat": {
+        "type": "TIME",
+        "days": 3,
+        "hours": 0
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME_QDS",
+          "items": [
+            {
+              "item": {
+                "id": "tconstruct:hepatizon_ingot",
+                "Count": 1152
+              },
+              "required": 1152
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "6ac683fe-a206-4f3d-9c9f-32a9a3893b40"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_dollar",
+          "Count": 3
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "7d0e1427-741f-4676-a1d9-d771693783bf",
+      "name": "Soup Collection I",
+      "description": "Make Food",
+      "x": 285,
+      "y": 161,
+      "icon": {
+        "id": "pamhc2foodcore:potatosoupitem",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "CONSUME_QDS",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:beetroot_soup",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "pamhc2foodcore:pumpkinsoupitem",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "pamhc2foodcore:carrotsoupitem",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "pamhc2foodcore:potatosoupitem",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "pamhc2foodcore:noodlesoupitem",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "pamhc2foodextended:chickennoodlesoupitem",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "0af61e81-e5fb-4a00-a769-c8be888946e5"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 80
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "cc6a5fd0-67f9-4a63-8947-13b3ebd8f9ad",
+      "name": "Manyullyn Collection III",
+      "description": "Collect Materials",
+      "x": 71,
+      "y": 152,
+      "icon": {
+        "id": "tconstruct:manyullyn_ingot",
+        "Count": 1
+      },
+      "repeat": {
+        "type": "TIME",
+        "days": 3,
+        "hours": 0
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME_QDS",
+          "items": [
+            {
+              "item": {
+                "id": "tconstruct:manyullyn_ingot",
+                "Count": 1152
+              },
+              "required": 1152
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "c9922690-2629-4733-bf9a-fdbf93fc0690"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_dollar",
+          "Count": 3
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "25067cde-ab69-4fda-9920-db68190a840b",
+      "name": "Ultimate Completionist",
+      "description": "A Reward for those who completed all of the completionist quests.",
+      "x": 158,
+      "y": 90,
+      "icon": {
+        "id": "hardcorequesting:quest_book",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME_QDS",
+          "items": [
+            {
+              "item": {
+                "id": "hardcorequesting:quest_book",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "9ca9069e-d66e-4586-bb28-c89f64b803a2",
+        "6fd150de-a2ae-49b8-be16-0c56f25a24f9",
+        "6605018e-21d3-4d04-b4c1-14349d639c64",
+        "6dd6d910-c0eb-4f3e-8e99-a0c22257c0e9",
+        "ca1b7da9-4e8c-47a6-99bf-14a6f680cd5e",
+        "cc6a5fd0-67f9-4a63-8947-13b3ebd8f9ad",
+        "f5fce48b-60d1-4689-b05d-4db12e2a151e",
+        "5ad74c8a-c77b-49aa-913e-7ce7bdecf2bb",
+        "bff31601-79b9-4957-bc54-b20b8c56eaab",
+        "fb58d814-805e-4f62-ae7d-58793a3eff29",
+        "e369739b-6e0f-467d-b13a-077fd2b4a2fb",
+        "379acb1c-d884-4ca6-9f60-b5e52c606d73",
+        "6b154d02-c3bb-4b0c-973c-ab3061adbef3",
+        "ec826afd-3d4c-4988-816f-3443087c2826"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "kubejs:skill_point",
+          "Count": 3
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "fb58d814-805e-4f62-ae7d-58793a3eff29",
+      "name": "Pizza Collection III",
+      "description": "Make Food",
+      "x": 233,
+      "y": 45,
+      "icon": {
+        "id": "pamhc2foodextended:bbqchickenpizzaitem",
+        "Count": 1
+      },
+      "repeat": {
+        "type": "TIME",
+        "days": 3,
+        "hours": 0
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME_QDS",
+          "items": [
+            {
+              "item": {
+                "id": "pamhc2foodextended:anchovypepperonipizzaitem",
+                "Count": 10
+              },
+              "required": 10
+            },
+            {
+              "item": {
+                "id": "pamhc2foodextended:hamandpineapplepizzaitem",
+                "Count": 10
+              },
+              "required": 10
+            },
+            {
+              "item": {
+                "id": "pamhc2foodextended:meatfeastpizzaitem",
+                "Count": 10
+              },
+              "required": 10
+            },
+            {
+              "item": {
+                "id": "pamhc2foodextended:supremepizzaitem",
+                "Count": 10
+              },
+              "required": 10
+            },
+            {
+              "item": {
+                "id": "pamhc2foodextended:pepperonipizzaitem",
+                "Count": 10
+              },
+              "required": 10
+            },
+            {
+              "item": {
+                "id": "pamhc2foodextended:bbqchickenpizzaitem",
+                "Count": 10
+              },
+              "required": 10
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "5d82b59e-dbb1-4c8b-98e2-f664ed8710b3"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_dollar",
+          "Count": 3
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "c1ffffdb-3454-440a-b9a6-b55713e95bc6",
+      "name": "Diamond Collection II",
+      "description": "Collect Materials",
+      "x": 46,
+      "y": 68,
+      "icon": {
+        "id": "minecraft:diamond",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME_QDS",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:diamond",
+                "Count": 960
+              },
+              "required": 960
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "fb64e685-768f-4c7a-abf6-d727483884a3"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_dollar",
+          "Count": 2
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "8e5e9be8-b57c-4e9d-a2cb-94a362659eb2",
+      "name": "Cake Collection II",
+      "description": "Make Food",
+      "x": 259,
+      "y": 74,
+      "icon": {
+        "id": "pamhc2foodcore:cheesecakeitem",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME_QDS",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:cake",
+                "Count": 5
+              },
+              "required": 5
+            },
+            {
+              "item": {
+                "id": "pamhc2foodcore:chocolatecakeitem",
+                "Count": 5
+              },
+              "required": 5
+            },
+            {
+              "item": {
+                "id": "pamhc2foodcore:cheesecakeitem",
+                "Count": 5
+              },
+              "required": 5
+            },
+            {
+              "item": {
+                "id": "pamhc2foodcore:pumpkincheesecakeitem",
+                "Count": 5
+              },
+              "required": 5
+            },
+            {
+              "item": {
+                "id": "pamhc2foodcore:carrotcakeitem",
+                "Count": 5
+              },
+              "required": 5
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "77f1401b-306b-4229-8241-e42e9f3a3b02"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_dollar",
+          "Count": 2
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "a4cfe0ef-db36-4a9e-8e18-91043cb8e705",
+      "name": "Burger Collection I",
+      "description": "Make Food",
+      "x": 285,
+      "y": 16,
+      "icon": {
+        "id": "pamhc2foodcore:basiccheeseburgeritem",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "CONSUME_QDS",
+          "items": [
+            {
+              "item": {
+                "id": "alexsmobs:kangaroo_burger",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "pamhc2foodcore:baconcheeseburgeritem",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "pamhc2foodcore:basiccheeseburgeritem",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "pamhc2foodcore:basichamburgeritem",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "pamhc2foodextended:deluxecheeseburgeritem",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "pamhc2foodextended:baconmushroomburgeritem",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "0af61e81-e5fb-4a00-a769-c8be888946e5"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 80
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "6605018e-21d3-4d04-b4c1-14349d639c64",
+      "name": "Diamond Collection III",
+      "description": "Collect Materials",
+      "x": 71,
+      "y": 68,
+      "icon": {
+        "id": "minecraft:diamond",
+        "Count": 1
+      },
+      "repeat": {
+        "type": "TIME",
+        "days": 3,
+        "hours": 0
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME_QDS",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:diamond",
+                "Count": 1728
+              },
+              "required": 1728
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "c1ffffdb-3454-440a-b9a6-b55713e95bc6"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_dollar",
+          "Count": 3
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "1127f009-3642-4e13-98b6-cb4facd11179",
+      "name": "Soup Collection II",
+      "description": "Make Food",
+      "x": 259,
+      "y": 161,
+      "icon": {
+        "id": "pamhc2foodcore:noodlesoupitem",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME_QDS",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:beetroot_soup",
+                "Count": 5
+              },
+              "required": 5
+            },
+            {
+              "item": {
+                "id": "pamhc2foodcore:pumpkinsoupitem",
+                "Count": 5
+              },
+              "required": 5
+            },
+            {
+              "item": {
+                "id": "pamhc2foodcore:carrotsoupitem",
+                "Count": 5
+              },
+              "required": 5
+            },
+            {
+              "item": {
+                "id": "pamhc2foodcore:potatosoupitem",
+                "Count": 5
+              },
+              "required": 5
+            },
+            {
+              "item": {
+                "id": "pamhc2foodcore:noodlesoupitem",
+                "Count": 5
+              },
+              "required": 5
+            },
+            {
+              "item": {
+                "id": "pamhc2foodextended:chickennoodlesoupitem",
+                "Count": 5
+              },
+              "required": 5
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "7d0e1427-741f-4676-a1d9-d771693783bf"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_dollar",
+          "Count": 2
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "66bb23f2-5ea6-4565-9556-5f480877708c",
+      "name": "Hepatizon Collection I",
+      "description": "Collect Materials",
+      "x": 21,
+      "y": 124,
+      "icon": {
+        "id": "tconstruct:hepatizon_ingot",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "CONSUME_QDS",
+          "items": [
+            {
+              "item": {
+                "id": "tconstruct:hepatizon_ingot",
+                "Count": 192
+              },
+              "required": 192
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "0af61e81-e5fb-4a00-a769-c8be888946e5"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 80
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "909d5868-ce6f-4131-b43e-57573df2271f",
+      "name": "Pizza Collection I",
+      "description": "Make Food",
+      "x": 285,
+      "y": 45,
+      "icon": {
+        "id": "pamhc2foodextended:hamandpineapplepizzaitem",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "CONSUME_QDS",
+          "items": [
+            {
+              "item": {
+                "id": "pamhc2foodextended:anchovypepperonipizzaitem",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "pamhc2foodextended:hamandpineapplepizzaitem",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "pamhc2foodextended:meatfeastpizzaitem",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "pamhc2foodextended:supremepizzaitem",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "pamhc2foodextended:pepperonipizzaitem",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "pamhc2foodextended:bbqchickenpizzaitem",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "0af61e81-e5fb-4a00-a769-c8be888946e5"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 80
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "9ca9069e-d66e-4586-bb28-c89f64b803a2",
+      "name": "Iron Collection III",
+      "description": "Collect Materials",
+      "x": 71,
+      "y": 12,
+      "icon": {
+        "id": "minecraft:iron_ingot",
+        "Count": 1
+      },
+      "repeat": {
+        "type": "TIME",
+        "days": 3,
+        "hours": 0
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME_QDS",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:iron_ingot",
+                "Count": 2304
+              },
+              "required": 2304
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "8292187a-3aa1-4031-92fa-ce00226b4566"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_dollar",
+          "Count": 3
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "a295c159-4807-4505-971f-1232e6346a65",
+      "name": "Netherite Collection II",
+      "description": "Collect Materials",
+      "x": 46,
+      "y": 96,
+      "icon": {
+        "id": "minecraft:netherite_ingot",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME_QDS",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:netherite_ingot",
+                "Count": 960
+              },
+              "required": 960
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "52e9aa60-3c7c-4482-afbc-27a3226bb4c8"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_dollar",
+          "Count": 2
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "6b154d02-c3bb-4b0c-973c-ab3061adbef3",
+      "name": "Sandwich Collection III",
+      "description": "Make Food",
+      "x": 233,
+      "y": 132,
+      "icon": {
+        "id": "pamhc2foodextended:bltitem",
+        "Count": 1
+      },
+      "repeat": {
+        "type": "TIME",
+        "days": 3,
+        "hours": 0
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME_QDS",
+          "items": [
+            {
+              "item": {
+                "id": "pamhc2foodextended:dragonfruitjellysandwichitem",
+                "Count": 10
+              },
+              "required": 10
+            },
+            {
+              "item": {
+                "id": "pamhc2foodextended:lycheejellysandwichitem",
+                "Count": 10
+              },
+              "required": 10
+            },
+            {
+              "item": {
+                "id": "pamhc2foodextended:passionfruitjellysandwichitem",
+                "Count": 10
+              },
+              "required": 10
+            },
+            {
+              "item": {
+                "id": "pamhc2foodcore:basicchickensandwichitem",
+                "Count": 10
+              },
+              "required": 10
+            },
+            {
+              "item": {
+                "id": "pamhc2foodcore:basicfishsandwichitem",
+                "Count": 10
+              },
+              "required": 10
+            },
+            {
+              "item": {
+                "id": "pamhc2foodextended:bltitem",
+                "Count": 10
+              },
+              "required": 10
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "1673e1db-a369-4f2b-98bf-c0ea77eff5ab"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_dollar",
+          "Count": 3
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "379acb1c-d884-4ca6-9f60-b5e52c606d73",
+      "name": "Mexican Collection III",
+      "description": "Make Food",
+      "x": 233,
+      "y": 103,
+      "icon": {
+        "id": "pamhc2foodextended:chimichangaitem",
+        "Count": 1
+      },
+      "repeat": {
+        "type": "TIME",
+        "days": 3,
+        "hours": 0
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME_QDS",
+          "items": [
+            {
+              "item": {
+                "id": "pamhc2foodextended:tacoitem",
+                "Count": 10
+              },
+              "required": 10
+            },
+            {
+              "item": {
+                "id": "pamhc2foodextended:deluxenachoesitem",
+                "Count": 10
+              },
+              "required": 10
+            },
+            {
+              "item": {
+                "id": "pamhc2foodextended:chilidogitem",
+                "Count": 10
+              },
+              "required": 10
+            },
+            {
+              "item": {
+                "id": "pamhc2foodextended:enchiladaitem",
+                "Count": 10
+              },
+              "required": 10
+            },
+            {
+              "item": {
+                "id": "pamhc2foodextended:chimichangaitem",
+                "Count": 10
+              },
+              "required": 10
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "19f12a55-933d-4965-9369-9a429f79c573"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_dollar",
+          "Count": 3
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "28ea3cfc-41ff-483e-88fb-3004f9b7acac",
+      "name": "Sandwich Collection I",
+      "description": "Make Food",
+      "x": 285,
+      "y": 132,
+      "icon": {
+        "id": "pamhc2foodextended:dragonfruitjellysandwichitem",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "CONSUME_QDS",
+          "items": [
+            {
+              "item": {
+                "id": "pamhc2foodextended:dragonfruitjellysandwichitem",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "pamhc2foodextended:lycheejellysandwichitem",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "pamhc2foodextended:passionfruitjellysandwichitem",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "pamhc2foodcore:basicchickensandwichitem",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "pamhc2foodcore:basicfishsandwichitem",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "pamhc2foodextended:bltitem",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "0af61e81-e5fb-4a00-a769-c8be888946e5"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 80
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "6dd6d910-c0eb-4f3e-8e99-a0c22257c0e9",
+      "name": "Netherite Collection III",
+      "description": "Collect Materials",
+      "x": 71,
+      "y": 96,
+      "icon": {
+        "id": "minecraft:netherite_ingot",
+        "Count": 1
+      },
+      "repeat": {
+        "type": "TIME",
+        "days": 3,
+        "hours": 0
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME_QDS",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:netherite_ingot",
+                "Count": 1728
+              },
+              "required": 1728
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "a295c159-4807-4505-971f-1232e6346a65"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_dollar",
+          "Count": 3
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "f5fce48b-60d1-4689-b05d-4db12e2a151e",
+      "name": "Exotic Wood Collection",
+      "description": "Gather Wood",
+      "x": 158,
+      "y": 155,
+      "icon": {
+        "id": "byg:blue_enchanted_log",
+        "Count": 1
+      },
+      "repeat": {
+        "type": "TIME",
+        "days": 3,
+        "hours": 0
+      },
+      "tasks": [
+        {
+          "type": "CONSUME_QDS",
+          "items": [
+            {
+              "item": {
+                "id": "byg:blue_enchanted_log",
+                "Count": 2304
+              },
+              "required": 2304
+            },
+            {
+              "item": {
+                "id": "byg:green_enchanted_log",
+                "Count": 2304
+              },
+              "required": 2304
+            },
+            {
+              "item": {
+                "id": "byg:ether_log",
+                "Count": 2304
+              },
+              "required": 2304
+            },
+            {
+              "item": {
+                "id": "byg:skyris_log",
+                "Count": 2304
+              },
+              "required": 2304
+            },
+            {
+              "item": {
+                "id": "byg:lament_log",
+                "Count": 2304
+              },
+              "required": 2304
+            },
+            {
+              "item": {
+                "id": "byg:witch_hazel_log",
+                "Count": 2304
+              },
+              "required": 2304
+            }
+          ]
+        }
+      ],
+      "prerequisites": [],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_dollar",
+          "Count": 3
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "ae1f5002-38d8-4269-9d20-86b8671693da",
+      "name": "Mexican Collection I",
+      "description": "Make Food",
+      "x": 285,
+      "y": 103,
+      "icon": {
+        "id": "pamhc2foodextended:tacoitem",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "CONSUME_QDS",
+          "items": [
+            {
+              "item": {
+                "id": "pamhc2foodextended:tacoitem",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "pamhc2foodextended:deluxenachoesitem",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "pamhc2foodextended:chilidogitem",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "pamhc2foodextended:enchiladaitem",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "pamhc2foodextended:chimichangaitem",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "0af61e81-e5fb-4a00-a769-c8be888946e5"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 80
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "6fd150de-a2ae-49b8-be16-0c56f25a24f9",
+      "name": "Gold Collection III",
+      "description": "Collect Materials",
+      "x": 71,
+      "y": 40,
+      "icon": {
+        "id": "minecraft:gold_ingot",
+        "Count": 1
+      },
+      "repeat": {
+        "type": "TIME",
+        "days": 3,
+        "hours": 0
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME_QDS",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:gold_ingot",
+                "Count": 2304
+              },
+              "required": 2304
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "779013a9-0b16-48ac-877a-4fe33f1c078b"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_dollar",
+          "Count": 2
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "1673e1db-a369-4f2b-98bf-c0ea77eff5ab",
+      "name": "Sandwich Collection II",
+      "description": "Make Food",
+      "x": 259,
+      "y": 132,
+      "icon": {
+        "id": "pamhc2foodcore:basicchickensandwichitem",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME_QDS",
+          "items": [
+            {
+              "item": {
+                "id": "pamhc2foodextended:dragonfruitjellysandwichitem",
+                "Count": 5
+              },
+              "required": 5
+            },
+            {
+              "item": {
+                "id": "pamhc2foodextended:lycheejellysandwichitem",
+                "Count": 5
+              },
+              "required": 5
+            },
+            {
+              "item": {
+                "id": "pamhc2foodextended:passionfruitjellysandwichitem",
+                "Count": 5
+              },
+              "required": 5
+            },
+            {
+              "item": {
+                "id": "pamhc2foodcore:basicchickensandwichitem",
+                "Count": 5
+              },
+              "required": 5
+            },
+            {
+              "item": {
+                "id": "pamhc2foodcore:basicfishsandwichitem",
+                "Count": 5
+              },
+              "required": 5
+            },
+            {
+              "item": {
+                "id": "pamhc2foodextended:bltitem",
+                "Count": 5
+              },
+              "required": 5
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "28ea3cfc-41ff-483e-88fb-3004f9b7acac"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_dollar",
+          "Count": 2
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "c8cc0bb1-c6f5-4cf5-b720-d05829fb4545",
+      "name": "Manyullyn Collection I",
+      "description": "Collect Materials",
+      "x": 21,
+      "y": 152,
+      "icon": {
+        "id": "tconstruct:manyullyn_ingot",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "CONSUME_QDS",
+          "items": [
+            {
+              "item": {
+                "id": "tconstruct:manyullyn_ingot",
+                "Count": 192
+              },
+              "required": 192
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "0af61e81-e5fb-4a00-a769-c8be888946e5"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 80
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "6ac683fe-a206-4f3d-9c9f-32a9a3893b40",
+      "name": "Hepatizon Collection II",
+      "description": "Collect Materials",
+      "x": 46,
+      "y": 124,
+      "icon": {
+        "id": "tconstruct:hepatizon_ingot",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME_QDS",
+          "items": [
+            {
+              "item": {
+                "id": "tconstruct:hepatizon_ingot",
+                "Count": 640
+              },
+              "required": 640
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "66bb23f2-5ea6-4565-9556-5f480877708c"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_dollar",
+          "Count": 2
+        },
+        {
+          "id": "kubejs:skill_point",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "b402ca5a-29f3-4cbb-85e1-bcab28e38f84",
+      "name": "Gold Collection I",
+      "description": "Collect Materials",
+      "x": 21,
+      "y": 40,
+      "icon": {
+        "id": "minecraft:gold_ingot",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "CONSUME_QDS",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:gold_ingot",
+                "Count": 320
+              },
+              "required": 320
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "0af61e81-e5fb-4a00-a769-c8be888946e5"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 80
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "bff31601-79b9-4957-bc54-b20b8c56eaab",
+      "name": "Burger Collection III",
+      "description": "Make Food",
+      "x": 233,
+      "y": 16,
+      "icon": {
+        "id": "pamhc2foodextended:baconmushroomburgeritem",
+        "Count": 1
+      },
+      "repeat": {
+        "type": "TIME",
+        "days": 3,
+        "hours": 0
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME_QDS",
+          "items": [
+            {
+              "item": {
+                "id": "alexsmobs:kangaroo_burger",
+                "Count": 10
+              },
+              "required": 10
+            },
+            {
+              "item": {
+                "id": "pamhc2foodcore:baconcheeseburgeritem",
+                "Count": 10
+              },
+              "required": 10
+            },
+            {
+              "item": {
+                "id": "pamhc2foodcore:basiccheeseburgeritem",
+                "Count": 10
+              },
+              "required": 10
+            },
+            {
+              "item": {
+                "id": "pamhc2foodcore:basichamburgeritem",
+                "Count": 10
+              },
+              "required": 10
+            },
+            {
+              "item": {
+                "id": "pamhc2foodextended:deluxecheeseburgeritem",
+                "Count": 10
+              },
+              "required": 10
+            },
+            {
+              "item": {
+                "id": "pamhc2foodextended:baconmushroomburgeritem",
+                "Count": 10
+              },
+              "required": 10
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "703e0871-d0de-43ce-b92d-de7ae55ca6c5"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_dollar",
+          "Count": 3
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "77f1401b-306b-4229-8241-e42e9f3a3b02",
+      "name": "Cake Collection",
+      "description": "Make Food",
+      "x": 285,
+      "y": 74,
+      "icon": {
+        "id": "minecraft:cake",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "CONSUME_QDS",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:cake",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "pamhc2foodcore:chocolatecakeitem",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "pamhc2foodcore:cheesecakeitem",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "pamhc2foodcore:pumpkincheesecakeitem",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "pamhc2foodcore:carrotcakeitem",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "0af61e81-e5fb-4a00-a769-c8be888946e5"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 80
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    }
+  ],
+  "reputationBar": [],
+  "description": "Completionist Quest"
+}

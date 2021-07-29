@@ -1,0 +1,11 @@
+{
+  "powers":[
+		"skilltree:defense/base_3"
+	],
+  "icon": "minecraft:shield",
+	"order": 3,
+	"impact": 1,
+  "name":"Defense III",
+  "description":" ",
+  "unchoosable": true
+}

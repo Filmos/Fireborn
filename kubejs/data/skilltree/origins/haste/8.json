@@ -1,0 +1,13 @@
+{
+  "powers":[
+		"skilltree:haste/base_8",
+		"skilltree:haste/upgrade_1",
+		"skilltree:haste/upgrade_2"
+	],
+  "icon": "minecraft:golden_pickaxe",
+	"order": 8,
+	"impact": 1,
+  "name":"Haste VIII",
+  "description":" ",
+  "unchoosable": true
+}

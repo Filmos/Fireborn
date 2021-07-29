@@ -1,0 +1,23 @@
+{
+  "GoodBag": {
+    "index": 0,
+    "stackStr": "hardcorequesting:good_bag",
+    "stackNBT": "",
+    "amount": 1,
+    "value": 50
+  },
+  "EpicBag": {
+    "index": 1,
+    "stackStr": "hardcorequesting:epic_bag",
+    "stackNBT": "",
+    "amount": 1,
+    "value": 200
+  },
+  "LegendaryBag": {
+    "index": 2,
+    "stackStr": "hardcorequesting:legendary_bag",
+    "stackNBT": "",
+    "amount": 1,
+    "value": 2000
+  }
+}

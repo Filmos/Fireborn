@@ -1,0 +1,12 @@
+{
+  "powers":[
+		"skilltree:defense/base_10",
+		"skilltree:defense/upgrade_3"
+	],
+  "icon": "minecraft:shield",
+	"order": 10,
+	"impact": 1,
+  "name":"Defense X",
+  "description":" ",
+  "unchoosable": true
+}

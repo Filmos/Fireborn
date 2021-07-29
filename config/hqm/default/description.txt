@@ -1,0 +1,3 @@
+This Quest Book is supposed to act as a guide for the newly added mods. If you have no clue as to how to progress though them, refer to the quest lines contained within. There are also rewards for completing the quests which range from small but useful items to creative-only upgrades. If you have any trouble obtaining some of the items please refer to the JEI interface.
+
+This Book was designed by Simon. The Skill Tree was designed by Filmos.

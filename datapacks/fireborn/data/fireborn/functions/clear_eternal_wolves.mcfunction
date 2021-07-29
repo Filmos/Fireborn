@@ -1,2 +1,0 @@
-execute as @a[scores={EternalWolfId=0..},nbt=!{cardinal_components:{"origins:origin":{Powers: [{Type: "fireborn:nat/eternal_companion"}]}}}] at @e[scores={EternalWolfId=0..},type=!player] if score @e[limit=1,sort=nearest] EternalWolfId = @s EternalWolfId run kill @e[limit=1,sort=nearest]
-execute as @a[scores={EternalWolfId=0..},nbt=!{cardinal_components:{"origins:origin":{Powers: [{Type: "fireborn:nat/eternal_companion"}]}}}] run scoreboard players reset @s EternalWolfId

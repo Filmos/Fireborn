@@ -1,0 +1,14 @@
+{
+  "powers":[
+		"skilltree:haste/base_10",
+		"skilltree:haste/upgrade_1",
+		"skilltree:haste/upgrade_2",
+		"skilltree:haste/upgrade_3"
+	],
+  "icon": "minecraft:golden_pickaxe",
+	"order": 10,
+	"impact": 1,
+  "name":"Haste X",
+  "description":" ",
+  "unchoosable": true
+}

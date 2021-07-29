@@ -1,0 +1,8 @@
+{
+    "type": "origins:effect_immunity",
+    "effects": [
+        "minecraft:slowness"
+    ],
+  	"name": "Resistance to slowness",
+  	"description": "You are completely immune to slowness potion effects."
+}

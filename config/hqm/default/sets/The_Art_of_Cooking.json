@@ -1,0 +1,371 @@
+{
+  "name": "The Art of Cooking",
+  "quests": [
+    {
+      "uuid": "ee4687e6-2170-432d-9bfd-0ef8e2411e3a",
+      "name": "Introduction",
+      "description": "Pam\u0027s Harvestcraft. A mod that reworks the cooking/eating system. You\u0027ll no longer find eating pure meat beneficial. Instead you\u0027ll cook soups and burgers and alike to properly feed yourself.\n\nOn different biomes you\u0027ll find what are called gardens, which will drop biome respective ingredients.\n\nGather some resources to get started.",
+      "x": 75,
+      "y": 17,
+      "icon": {
+        "id": "pamhc2crops:barleyitem",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:wheat",
+                "Count": 1
+              },
+              "precision": "TAG_NBT_FUZZY"
+            },
+            {
+              "item": {
+                "id": "minecraft:beef",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "0af61e81-e5fb-4a00-a769-c8be888946e5"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 8
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "24d239ac-5b11-4179-b47a-88752d53b5fe",
+      "name": "Tools",
+      "description": "In order to cook, you\u0027ll need a variety of tools. Craft them now.",
+      "x": 113,
+      "y": 76,
+      "icon": {
+        "id": "pamhc2foodcore:skilletitem",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "pamhc2foodcore:skilletitem",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "pamhc2foodcore:saucepanitem",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "pamhc2foodcore:rolleritem",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "pamhc2foodcore:bakewareitem",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "pamhc2foodcore:cuttingboarditem",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "pamhc2foodcore:grinderitem",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "pamhc2foodcore:juiceritem",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "pamhc2foodcore:mixingbowlitem",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "pamhc2foodcore:potitem",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "ee4687e6-2170-432d-9bfd-0ef8e2411e3a"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 8
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "d056fc82-b35b-44be-a230-d1bd8d4331ea",
+      "name": "Cooking for Blockheads",
+      "description": "In this modpack we have an addon to Pam\u0027s Harvestcraft called Cooking for Blockheads. It adds a functional multiblock kitchen to ease the quite complicated crafting process for all the new food items.",
+      "x": 73,
+      "y": 179,
+      "bigicon": true,
+      "icon": {
+        "id": "cookingforblockheads:recipe_book",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "cookingforblockheads:cooking_table",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "cookingforblockheads:oven",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "cookingforblockheads:sink",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "cookingforblockheads:counter",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "cookingforblockheads:recipe_book",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "cookingforblockheads:milk_jar",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "46bdfc5f-7415-476c-a416-60715f4c00b9"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 96
+        },
+        {
+          "id": "kubejs:skill_point",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "a7c453b3-f5b8-4441-9831-2762da919d2b",
+      "name": "Plants",
+      "description": "Great, now that you have gathered the basic ingredients, we need some of the special stuff added by the mod. Try destorying gardens in different biomes to get these ingredients.",
+      "x": 39,
+      "y": 76,
+      "icon": {
+        "id": "pamhc2crops:tomatoitem",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "pamhc2crops:tomatoitem",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "pamhc2crops:mustardseedsitem",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "pamhc2crops:onionitem",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "pamhc2crops:lettuceitem",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "ee4687e6-2170-432d-9bfd-0ef8e2411e3a"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 8
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "46bdfc5f-7415-476c-a416-60715f4c00b9",
+      "name": "Cooking",
+      "description": "It\u0027s time to get cooking! Use your gathered ingredients and made tools to cook a Deluxe Cheeseburger!",
+      "x": 73,
+      "y": 129,
+      "bigicon": true,
+      "icon": {
+        "id": "pamhc2foodextended:deluxecheeseburgeritem",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "pamhc2foodextended:deluxecheeseburgeritem",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "24d239ac-5b11-4179-b47a-88752d53b5fe",
+        "a7c453b3-f5b8-4441-9831-2762da919d2b"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 40
+        },
+        {
+          "id": "kubejs:skill_point",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "946115e0-30e2-4aa5-9559-9c2efa75584f",
+      "name": "Unnamed",
+      "description": "Unnamed quest",
+      "x": 236,
+      "y": 51,
+      "trigger": "QUEST_TRIGGER",
+      "tasks": [
+        {
+          "type": "COMPLETION",
+          "completed_quests": [
+            {
+              "quest_uuid": "d056fc82-b35b-44be-a230-d1bd8d4331ea"
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "d056fc82-b35b-44be-a230-d1bd8d4331ea"
+      ],
+      "optionlinks": [],
+      "reward": [],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "afa19c71-fe20-45a8-a044-1313208eef6e",
+      "name": "A Cow in a Jar",
+      "description": "Get a cow into a jar - get infinite milk! What could be so hard about this?",
+      "x": 233,
+      "y": 93,
+      "bigicon": true,
+      "icon": {
+        "id": "cookingforblockheads:cow_jar",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "cookingforblockheads:cow_jar",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "946115e0-30e2-4aa5-9559-9c2efa75584f"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_dollar",
+          "Count": 1
+        },
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 20
+        },
+        {
+          "id": "kubejs:skill_point",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    }
+  ],
+  "reputationBar": [],
+  "description": "The Chapter about Pam\u0027s Harvestcraft"
+}

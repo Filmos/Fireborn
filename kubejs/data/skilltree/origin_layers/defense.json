@@ -1,0 +1,20 @@
+{
+	"name": "defense skill",
+  "replace": false,
+  "origins": [
+    "skilltree:blank",
+	  "skilltree:defense/1",
+		"skilltree:defense/2",
+		"skilltree:defense/3",
+		"skilltree:defense/4",
+		"skilltree:defense/5",
+		"skilltree:defense/6",
+		"skilltree:defense/7",
+		"skilltree:defense/8",
+		"skilltree:defense/9",
+		"skilltree:defense/10"
+  ],
+  "order": 13,
+  "auto_choose": true
+}
+

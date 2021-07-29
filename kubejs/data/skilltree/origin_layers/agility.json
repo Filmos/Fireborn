@@ -1,0 +1,20 @@
+{
+	"name": "agility skill",
+  "replace": false,
+  "origins": [
+    "skilltree:blank",
+	  "skilltree:agility/1",
+		"skilltree:agility/2",
+		"skilltree:agility/3",
+		"skilltree:agility/4",
+		"skilltree:agility/5",
+		"skilltree:agility/6",
+		"skilltree:agility/7",
+		"skilltree:agility/8",
+		"skilltree:agility/9",
+		"skilltree:agility/10"
+  ],
+  "order": 14,
+  "auto_choose": true
+}
+

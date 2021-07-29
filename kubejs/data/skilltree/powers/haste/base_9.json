@@ -1,0 +1,10 @@
+
+{
+    "type": "origins:modify_break_speed",
+    "modifier": {
+        "operation": "multiply_total",
+        "value": 1.3499999999999999
+    },
+  	"name": "Fast hands",
+  	"description": "You are mining 135% faster."
+}

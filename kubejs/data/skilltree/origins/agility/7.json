@@ -1,0 +1,13 @@
+{
+  "powers":[
+		"skilltree:agility/base_7",
+		"skilltree:agility/upgrade_1",
+		"skilltree:agility/upgrade_2"
+	],
+  "icon": "minecraft:sugar",
+	"order": 7,
+	"impact": 1,
+  "name":"Agility VII",
+  "description":" ",
+  "unchoosable": true
+}

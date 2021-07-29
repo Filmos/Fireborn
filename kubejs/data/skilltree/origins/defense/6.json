@@ -1,0 +1,12 @@
+{
+  "powers":[
+		"skilltree:defense/base_6",
+		"skilltree:defense/upgrade_1"
+	],
+  "icon": "minecraft:shield",
+	"order": 6,
+	"impact": 1,
+  "name":"Defense VI",
+  "description":" ",
+  "unchoosable": true
+}

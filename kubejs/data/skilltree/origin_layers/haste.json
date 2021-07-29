@@ -1,0 +1,20 @@
+{
+	"name": "haste skill",
+  "replace": false,
+  "origins": [
+    "skilltree:blank",
+	  "skilltree:haste/1",
+		"skilltree:haste/2",
+		"skilltree:haste/3",
+		"skilltree:haste/4",
+		"skilltree:haste/5",
+		"skilltree:haste/6",
+		"skilltree:haste/7",
+		"skilltree:haste/8",
+		"skilltree:haste/9",
+		"skilltree:haste/10"
+  ],
+  "order": 11,
+  "auto_choose": true
+}
+

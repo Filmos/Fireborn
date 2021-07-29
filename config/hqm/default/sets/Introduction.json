@@ -1,0 +1,297 @@
+{
+  "name": "Introduction",
+  "quests": [
+    {
+      "uuid": "e0028601-315b-4197-b1cf-07fb7ea9b480",
+      "name": "Death and Rebirth",
+      "description": "When you die here, you don\u0027t drop your items as you normally would. Instead a corpse is created at your place of death. Specifically - your corpse, containing all of your items.\n\nBut beware, as you are not the only person that will want to loot your previous, now deceased body.\n\nYou can view your death history by pressing the \u0027U\u0027 key. Last death location is shown there.",
+      "x": 28,
+      "y": 52,
+      "icon": {
+        "id": "minecraft:skeleton_skull",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DEATH",
+          "deaths": 1
+        }
+      ],
+      "prerequisites": [
+        "0af61e81-e5fb-4a00-a769-c8be888946e5"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 8
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "ce8775c4-f14a-40ea-b9fe-aac59835a4be",
+      "name": "The Wallet",
+      "description": "The Wallet allows you to store all of your coins in one place, and automatically converts them to higher value coins.",
+      "x": 45,
+      "y": 78,
+      "icon": {
+        "id": "calemiutils:wallet",
+        "Count": 1,
+        "tag": {}
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "calemiutils:wallet",
+                "Count": 1,
+                "tag": {}
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "0af61e81-e5fb-4a00-a769-c8be888946e5"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "9210af40-a45b-40d1-89aa-15091c0775f8",
+      "name": "The Quests",
+      "description": "The Quest Book is designed as a guide for your journey across the lands of the Fireborn World. There are chapters for each changed aspect of the game, as well as chapters with repeatable quests. Each quest in the main line will unlock more of them, so if you\u0027re new to these mods or just want to have some goals on your way, it is recommended to follow the quest lines from this book.",
+      "x": 133,
+      "y": 23,
+      "icon": {
+        "id": "hardcorequesting:quest_book",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:oak_log",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "0af61e81-e5fb-4a00-a769-c8be888946e5"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 8
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "86c5ab6d-d623-4dd7-ad70-abf7a82116cc",
+      "name": "Quest Rewards",
+      "description": "Each completed quest will earn you Fireborn Coins. You can use them to buy Reward Bags from The Shop. The Reward Bags are divided into Good, Epic and Legendary\n\nThe Good Rewards will be represented as green bags, the Epic Rewards as orange bags and the Legendary Rewards as purple bags.\n\nClaim a Good Reward from The Shop to complete this quest.",
+      "x": 19,
+      "y": 23,
+      "icon": {
+        "id": "hardcorequesting:good_bag",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "COMPLETION",
+          "completed_quests": [
+            {
+              "quest_uuid": "566719c8-532c-4210-b508-57363d818b76"
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "0af61e81-e5fb-4a00-a769-c8be888946e5"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 8
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "0af61e81-e5fb-4a00-a769-c8be888946e5",
+      "name": "Introduction",
+      "description": "Welcome to the Fireborn World.\n\nYou wake up in this bizzare world, filled with danger, adventure and loot.\n\nWhat happens next is up to you. You can forge your destiny however you want here.\n\nThis quest book was made to guide you through the mods that are installed in this modpack. They are optional.",
+      "x": 76,
+      "y": 23,
+      "icon": {
+        "id": "minecraft:grass_block",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:oak_log",
+                "Count": 1
+              },
+              "precision": "TAG_NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "prerequisites": [],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_quarter",
+          "Count": 2
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "9d0a262f-47d2-42ba-8eb1-b8d8f9306143",
+      "name": "Quest Delivery System",
+      "description": "The QDE allows you to set a quest and automatically send in required items.",
+      "x": 76,
+      "y": 87,
+      "icon": {
+        "id": "hardcorequesting:item_barrel",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "hardcorequesting:quest_tracker",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "hardcorequesting:item_barrel",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "0af61e81-e5fb-4a00-a769-c8be888946e5"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 8
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "dbf810f2-0dbf-49a1-9045-4e11b465815c",
+      "name": "Skill Tree \u0026 Skill Points",
+      "description": "You can earn skill points for completing certain quests. There are repeatable quests that can earn you skill points so don\u0027t worry about them running out. You can find the Skill Tree in the FTBQuest Interface.",
+      "x": 107,
+      "y": 79,
+      "icon": {
+        "id": "kubejs:skill_point",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "COMPLETION",
+          "completed_quests": [
+            {
+              "quest_uuid": "0af61e81-e5fb-4a00-a769-c8be888946e5"
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "0af61e81-e5fb-4a00-a769-c8be888946e5"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 8
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "a3c5505e-8303-4435-9879-bdfb01c44d16",
+      "name": "Origin",
+      "description": "In the world of Fireborn each individual is able to harness the forces of nature and alike to use it in form of his abilities. Everyones\u0027 abilities are different, so there\u0027s no telling which powers you will possess.\n\nTo use your primary power, press the \u0027g\u0027 key.\n\nTo view the description of your origin, press the \u0027o\u0027 key.\n\nPassive abilites are always active.",
+      "x": 123,
+      "y": 52,
+      "icon": {
+        "id": "origins:orb_of_origin",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:oak_log",
+                "Count": 1
+              },
+              "precision": "TAG_FUZZY"
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "0af61e81-e5fb-4a00-a769-c8be888946e5"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 8
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    }
+  ],
+  "reputationBar": [],
+  "description": "The Chapter about The Basics"
+}

@@ -1,0 +1,1009 @@
+{
+  "name": "The Hunt",
+  "quests": [
+    {
+      "uuid": "39d375e2-540a-431d-930c-ce6a975e4a9d",
+      "name": "Twinkle twinkle Nether Star",
+      "description": "How I wonder what you are!\nUp above the world so high, Devastation from the sky.\nTwinkle twinkle Nether Star,\nHow I wonder what you are!",
+      "x": 113,
+      "y": 15,
+      "icon": {
+        "id": "minecraft:nether_star",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "KILL",
+          "mobs": [
+            {
+              "name": "Wither",
+              "icon": {
+                "id": "minecraft:wither_skeleton_skull",
+                "Count": 1
+              },
+              "mob": "minecraft:wither",
+              "kills": 50
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "0f55aefd-0868-4616-b318-daa1904bc5de"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_dollar",
+          "Count": 4
+        },
+        {
+          "id": "kubejs:skill_point",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "2e07d2c3-5e25-4cbd-aecc-18d3d8ea7d8d",
+      "name": "An Infestation",
+      "description": "The monsters have spread even more across the lands of this world. Kill them, and you\u0027ll be rewarded.",
+      "x": 68,
+      "y": 53,
+      "icon": {
+        "id": "minecraft:zombie_head",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "KILL",
+          "mobs": [
+            {
+              "name": "Zombie",
+              "icon": {
+                "id": "minecraft:zombie_head",
+                "Count": 1
+              },
+              "mob": "minecraft:zombie",
+              "kills": 50
+            },
+            {
+              "name": "Skeleton",
+              "icon": {
+                "id": "minecraft:skeleton_skull",
+                "Count": 1
+              },
+              "mob": "minecraft:skeleton",
+              "kills": 50
+            },
+            {
+              "name": "Creeper",
+              "icon": {
+                "id": "minecraft:creeper_head",
+                "Count": 1
+              },
+              "mob": "minecraft:creeper",
+              "kills": 50
+            },
+            {
+              "name": "Spider",
+              "icon": {
+                "id": "minecraft:spider_eye",
+                "Count": 1
+              },
+              "mob": "minecraft:spider",
+              "kills": 50
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "c7bfd4df-a905-44ce-9838-8645ba8e1b11"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_dollar",
+          "Count": 2
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "770fb878-82ce-4095-a839-e19a50675ace",
+      "name": "The Ultimate Showdown",
+      "description": "Ok. It\u0027s time for THE ULTIMATE SHOWDOWN!!! Will the Player kill all 100 Withers? Or will one of them kill him? To find out, make sure to watch\n\n\nTOTAL\n\n\nDRAMA\n\n\nFIREBORN CAMP!!!",
+      "x": 156,
+      "y": 15,
+      "icon": {
+        "id": "minecraft:wither_rose",
+        "Count": 1
+      },
+      "repeat": {
+        "type": "TIME",
+        "days": 3,
+        "hours": 0
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "KILL",
+          "mobs": [
+            {
+              "name": "Wither",
+              "icon": {
+                "id": "minecraft:wither_skeleton_skull",
+                "Count": 1
+              },
+              "mob": "minecraft:wither",
+              "kills": 100
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "39d375e2-540a-431d-930c-ce6a975e4a9d"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_dollar",
+          "Count": 5
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "4d35ffeb-a1e9-4c6f-9ace-a1774cc0a289",
+      "name": "Don\u0027t let the bedbugs bite",
+      "description": "I\u0027ve called for a professional Pest Control crew, but It\u0027ll take them a while to come here. In the meantime, would you kindly?",
+      "x": 205,
+      "y": 53,
+      "icon": {
+        "id": "minecraft:zombie_head",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "KILL",
+          "mobs": [
+            {
+              "name": "Zombie",
+              "icon": {
+                "id": "minecraft:zombie_head",
+                "Count": 1
+              },
+              "mob": "minecraft:zombie",
+              "kills": 350
+            },
+            {
+              "name": "Skeleton",
+              "icon": {
+                "id": "minecraft:skeleton_skull",
+                "Count": 1
+              },
+              "mob": "minecraft:skeleton",
+              "kills": 350
+            },
+            {
+              "name": "Creeper",
+              "icon": {
+                "id": "minecraft:creeper_head",
+                "Count": 1
+              },
+              "mob": "minecraft:creeper",
+              "kills": 350
+            },
+            {
+              "name": "Spider",
+              "icon": {
+                "id": "minecraft:spider_eye",
+                "Count": 1
+              },
+              "mob": "minecraft:spider",
+              "kills": 350
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "a3419864-87c4-4e51-a9cf-df6d4ef5d508"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_dollar",
+          "Count": 3
+        },
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 20
+        },
+        {
+          "id": "kubejs:skill_point",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "45656567-0caf-42ce-8bdb-43d53509626c",
+      "name": "The Wither",
+      "description": "Born from the lost souls of The Nether, The Wither is a danger exceeding every other inhabitant there.",
+      "x": 28,
+      "y": 15,
+      "icon": {
+        "id": "minecraft:wither_skeleton_skull",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "KILL",
+          "mobs": [
+            {
+              "name": "Wither",
+              "icon": {
+                "id": "minecraft:wither_skeleton_skull",
+                "Count": 1
+              },
+              "mob": "minecraft:wither",
+              "kills": 10
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "0af61e81-e5fb-4a00-a769-c8be888946e5"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_dollar",
+          "Count": 2
+        },
+        {
+          "id": "kubejs:skill_point",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "c7bfd4df-a905-44ce-9838-8645ba8e1b11",
+      "name": "The Monster Plague",
+      "description": "The Fireborn World is plagued by multitudes of monsters. Make yourself useful and help clean some of them up.",
+      "x": 29,
+      "y": 53,
+      "icon": {
+        "id": "minecraft:zombie_head",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "KILL",
+          "mobs": [
+            {
+              "name": "Zombie",
+              "icon": {
+                "id": "minecraft:zombie_head",
+                "Count": 1
+              },
+              "mob": "minecraft:zombie",
+              "kills": 25
+            },
+            {
+              "name": "Skeleton",
+              "icon": {
+                "id": "minecraft:skeleton_skull",
+                "Count": 1
+              },
+              "mob": "minecraft:skeleton",
+              "kills": 25
+            },
+            {
+              "name": "Creeper",
+              "icon": {
+                "id": "minecraft:creeper_head",
+                "Count": 1
+              },
+              "mob": "minecraft:creeper",
+              "kills": 25
+            },
+            {
+              "name": "Spider",
+              "icon": {
+                "id": "minecraft:spider_eye",
+                "Count": 1
+              },
+              "mob": "minecraft:spider",
+              "kills": 25
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "0af61e81-e5fb-4a00-a769-c8be888946e5"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_dollar",
+          "Count": 1
+        },
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 60
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "927b76c2-3195-4535-ae00-65d346177f70",
+      "name": "The Dragon Reborn",
+      "description": "The Dragon has been Reborn and roams The End once more. You know what you have to do.",
+      "x": 67,
+      "y": 93,
+      "icon": {
+        "id": "minecraft:dragon_head",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "KILL",
+          "mobs": [
+            {
+              "name": "Ender Dragon",
+              "icon": {
+                "id": "minecraft:dragon_head",
+                "Count": 1
+              },
+              "mob": "minecraft:ender_dragon",
+              "kills": 1
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "c87f7de5-e35e-45b3-9fc1-bff25829129b"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_dollar",
+          "Count": 1
+        },
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 60
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "e0e31059-df22-47bb-ab52-72b46d52edb9",
+      "name": "Overworld\u0027s Great Threats",
+      "description": "There are several powerful beings in the overworld. Killing all of them will earn you a big reward.",
+      "x": 28,
+      "y": 171,
+      "icon": {
+        "id": "mowziesmobs:wrought_helmet",
+        "Count": 1
+      },
+      "repeat": {
+        "type": "TIME",
+        "days": 3,
+        "hours": 0
+      },
+      "tasks": [
+        {
+          "type": "KILL",
+          "mobs": [
+            {
+              "name": "Ferrous Wroughtnaut",
+              "icon": {
+                "id": "mowziesmobs:wrought_helmet",
+                "Count": 1
+              },
+              "mob": "mowziesmobs:ferrous_wroughtnaut",
+              "kills": 1
+            },
+            {
+              "name": "Barako, the Sun Chief",
+              "icon": {
+                "id": "mowziesmobs:barako_mask",
+                "Count": 1
+              },
+              "mob": "mowziesmobs:barako",
+              "kills": 1
+            },
+            {
+              "name": "Frostmaw",
+              "icon": {
+                "id": "mowziesmobs:ice_crystal",
+                "Count": 1,
+                "tag": {
+                  "Damage": 0
+                }
+              },
+              "mob": "mowziesmobs:frostmaw",
+              "kills": 1
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "0af61e81-e5fb-4a00-a769-c8be888946e5"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 50
+        },
+        {
+          "id": "kubejs:skill_point",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "adfd4459-0244-4125-9f8c-9084ef1db9ff",
+      "name": "World War Y",
+      "description": "Ok, this is getting scary. There are even more monsters. Twice as much as there were last time. Whatever is causing this we\u0027ll have to stop it.",
+      "x": 113,
+      "y": 53,
+      "icon": {
+        "id": "minecraft:zombie_head",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "KILL",
+          "mobs": [
+            {
+              "name": "Zombie",
+              "icon": {
+                "id": "minecraft:zombie_head",
+                "Count": 1
+              },
+              "mob": "minecraft:zombie",
+              "kills": 100
+            },
+            {
+              "name": "Skeleton",
+              "icon": {
+                "id": "minecraft:skeleton_skull",
+                "Count": 1
+              },
+              "mob": "minecraft:skeleton",
+              "kills": 100
+            },
+            {
+              "name": "Creeper",
+              "icon": {
+                "id": "minecraft:creeper_head",
+                "Count": 1
+              },
+              "mob": "minecraft:creeper",
+              "kills": 100
+            },
+            {
+              "name": "Spider",
+              "icon": {
+                "id": "minecraft:spider_eye",
+                "Count": 1
+              },
+              "mob": "minecraft:spider",
+              "kills": 100
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "2e07d2c3-5e25-4cbd-aecc-18d3d8ea7d8d"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_dollar",
+          "Count": 2
+        },
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 40
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "a3419864-87c4-4e51-a9cf-df6d4ef5d508",
+      "name": "World War Z",
+      "description": "Well, Code Red. We\u0027re officialy at war with the monsters. Maybe someday if we kill enough of them, they\u0027ll stop coming?",
+      "x": 157,
+      "y": 53,
+      "icon": {
+        "id": "minecraft:zombie_head",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "KILL",
+          "mobs": [
+            {
+              "name": "Zombie",
+              "icon": {
+                "id": "minecraft:zombie_head",
+                "Count": 1
+              },
+              "mob": "minecraft:zombie",
+              "kills": 200
+            },
+            {
+              "name": "Skeleton",
+              "icon": {
+                "id": "minecraft:skeleton_skull",
+                "Count": 1
+              },
+              "mob": "minecraft:skeleton",
+              "kills": 200
+            },
+            {
+              "name": "Creeper",
+              "icon": {
+                "id": "minecraft:creeper_head",
+                "Count": 1
+              },
+              "mob": "minecraft:creeper",
+              "kills": 200
+            },
+            {
+              "name": "Spider",
+              "icon": {
+                "id": "minecraft:spider_eye",
+                "Count": 1
+              },
+              "mob": "minecraft:spider",
+              "kills": 200
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "adfd4459-0244-4125-9f8c-9084ef1db9ff"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_dollar",
+          "Count": 2
+        },
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 80
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "51a1d075-6cf0-44da-8ce5-1ff1936c03f6",
+      "name": "Bane of the Twilight Forest",
+      "description": "The biggest of monsters of the Twilight Forest have been revived. Stop them all again to recieve a big reward.",
+      "x": 28,
+      "y": 134,
+      "icon": {
+        "id": "twilightforest:naga_trophy",
+        "Count": 1
+      },
+      "repeat": {
+        "type": "TIME",
+        "days": 3,
+        "hours": 0
+      },
+      "tasks": [
+        {
+          "type": "KILL",
+          "mobs": [
+            {
+              "name": "Naga",
+              "icon": {
+                "id": "twilightforest:naga_trophy",
+                "Count": 1
+              },
+              "mob": "twilightforest:naga",
+              "kills": 1
+            },
+            {
+              "name": "Twilight Lich",
+              "icon": {
+                "id": "twilightforest:lich_trophy",
+                "Count": 1
+              },
+              "mob": "twilightforest:lich",
+              "kills": 1
+            },
+            {
+              "name": "Minoshroom",
+              "icon": {
+                "id": "twilightforest:minoshroom_trophy",
+                "Count": 1
+              },
+              "mob": "twilightforest:minoshroom",
+              "kills": 1
+            },
+            {
+              "name": "Hydra",
+              "icon": {
+                "id": "twilightforest:hydra_trophy",
+                "Count": 1
+              },
+              "mob": "twilightforest:hydra",
+              "kills": 1
+            },
+            {
+              "name": "Knight Phantom",
+              "icon": {
+                "id": "twilightforest:knight_phantom_trophy",
+                "Count": 1
+              },
+              "mob": "twilightforest:knight_phantom",
+              "kills": 1
+            },
+            {
+              "name": "Ur-Ghast",
+              "icon": {
+                "id": "twilightforest:ur_ghast_trophy",
+                "Count": 1
+              },
+              "mob": "twilightforest:ur_ghast",
+              "kills": 1
+            },
+            {
+              "name": "Alpha Yeti",
+              "icon": {
+                "id": "twilightforest:yeti_trophy",
+                "Count": 1
+              },
+              "mob": "twilightforest:yeti_alpha",
+              "kills": 1
+            },
+            {
+              "name": "Snow Queen",
+              "icon": {
+                "id": "twilightforest:snow_queen_trophy",
+                "Count": 1
+              },
+              "mob": "twilightforest:snow_queen",
+              "kills": 1
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "0af61e81-e5fb-4a00-a769-c8be888946e5"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_dollar",
+          "Count": 3
+        },
+        {
+          "id": "kubejs:skill_point",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "8bb66763-023c-4867-bd32-d3dd7ffd30c8",
+      "name": "Deadbugs don\u0027t bite",
+      "description": "The Pest Control has arrived, but now I\u0027m afraid they won\u0027t handle all of them by themselves. Could you please help them? One last time?\n\n\n\nOh, wait... Not the last time. Turns out that because they\u0027re mainly UNDEAD they\u0027ll just keep being resurrected. So just go kill even more monsters tham before.",
+      "x": 254,
+      "y": 53,
+      "icon": {
+        "id": "minecolonies:blockminecoloniesgrave",
+        "Count": 1
+      },
+      "repeat": {
+        "type": "TIME",
+        "days": 3,
+        "hours": 0
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "KILL",
+          "mobs": [
+            {
+              "name": "Zombie",
+              "icon": {
+                "id": "minecraft:zombie_head",
+                "Count": 1
+              },
+              "mob": "minecraft:zombie",
+              "kills": 500
+            },
+            {
+              "name": "Skeleton",
+              "icon": {
+                "id": "minecraft:skeleton_skull",
+                "Count": 1
+              },
+              "mob": "minecraft:skeleton",
+              "kills": 500
+            },
+            {
+              "name": "Creeper",
+              "icon": {
+                "id": "minecraft:creeper_head",
+                "Count": 1
+              },
+              "mob": "minecraft:creeper",
+              "kills": 500
+            },
+            {
+              "name": "Spider",
+              "icon": {
+                "id": "minecraft:spider_eye",
+                "Count": 1
+              },
+              "mob": "minecraft:spider",
+              "kills": 500
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "4d35ffeb-a1e9-4c6f-9ace-a1774cc0a289"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_dollar",
+          "Count": 5
+        },
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 60
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "4f2f80ea-e907-4a13-b9df-da1823089c48",
+      "name": "Five times the Dragon",
+      "description": "Turns out the Dragon you killed last time wasn\u0027t the only one. And also that everyone of them has 10 lives. Sooo... this one is still the same one.",
+      "x": 113,
+      "y": 93,
+      "icon": {
+        "id": "minecraft:dragon_head",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "KILL",
+          "mobs": [
+            {
+              "name": "Ender Dragon",
+              "icon": {
+                "id": "minecraft:dragon_head",
+                "Count": 1
+              },
+              "mob": "minecraft:ender_dragon",
+              "kills": 3
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "927b76c2-3195-4535-ae00-65d346177f70"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_dollar",
+          "Count": 2
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "c87f7de5-e35e-45b3-9fc1-bff25829129b",
+      "name": "The Dragon",
+      "description": "The Ender Dragon roams The End, disposing of all of his opponents. Will you be the one to finally rid The End of him?",
+      "x": 28,
+      "y": 93,
+      "icon": {
+        "id": "minecraft:dragon_head",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "KILL",
+          "mobs": [
+            {
+              "name": "Ender Dragon",
+              "icon": {
+                "id": "minecraft:dragon_head",
+                "Count": 1
+              },
+              "mob": "minecraft:ender_dragon",
+              "kills": 1
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "0af61e81-e5fb-4a00-a769-c8be888946e5"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_dollar",
+          "Count": 1
+        },
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 60
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "0f55aefd-0868-4616-b318-daa1904bc5de",
+      "name": "The Wither Reborn",
+      "description": "Well, you\u0027ll have to kill more Withers. Apparently some mad man decided to infinitely clone him. That\u0027s why you had to kill 10 of them last time. Now get to work.",
+      "x": 68,
+      "y": 15,
+      "icon": {
+        "id": "minecraft:wither_skeleton_skull",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "KILL",
+          "mobs": [
+            {
+              "name": "Wither",
+              "icon": {
+                "id": "minecraft:wither_skeleton_skull",
+                "Count": 1
+              },
+              "mob": "minecraft:wither",
+              "kills": 20
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "45656567-0caf-42ce-8bdb-43d53509626c"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_dollar",
+          "Count": 3
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "fc6528a6-d100-4fda-883e-37a434eda234",
+      "name": "And five times Reborn",
+      "description": "You know the drill. 10 lives and all. Just kill him already.",
+      "x": 156,
+      "y": 93,
+      "icon": {
+        "id": "minecraft:dragon_head",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "KILL",
+          "mobs": [
+            {
+              "name": "Ender Dragon",
+              "icon": {
+                "id": "minecraft:dragon_head",
+                "Count": 1
+              },
+              "mob": "minecraft:ender_dragon",
+              "kills": 5
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "4f2f80ea-e907-4a13-b9df-da1823089c48"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_dollar",
+          "Count": 2
+        },
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 40
+        },
+        {
+          "id": "kubejs:skill_point",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "e7ce109d-0782-477d-8987-6c9db6c0194a",
+      "name": "Slayer of Dragons",
+      "description": "Congrats, you finally killed one Dragon. Now for each TWO You\u0027ll kill You will be rewarded. And yes, that means kill a Dragon 20 times.",
+      "x": 204,
+      "y": 93,
+      "icon": {
+        "id": "minecraft:dragon_egg",
+        "Count": 1
+      },
+      "repeat": {
+        "type": "TIME",
+        "days": 3,
+        "hours": 0
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "KILL",
+          "mobs": [
+            {
+              "name": "Ender Dragon",
+              "icon": {
+                "id": "minecraft:dragon_head",
+                "Count": 1
+              },
+              "mob": "minecraft:ender_dragon",
+              "kills": 20
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "fc6528a6-d100-4fda-883e-37a434eda234"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_dollar",
+          "Count": 4
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    }
+  ],
+  "reputationBar": [],
+  "description": "Repeatable Hunting Quests"
+}

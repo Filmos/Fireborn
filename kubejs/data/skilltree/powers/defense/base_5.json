@@ -1,0 +1,24 @@
+
+{
+  "type": "origins:self_action_when_hit",
+  "entity_action": {
+    "type": "origins:chance",
+    "action": {
+      "type": "origins:apply_effect",
+      "effect": {
+          "effect": "minecraft:resistance",
+          
+          "duration": 80
+      }
+    },
+    "chance": 0.25
+  },
+  "damage_condition": {
+      "type": "origins:amount",
+      "comparison": ">=",
+      "compare_to": 1.0
+  },
+  "cooldown": 10,
+	"name": "Resistance",
+	"description": "You have 25% chance to briefly receive resistance effect when being hit."
+}

@@ -1,0 +1,13 @@
+{
+  "powers":[
+		"skilltree:defense/base_8",
+		"skilltree:defense/upgrade_1",
+		"skilltree:defense/upgrade_2"
+	],
+  "icon": "minecraft:shield",
+	"order": 8,
+	"impact": 1,
+  "name":"Defense VIII",
+  "description":" ",
+  "unchoosable": true
+}

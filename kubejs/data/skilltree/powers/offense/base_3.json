@@ -1,0 +1,20 @@
+
+{
+  "type": "origins:target_action_on_hit",
+  "entity_action": {
+    "type": "origins:chance",
+    "action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:set_on_fire",
+          "duration": 3
+        }
+      ]
+    },
+    "chance": 0.12
+  },
+  "cooldown": 5,
+	"name": "Fire touch",
+	"description": "You have 12% chance to briefly set the hit entity on fire."
+}

@@ -1,0 +1,13 @@
+{
+  "powers":[
+		"skilltree:defense/base_9",
+		"skilltree:defense/upgrade_1",
+		"skilltree:defense/upgrade_2"
+	],
+  "icon": "minecraft:shield",
+	"order": 9,
+	"impact": 1,
+  "name":"Defense IX",
+  "description":" ",
+  "unchoosable": true
+}

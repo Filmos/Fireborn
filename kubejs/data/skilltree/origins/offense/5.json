@@ -1,0 +1,12 @@
+{
+  "powers":[
+		"skilltree:offense/base_5",
+		"skilltree:offense/upgrade_1"
+	],
+  "icon": "twilightforest:fiery_sword",
+	"order": 5,
+	"impact": 1,
+  "name":"Offense V",
+  "description":" ",
+  "unchoosable": true
+}

@@ -1,0 +1,12 @@
+{
+  "powers":[
+		"skilltree:defense/base_5",
+		"skilltree:defense/upgrade_1"
+	],
+  "icon": "minecraft:shield",
+	"order": 5,
+	"impact": 1,
+  "name":"Defense V",
+  "description":" ",
+  "unchoosable": true
+}

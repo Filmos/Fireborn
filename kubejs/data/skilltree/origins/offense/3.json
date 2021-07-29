@@ -1,0 +1,11 @@
+{
+  "powers":[
+		"skilltree:offense/base_3"
+	],
+  "icon": "twilightforest:fiery_sword",
+	"order": 3,
+	"impact": 1,
+  "name":"Offense III",
+  "description":" ",
+  "unchoosable": true
+}

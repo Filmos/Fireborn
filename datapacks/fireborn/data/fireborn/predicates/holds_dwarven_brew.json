@@ -1,7 +1,0 @@
-{
-  "condition": "minecraft:entity_properties",
-  "predicate": {
-      "nbt": "{SelectedItem:{tag:{DwarvenPotion:1b}}}"
-  },
-  "entity": "this"
-}

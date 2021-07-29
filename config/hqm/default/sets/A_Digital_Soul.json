@@ -1,0 +1,755 @@
+{
+  "name": "A Digital Soul",
+  "quests": [
+    {
+      "uuid": "e378994a-dd8c-4024-a912-5343f56070cb",
+      "name": "WLAN",
+      "description": "Who needs cables anyway.",
+      "x": 50,
+      "y": 146,
+      "icon": {
+        "id": "computercraft:wireless_modem_normal",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "computercraft:wireless_modem_normal",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "e42b9b64-efab-4f9f-b3cd-a4a751aa70c8"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 16
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "0f30ed5c-26ba-4099-b04f-dc1bf36ca975",
+      "name": "Peripherals basics",
+      "description": "To use a peripheral u need to get its object. Use `peripheral.wrap(side)` (sides are left, top, back, right, bottom) or `peripheral.find(name)` (monitor).\n`local r\u003dperipheral.wrap(\u0027back\u0027) r.setOutput(\u0027north\u0027,true)`. To its functions wrap it in LUA interpreter.",
+      "x": 139,
+      "y": 30,
+      "icon": {
+        "id": "minecraft:obsidian",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:obsidian",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "477c1c04-00ce-4790-ab76-b2a8970703b4"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 8
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "d5e5bf4b-c0b3-4e67-8cdf-6381f1dd2d9b",
+      "name": "Automatization",
+      "description": "Create a turtle.",
+      "x": 62,
+      "y": 89,
+      "icon": {
+        "id": "computercraft:turtle_normal",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "computercraft:turtle_normal",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "058ee760-5a33-4b14-85fb-8d308a018bea"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 16
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "1edb25d4-f8ae-4343-80ad-999eb6f25ea1",
+      "name": "Im a programmer",
+      "description": "Create Advanced Computer. Its better than a normal computer: color support, more advanced editor and its golden.",
+      "x": 234,
+      "y": 105,
+      "bigicon": true,
+      "icon": {
+        "id": "computercraft:computer_advanced",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "computercraft:computer_advanced",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "058ee760-5a33-4b14-85fb-8d308a018bea"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 40
+        },
+        {
+          "id": "kubejs:skill_point",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "8201dbfb-a9e6-4808-9e63-2cec152bc753",
+      "name": "PDA",
+      "description": "Item version computer. Can only have one peripherial connected.",
+      "x": 85,
+      "y": 128,
+      "icon": {
+        "id": "computercraft:pocket_computer_normal",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "computercraft:pocket_computer_normal",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "058ee760-5a33-4b14-85fb-8d308a018bea"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 8
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "690c7e74-e2d4-429f-8621-897826564b58",
+      "name": "Redstone",
+      "description": "Run out of redstone ports on your computer? Extend redstone I/O via redstone integrator, just connect it via rednet. You can get or set digital and analog I/O (digital means power 15 analog output).",
+      "x": 52,
+      "y": 108,
+      "icon": {
+        "id": "advancedperipherals:redstone_integrator",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "advancedperipherals:redstone_integrator",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "058ee760-5a33-4b14-85fb-8d308a018bea"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 16
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "2c9aaf1f-66d7-4db8-af0a-0628c87e8550",
+      "name": "Audio",
+      "description": "Speaker can play any minecraft sound. Scare your friends by playing creeper sound from a hidden speaker :p",
+      "x": 225,
+      "y": 127,
+      "icon": {
+        "id": "computercraft:speaker",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "computercraft:speaker",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "1edb25d4-f8ae-4343-80ad-999eb6f25ea1"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 16
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "df72ef24-0c04-47cd-a0cb-38a39c49f336",
+      "name": "LUA basics",
+      "description": "LUA is script language that can be in one line, but indentation is helpful. Example code: `code`. Variable declaration `local a \u003d 4`, `print(\u0027Goodbye world\u0027), `function f(a,b) return a+b end`, `while true \u003d\u003d true do print(\u0027spam\u0027) end`, `if 2 \u003d\u003d 3 then print(\u0027yes\u0027) end`, `for i\u003d0,i\u003c10,1 do print(i) end`. To live play with LUA type `lua` in computer to start interpreter (hold CTRL+T terminates any program).",
+      "x": 106,
+      "y": 13,
+      "icon": {
+        "id": "minecraft:dirt",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:dirt",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "0af61e81-e5fb-4a00-a769-c8be888946e5"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 8
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "058ee760-5a33-4b14-85fb-8d308a018bea",
+      "name": "Introduction",
+      "description": "This chapter will guide you through the main elements of ComputerCraft and Advanced Peripherals. To learn about programming them redeem the Documentation Quest and open LUA documentation.",
+      "x": 74,
+      "y": 108,
+      "icon": {
+        "id": "computercraft:printed_book",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "computercraft:computer_normal",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "0af61e81-e5fb-4a00-a769-c8be888946e5"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 8
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "477c1c04-00ce-4790-ab76-b2a8970703b4",
+      "name": "LUA advanced",
+      "description": "Tables in LUA start from 1. `a\u003d{}`, `a[\u0027x\u0027]\u003d10` is same as `a.x\u003d10`, `a[2]\u003d3. Important, dont mix `a[\"0\"]` with `a[0]` - one is string other a number. `local A\u003d\u0027x\u0027,B\u003d\u0027d\u0027 print(A..B)` \"xd\" ..concats strings. Use `table.remove(table,idx)` and `table.insert(table,idx,val)`.",
+      "x": 128,
+      "y": 12,
+      "icon": {
+        "id": "minecraft:stone",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:stone",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "df72ef24-0c04-47cd-a0cb-38a39c49f336"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 8
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "0ff7ce1d-c801-400e-8ddd-5bf2e4ee3b36",
+      "name": "Chunkloader",
+      "description": "Finally autofarms are viable. Craft a chunky turtle with Chunk controller to have a working chunkloader (loads chunks its currently in).",
+      "x": 48,
+      "y": 14,
+      "icon": {
+        "id": "advancedperipherals:chunk_controller",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "advancedperipherals:chunk_controller",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "0af61e81-e5fb-4a00-a769-c8be888946e5"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 16
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "cd514ed3-5212-4a55-8c7f-65c866ffcf1e",
+      "name": "DIY radar",
+      "description": "Create Player Detector to track (and kill) your friends.",
+      "x": 248,
+      "y": 127,
+      "icon": {
+        "id": "advancedperipherals:player_detector",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "advancedperipherals:player_detector",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "1edb25d4-f8ae-4343-80ad-999eb6f25ea1"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 24
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "e42b9b64-efab-4f9f-b3cd-a4a751aa70c8",
+      "name": "LAN",
+      "description": "Creating your home LAN connection,",
+      "x": 62,
+      "y": 127,
+      "icon": {
+        "id": "computercraft:cable",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "computercraft:cable",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "computercraft:wired_modem",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "058ee760-5a33-4b14-85fb-8d308a018bea"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 8
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "46f211d9-fe08-48ed-908b-73dc400cb386",
+      "name": "HDMI",
+      "description": "Create a  Monitor. The golden rule also applies to Monitors. Golden Monitor have color support.",
+      "x": 84,
+      "y": 88,
+      "icon": {
+        "id": "computercraft:monitor_normal",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "computercraft:monitor_normal",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "computercraft:monitor_advanced",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "058ee760-5a33-4b14-85fb-8d308a018bea"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 16
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "a355aabb-f2e2-482b-93f9-8090ffda2647",
+      "name": "WAN",
+      "description": "Ender modem can send data between dimensions.",
+      "x": 38,
+      "y": 165,
+      "icon": {
+        "id": "computercraft:wireless_modem_advanced",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "computercraft:wireless_modem_advanced",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "e378994a-dd8c-4024-a912-5343f56070cb"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 16
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "eb4261d5-8a5a-4ba7-b281-8181d5afcf50",
+      "name": "Weather forecasting",
+      "description": "Create an Environment Detector. It can check information about the world. Important ability is to check if current chunk is slime (use pocket environment computer for this).",
+      "x": 225,
+      "y": 89,
+      "icon": {
+        "id": "advancedperipherals:environment_detector",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "advancedperipherals:environment_detector",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "1edb25d4-f8ae-4343-80ad-999eb6f25ea1"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 16
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "07753b67-049c-4944-a0e8-58dd95cf4ca8",
+      "name": "Inventory",
+      "description": "Inventory Controller can interact with players inventory via linked, inserted card. Must have a chest or different invetory connected to its side. Works interdimensionaly. Now you will never run out dirt on your adventure.",
+      "x": 248,
+      "y": 89,
+      "icon": {
+        "id": "advancedperipherals:inventory_manager",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "advancedperipherals:inventory_manager",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "1edb25d4-f8ae-4343-80ad-999eb6f25ea1"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 16
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "8c3261f7-ff5e-4c52-af81-017de823810c",
+      "name": "Chatting",
+      "description": "Create Chat Box. Now you can have someone who will finally listen to you and respond (or not).",
+      "x": 214,
+      "y": 108,
+      "icon": {
+        "id": "advancedperipherals:chat_box",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "advancedperipherals:chat_box",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "1edb25d4-f8ae-4343-80ad-999eb6f25ea1"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 16
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "a0bad71f-69da-4b0e-ae23-6a2c818f128b",
+      "name": "Documentation",
+      "description": "Redeem the reward to get links to external documentations.",
+      "x": 20,
+      "y": 14,
+      "icon": {
+        "id": "citadel:citadel_book",
+        "Count": 1
+      },
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "computercraft:computer_normal",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "0af61e81-e5fb-4a00-a769-c8be888946e5"
+      ],
+      "optionlinks": [],
+      "reward": [],
+      "rewardchoice": [],
+      "commandrewards": [
+        "/tellraw @p [\"\",{\"text\":\"Advanced Peripherals Documentation\",\"underlined\":true,\"color\":\"aqua\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://docs.srendi.de/\"}},{\"text\":\"\\n\",\"underlined\":true,\"color\":\"aqua\"},{\"text\":\"ComputerCraft Documentation\",\"underlined\":true,\"color\":\"aqua\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://tweaked.cc/\"}}]"
+      ]
+    },
+    {
+      "uuid": "d3192e43-3776-4db7-a997-08cc4102a79d",
+      "name": "Cool glasses",
+      "description": "Create AR setup. After linking goggles with controller (PPM), you can draw simple shapes and text directly to your screen (goggles must be weared as helmet).",
+      "x": 260,
+      "y": 108,
+      "icon": {
+        "id": "advancedperipherals:ar_goggles",
+        "Count": 1,
+        "tag": {
+          "Damage": 0
+        }
+      },
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "advancedperipherals:ar_goggles",
+                "Count": 1,
+                "tag": {
+                  "Damage": 0
+                }
+              }
+            },
+            {
+              "item": {
+                "id": "advancedperipherals:ar_controller",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "1edb25d4-f8ae-4343-80ad-999eb6f25ea1"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 24
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    }
+  ],
+  "reputationBar": []
+}

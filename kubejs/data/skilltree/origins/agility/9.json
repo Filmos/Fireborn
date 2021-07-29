@@ -1,0 +1,13 @@
+{
+  "powers":[
+		"skilltree:agility/base_9",
+		"skilltree:agility/upgrade_1",
+		"skilltree:agility/upgrade_2"
+	],
+  "icon": "minecraft:sugar",
+	"order": 9,
+	"impact": 1,
+  "name":"Agility IX",
+  "description":" ",
+  "unchoosable": true
+}

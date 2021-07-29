@@ -1,0 +1,870 @@
+{
+  "name": "Twilight of the Fireborn",
+  "quests": [
+    {
+      "uuid": "9f285d22-35e0-45bd-8233-1561f1242f01",
+      "name": "The Questing Ram\u0027s Quest",
+      "description": "At the Quest Grove lives the Questing Ram. Complete it\u0027s quest for some nice treasure.",
+      "x": 29,
+      "y": 50,
+      "icon": {
+        "id": "twilightforest:quest_ram_trophy",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "ADVANCEMENT",
+          "advancements": [
+            {
+              "name": "Quest Ram\u0027s Quest",
+              "icon": {
+                "id": "twilightforest:quest_ram_trophy",
+                "Count": 1
+              },
+              "adv_name": "twilightforest:quest_ram"
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "f7739b09-fb96-4a71-af2a-9427e1ad5b56"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 40
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "7544cbda-68c8-48b7-b591-6cb76c52f194",
+      "name": "The Snow Queen",
+      "description": "Ah The Snow Queen. She lives in the Aurora Palace at the center of the Glacier. But don\u0027t let her beauty distract you, because if it will, you\u0027ll certainly end up dead. And we wouldn\u0027t like that, would we? She\u0027s a Guardian of the Highlands, so if you want to access it\u0027s treasures you\u0027ll need to defeat her.",
+      "x": 78,
+      "y": 130,
+      "bigicon": true,
+      "icon": {
+        "id": "twilightforest:snow_queen_trophy",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "KILL",
+          "mobs": [
+            {
+              "name": "Snow Queen",
+              "icon": {
+                "id": "twilightforest:snow_queen_trophy",
+                "Count": 1
+              },
+              "mob": "twilightforest:snow_queen",
+              "kills": 1
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "9adad9a5-abf7-412b-833f-6c01ad356cbb"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_dollar",
+          "Count": 1
+        },
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 60
+        },
+        {
+          "id": "kubejs:skill_point",
+          "Count": 2
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "99f3d47f-e4fe-4b3f-84af-3898fb3b7a83",
+      "name": "The Hollow Hills",
+      "description": "The Hollow Hills is a perfect place to obtain some precious ore and treasure. Well at least it would be if not for those pesky monsters. You can handle them, right?",
+      "x": 138,
+      "y": 16,
+      "icon": {
+        "id": "minecraft:emerald_ore",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "ADVANCEMENT",
+          "description": "at small Hollow Hill",
+          "advancements": [
+            {
+              "name": "Redcap Goblin",
+              "icon": {
+                "id": "twilightforest:redcap_spawn_egg",
+                "Count": 1
+              },
+              "adv_name": "twilightforest:hill1"
+            }
+          ]
+        },
+        {
+          "type": "ADVANCEMENT",
+          "description": "at medium Hollow Hill",
+          "advancements": [
+            {
+              "name": "Redcap Sapper",
+              "icon": {
+                "id": "twilightforest:redcap_sapper_spawn_egg",
+                "Count": 1
+              },
+              "adv_name": "twilightforest:hill2"
+            }
+          ]
+        },
+        {
+          "type": "ADVANCEMENT",
+          "description": "at large Hollow Hill",
+          "advancements": [
+            {
+              "name": "Twilight Wraith",
+              "icon": {
+                "id": "twilightforest:wraith_spawn_egg",
+                "Count": 1
+              },
+              "adv_name": "twilightforest:hill3"
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "72e20075-8e14-4cdd-a506-73e947e884e2"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 40
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "04a6717a-8919-453d-abd1-e3ca92773150",
+      "name": "The Knight Phantoms",
+      "description": "In The Dark Forest you can find Strongholds of the Twilight Knights. You need to access the lowest levels of the Stronghold and put the Knight Phantoms to rest in order to access the Dark Tower, where a Guardian of the Highlands resides.",
+      "x": 136,
+      "y": 80,
+      "bigicon": true,
+      "icon": {
+        "id": "twilightforest:knight_phantom_trophy",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "KILL",
+          "mobs": [
+            {
+              "name": "Knight Phantom",
+              "icon": {
+                "id": "twilightforest:knight_phantom_trophy",
+                "Count": 1
+              },
+              "mob": "minecraft:pig",
+              "kills": 1
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "b5b4cb13-41f5-4c47-b008-c7985a6efda6"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 40
+        },
+        {
+          "id": "kubejs:skill_point",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "2feae86a-6b3c-4b38-8f9a-e11f6b0e5b69",
+      "name": "The Magic Beans",
+      "description": "Beneath the Highlands, in the Troll Caves, you\u0027ll find a small obsidian vault and a big one. Get the Magic Beans from the small vault to access the Cloud Cottages.",
+      "x": 239,
+      "y": 17,
+      "icon": {
+        "id": "twilightforest:magic_beans",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "twilightforest:magic_beans",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "e0796ea2-8ffe-41a5-ae58-2d6ff922ff67"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 40
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "4d222f59-af3e-4c1d-b01f-e1481a737cb6",
+      "name": "The Giant\u0027s Pickaxe",
+      "description": "To open the big obsidian vault down in the Troll Caves you\u0027ll need a Giant\u0027s Pickaxe. Fortunately, or unfortunately, the Cloud Cottage is full of Giants. Just find one\u0027s pickaxe and go open the big vault!",
+      "x": 239,
+      "y": 55,
+      "icon": {
+        "id": "twilightforest:giant_pickaxe",
+        "Count": 1,
+        "tag": {
+          "Damage": 0
+        }
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "twilightforest:giant_pickaxe",
+                "Count": 1,
+                "tag": {
+                  "Damage": 0
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "2feae86a-6b3c-4b38-8f9a-e11f6b0e5b69"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 40
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "9d44fe83-01c7-4ce2-b32d-cbc9e4656d08",
+      "name": "The Ur-Ghast",
+      "description": "On the top of the Dark Tower you\u0027ll find a Guardian of the Highlands - Ur-Ghast. Defeat him, and you\u0027ll be one step closer to their treasures.",
+      "x": 136,
+      "y": 125,
+      "bigicon": true,
+      "icon": {
+        "id": "twilightforest:ur_ghast_trophy",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "KILL",
+          "mobs": [
+            {
+              "name": "Ur-Ghast",
+              "icon": {
+                "id": "twilightforest:ur_ghast_trophy",
+                "Count": 1
+              },
+              "mob": "twilightforest:ur_ghast",
+              "kills": 1
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "04a6717a-8919-453d-abd1-e3ca92773150"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_dollar",
+          "Count": 1
+        },
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 60
+        },
+        {
+          "id": "kubejs:skill_point",
+          "Count": 2
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "f7739b09-fb96-4a71-af2a-9427e1ad5b56",
+      "name": "Naga",
+      "description": "The Twilight Forest is full of dangers and challenges. Make a Magic Map and find the first one - Naga.\n\nDefeat her to continue.",
+      "x": 26,
+      "y": 13,
+      "bigicon": true,
+      "icon": {
+        "id": "twilightforest:naga_trophy",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "twilightforest:magic_map_empty",
+                "Count": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "KILL",
+          "mobs": [
+            {
+              "name": "Naga",
+              "icon": {
+                "id": "twilightforest:naga_trophy",
+                "Count": 1
+              },
+              "mob": "twilightforest:naga",
+              "kills": 1
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "72e20075-8e14-4cdd-a506-73e947e884e2"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 40
+        },
+        {
+          "id": "kubejs:skill_point",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "55cca0c6-bff0-4922-add1-48344b0fe29e",
+      "name": "The Highlands",
+      "description": "With all of the guardians defeated the acid rain around the Highlands dissipates.",
+      "x": 78,
+      "y": 173,
+      "bigicon": true,
+      "icon": {
+        "id": "twilightforest:fluffy_cloud",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "ADVANCEMENT",
+          "advancements": [
+            {
+              "name": "Kill all 3 Guardians",
+              "adv_name": "twilightforest:progress_merge"
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "8ff74be4-0fa5-4f5e-9f36-50c1c539ef99",
+        "7544cbda-68c8-48b7-b591-6cb76c52f194",
+        "9d44fe83-01c7-4ce2-b32d-cbc9e4656d08"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_dollar",
+          "Count": 2
+        },
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 40
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "b5b4cb13-41f5-4c47-b008-c7985a6efda6",
+      "name": "The Twilight Lich",
+      "description": "After defeating the Naga the protective spell around the Lich\u0027s tower dissipated. His magic will help you withstand the various extreme conditions in this world, if you can defeat him.",
+      "x": 78,
+      "y": 49,
+      "bigicon": true,
+      "icon": {
+        "id": "twilightforest:lich_trophy",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "KILL",
+          "mobs": [
+            {
+              "name": "Twilight Lich",
+              "icon": {
+                "id": "twilightforest:lich_trophy",
+                "Count": 1
+              },
+              "mob": "twilightforest:lich",
+              "kills": 1
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "f7739b09-fb96-4a71-af2a-9427e1ad5b56"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 80
+        },
+        {
+          "id": "kubejs:skill_point",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "8ee92caa-2fd2-4b7a-a0ad-109d3659f38d",
+      "name": "The Final Castle",
+      "description": "And so here you are, at the end of your journey through the lands of the Twilight Forest. Before you stands the majestic Final Castle. Unfortunately, it\u0027s not finished yet. But hey, feel free to obliterate Final Boss at the top of the Castle!\n\nHey, I hope you had fun, at least in between the pain of fighting some of the harder bosses here. I\u0027m sorry for getting your hopes up for this climax, but there\u0027s still a lot of content to explore in this modpack, so go complete more quests and achieve great things.\n\n-Simon",
+      "x": 236,
+      "y": 167,
+      "bigicon": true,
+      "icon": {
+        "id": "twilightforest:castle_brick",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "COMPLETION",
+          "completed_quests": [
+            {
+              "quest_uuid": "7ce13fd1-79f8-436d-9299-18c26978fbf2"
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "7ce13fd1-79f8-436d-9299-18c26978fbf2"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_dollar",
+          "Count": 2
+        },
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 40
+        },
+        {
+          "id": "kubejs:skill_point",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "e0796ea2-8ffe-41a5-ae58-2d6ff922ff67",
+      "name": "Unnamed",
+      "description": "Unnamed quest",
+      "x": 277,
+      "y": 17,
+      "trigger": "QUEST_TRIGGER",
+      "tasks": [
+        {
+          "type": "COMPLETION",
+          "completed_quests": [
+            {
+              "quest_uuid": "55cca0c6-bff0-4922-add1-48344b0fe29e"
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "55cca0c6-bff0-4922-add1-48344b0fe29e"
+      ],
+      "optionlinks": [],
+      "reward": [],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "bfdf817b-b8c4-4998-85f8-5f46ce7f106b",
+      "name": "The Hedge Maze",
+      "description": "Sometimes great treasures can be found in those mazes. Unfortunately monsters roam even this place.",
+      "x": 138,
+      "y": 45,
+      "icon": {
+        "id": "twilightforest:hedge",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "ADVANCEMENT",
+          "description": "at the Hedge Maze",
+          "advancements": [
+            {
+              "name": "Hedge/Swarm Spider",
+              "icon": {
+                "id": "twilightforest:hedge_spider_spawn_egg",
+                "Count": 1
+              },
+              "adv_name": "twilightforest:hedge"
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "72e20075-8e14-4cdd-a506-73e947e884e2"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 40
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "7a62d825-eb44-46b8-9289-776ed898ff17",
+      "name": "The Minoshroom",
+      "description": "Deep in The Labirynth under The Swamp exists The Minoshroom. Find it, kill it and eat it\u0027s meat to gain invulnerability to the Fire Swamp\u0027s hot temperatures.",
+      "x": 23,
+      "y": 81,
+      "bigicon": true,
+      "icon": {
+        "id": "twilightforest:minoshroom_trophy",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "KILL",
+          "mobs": [
+            {
+              "name": "Minoshroom",
+              "icon": {
+                "id": "twilightforest:minoshroom_trophy",
+                "Count": 1
+              },
+              "mob": "twilightforest:minoshroom",
+              "kills": 1
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "twilightforest:meef_stroganoff",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "b5b4cb13-41f5-4c47-b008-c7985a6efda6"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 40
+        },
+        {
+          "id": "kubejs:skill_point",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "9adad9a5-abf7-412b-833f-6c01ad356cbb",
+      "name": "The Alpha Yeti",
+      "description": "The Alpha Yeti resides in the center of the snow forest. To access the glacier, where a guardian of The Highlands is located, You\u0027ll need some of his downy fur.",
+      "x": 78,
+      "y": 86,
+      "bigicon": true,
+      "icon": {
+        "id": "twilightforest:yeti_trophy",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "KILL",
+          "mobs": [
+            {
+              "name": "Alpha Yeti",
+              "icon": {
+                "id": "twilightforest:yeti_trophy",
+                "Count": 1
+              },
+              "mob": "minecraft:pig",
+              "kills": 1
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "twilightforest:alpha_fur",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "b5b4cb13-41f5-4c47-b008-c7985a6efda6"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 40
+        },
+        {
+          "id": "kubejs:skill_point",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "7ce13fd1-79f8-436d-9299-18c26978fbf2",
+      "name": "The Thornlands",
+      "description": "This is it! The last obstacle on your way to the Final Castle. Use the Lamp od Cinders to burn the thorns, preventing their rapid regeneration. You\u0027ll also find some structures, and maybe even some loot inside.",
+      "x": 239,
+      "y": 130,
+      "icon": {
+        "id": "twilightforest:brown_thorns",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "BLOCK_BREAK",
+          "blocks": [
+            {
+              "item": {
+                "id": "twilightforest:burnt_thorns",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "3f458f37-e568-4f3d-819f-21a37567fe0b"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 40
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "3f458f37-e568-4f3d-819f-21a37567fe0b",
+      "name": "The Lamp of Cinders",
+      "description": "Inside the big vault you\u0027ll find the Lamp of Cinders. If you want to get to the Final Castle through the Thornlands, it will be of great use to you.",
+      "x": 239,
+      "y": 91,
+      "icon": {
+        "id": "twilightforest:lamp_of_cinders",
+        "Count": 1,
+        "tag": {
+          "Damage": 0
+        }
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "twilightforest:lamp_of_cinders",
+                "Count": 1,
+                "tag": {
+                  "Damage": 0
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "4d222f59-af3e-4c1d-b01f-e1481a737cb6"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 40
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "72e20075-8e14-4cdd-a506-73e947e884e2",
+      "name": "The Beggining",
+      "description": "Find a way into the Twilight Forest.",
+      "x": 81,
+      "y": 16,
+      "icon": {
+        "id": "twilightforest:twilight_portal_miniature_structure",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "ADVANCEMENT",
+          "advancements": [
+            {
+              "name": "Make a Portal",
+              "adv_name": "twilightforest:root"
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "0af61e81-e5fb-4a00-a769-c8be888946e5"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 24
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "8ff74be4-0fa5-4f5e-9f36-50c1c539ef99",
+      "name": "The Hydra",
+      "description": "The Hydra is an absolute BEAST. It\u0027s found in the middle of the Fire Swamp. You\u0027ll need to kill it, as it\u0027s one of the three guardians of The Highlands.\n\nObtaining some of it\u0027s Fiery Blood will also be of great help to you.\n\nGood Luck!",
+      "x": 23,
+      "y": 125,
+      "bigicon": true,
+      "icon": {
+        "id": "twilightforest:hydra_trophy",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "KILL",
+          "mobs": [
+            {
+              "name": "Hydra",
+              "icon": {
+                "id": "twilightforest:hydra_trophy",
+                "Count": 1
+              },
+              "mob": "twilightforest:hydra",
+              "kills": 1
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "twilightforest:fiery_blood",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "7a62d825-eb44-46b8-9289-776ed898ff17"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_dollar",
+          "Count": 2
+        },
+        {
+          "id": "kubejs:skill_point",
+          "Count": 2
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    }
+  ],
+  "reputationBar": [],
+  "description": "The Chapter about The Twilight Forest"
+}

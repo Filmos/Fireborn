@@ -1,0 +1,749 @@
+{
+  "name": "The Tinker\u0027s Work",
+  "quests": [
+    {
+      "uuid": "356bd461-f5c8-4c6e-a473-f473d0f2d11a",
+      "name": "Part Builder",
+      "description": "The Part Builder allows you to make selected tool parts using chosen materials. Just like other tinker\u0027s stations it can connect to adjacent stations.\n\nFor selecting a tool part a pattern is required.",
+      "x": 20,
+      "y": 79,
+      "icon": {
+        "id": "tconstruct:part_builder",
+        "Count": 1,
+        "tag": {
+          "texture": "minecraft:oak_planks"
+        }
+      },
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "tconstruct:part_builder",
+                "Count": 1,
+                "tag": {
+                  "texture": "minecraft:oak_planks"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "094c7a74-38b0-4c32-902b-f29a61a64060"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 8
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "6087591d-b318-4c3f-8222-ca014540befa",
+      "name": "Crafting Station",
+      "description": "The Crafting Station works just like a crafting table, but with a twist. It connects to all of your adjacent tinker\u0027s stations, allowing you to access all of them without leaving the crafting station.\n\nIt also keeps the items placed inside, instead of dropping them on the ground.",
+      "x": 135,
+      "y": 80,
+      "icon": {
+        "id": "tconstruct:crafting_station",
+        "Count": 1,
+        "tag": {
+          "texture": "minecraft:oak_planks"
+        }
+      },
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "tconstruct:crafting_station",
+                "Count": 1,
+                "tag": {
+                  "texture": "minecraft:oak_planks"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "094c7a74-38b0-4c32-902b-f29a61a64060"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 8
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "b9441465-da0b-4d56-98ae-12f909eb3404",
+      "name": "Casts",
+      "description": "In order to make parts out of metals you need to cast them into corresponding casts.",
+      "x": 271,
+      "y": 57,
+      "icon": {
+        "id": "tconstruct:pickaxe_head_cast",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "tconstruct:pickaxe_head_cast",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "ab23897f-afe3-4299-81cb-961664105698"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 8
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "c17114bb-66e2-4a86-bf95-fe9a559ec9fa",
+      "name": "The Tinker\u0027s Anvil",
+      "description": "The Tinker Anvil is required to make bigger and better tools. Craft one now.",
+      "x": 195,
+      "y": 93,
+      "icon": {
+        "id": "tconstruct:tinkers_anvil",
+        "Count": 1,
+        "tag": {
+          "texture": "tconstruct:slimesteel_block"
+        }
+      },
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "tconstruct:tinkers_anvil",
+                "Count": 1,
+                "tag": {
+                  "texture": "tconstruct:slimesteel_block"
+                }
+              },
+              "precision": "TAG_NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "e59116e3-4b76-455d-a6b6-bccdc80c0680"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 32
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "47b2351b-3399-4433-a224-65ce4dc18b64",
+      "name": "Tinker\u0027s Tools",
+      "description": "You can make tools in Tinker Stations using selected parts.\n\nCraft a pickaxe using the Tinker Station to complete this quest line.",
+      "x": 75,
+      "y": 133,
+      "bigicon": true,
+      "icon": {
+        "id": "tconstruct:pickaxe",
+        "Count": 1,
+        "tag": {
+          "tic_stats": {
+            "tconstruct:attack_speed": 1.2,
+            "tconstruct:mining_speed": 2.0,
+            "tconstruct:attack_damage": 0.0,
+            "tconstruct:harvest_level": 0.0,
+            "tconstruct:durability": 60.0
+          },
+          "tic_broken": 0,
+          "tic_modifiers": [
+            {
+              "name": "tconstruct:cultivated",
+              "level": 3
+            },
+            {
+              "name": "tconstruct:piercing",
+              "level": 2
+            }
+          ],
+          "tic_materials": [
+            "tconstruct:wood",
+            "tconstruct:wood",
+            "tconstruct:wood"
+          ],
+          "Damage": 0,
+          "tic_persistent_data": {
+            "abilities": 1,
+            "traits": 0,
+            "upgrades": 3
+          }
+        }
+      },
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "tconstruct:pickaxe",
+                "Count": 1,
+                "tag": {
+                  "tic_stats": {
+                    "tconstruct:attack_speed": 1.2,
+                    "tconstruct:mining_speed": 2.0,
+                    "tconstruct:attack_damage": 0.0,
+                    "tconstruct:harvest_level": 0.0,
+                    "tconstruct:durability": 60.0
+                  },
+                  "tic_broken": 0,
+                  "tic_modifiers": [
+                    {
+                      "name": "tconstruct:cultivated",
+                      "level": 3
+                    },
+                    {
+                      "name": "tconstruct:piercing",
+                      "level": 2
+                    }
+                  ],
+                  "tic_materials": [
+                    "tconstruct:wood",
+                    "tconstruct:wood",
+                    "tconstruct:wood"
+                  ],
+                  "Damage": 0,
+                  "tic_persistent_data": {
+                    "abilities": 1,
+                    "traits": 0,
+                    "upgrades": 3
+                  }
+                }
+              },
+              "precision": "TAG_NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "356bd461-f5c8-4c6e-a473-f473d0f2d11a",
+        "e435567e-84eb-479c-9fe6-8434a4f7cd29",
+        "6087591d-b318-4c3f-8222-ca014540befa"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 16
+        },
+        {
+          "id": "kubejs:skill_point",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "094c7a74-38b0-4c32-902b-f29a61a64060",
+      "name": "Introduction to Tinker\u0027s Construct",
+      "description": "This chapter is dedicated to Tinker\u0027s Construct, a powerful mod that allows you to create your own, custom tools from parts.\n\nTo begin craft a pattern, which we\u0027ll use to make necessary blocks and tool parts.",
+      "x": 77,
+      "y": 22,
+      "icon": {
+        "id": "tconstruct:materials_and_you",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "tconstruct:pattern",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "0af61e81-e5fb-4a00-a769-c8be888946e5"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 8
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "e59116e3-4b76-455d-a6b6-bccdc80c0680",
+      "name": "The Smeltery",
+      "description": "The Smeltery is required to make alloys, and also has a customizable capacity (depends on how big it is). To build a smeltery make a 3x3 seared bricks platform, then above and 1 block out place 4 3x3 seared bricks walls. Replace two bottom blocks on one of the walls for a smeltery controller and a seared tank. Replace one of the middle layer blocks for a drain. Place the faucet on the outward facing side of the drain and place the casting table/basin below it.",
+      "x": 192,
+      "y": 51,
+      "bigicon": true,
+      "icon": {
+        "id": "tconstruct:smeltery_controller",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "tconstruct:smeltery_controller",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "tconstruct:seared_fuel_tank",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "tconstruct:seared_drain",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "tconstruct:seared_bricks",
+                "Count": 42
+              },
+              "required": 42
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "ab23897f-afe3-4299-81cb-961664105698"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 40
+        },
+        {
+          "id": "kubejs:skill_point",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "e435567e-84eb-479c-9fe6-8434a4f7cd29",
+      "name": "Tinker Station",
+      "description": "The Tinker Station allows you to combine made tool parts into useable tools which inherit the traits from it\u0027s parts",
+      "x": 78,
+      "y": 80,
+      "icon": {
+        "id": "tconstruct:tinker_station",
+        "Count": 1,
+        "tag": {
+          "texture": "minecraft:oak_planks"
+        }
+      },
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "tconstruct:tinker_station",
+                "Count": 1,
+                "tag": {
+                  "texture": "minecraft:oak_planks"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "094c7a74-38b0-4c32-902b-f29a61a64060"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 8
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "7a518603-1c5c-494e-bf17-9e31be8121b6",
+      "name": "Metal Tools",
+      "description": "Use the crafted metal parts to make better tools with higher mining levels. Craft a pickaxe from an iron pickaxe head, stone binding and a wooden tool rod.",
+      "x": 268,
+      "y": 90,
+      "bigicon": true,
+      "icon": {
+        "id": "tconstruct:pickaxe",
+        "Count": 1,
+        "tag": {
+          "tic_stats": {
+            "tconstruct:attack_speed": 1.2,
+            "tconstruct:mining_speed": 6.0,
+            "tconstruct:attack_damage": 2.0,
+            "tconstruct:harvest_level": 2.0,
+            "tconstruct:durability": 275.0
+          },
+          "tic_broken": 0,
+          "tic_modifiers": [
+            {
+              "name": "tconstruct:cultivated",
+              "level": 1
+            },
+            {
+              "name": "tconstruct:piercing",
+              "level": 2
+            },
+            {
+              "name": "tconstruct:stonebound",
+              "level": 1
+            },
+            {
+              "name": "tconstruct:sturdy",
+              "level": 1
+            }
+          ],
+          "tic_materials": [
+            "tconstruct:iron",
+            "tconstruct:wood",
+            "tconstruct:stone"
+          ],
+          "Damage": 0,
+          "tic_persistent_data": {
+            "abilities": 1,
+            "traits": 0,
+            "upgrades": 3
+          }
+        }
+      },
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "tconstruct:pickaxe",
+                "Count": 1,
+                "tag": {
+                  "tic_stats": {
+                    "tconstruct:attack_speed": 1.2,
+                    "tconstruct:mining_speed": 6.0,
+                    "tconstruct:attack_damage": 2.0,
+                    "tconstruct:harvest_level": 2.0,
+                    "tconstruct:durability": 275.0
+                  },
+                  "tic_broken": 0,
+                  "tic_modifiers": [
+                    {
+                      "name": "tconstruct:cultivated",
+                      "level": 1
+                    },
+                    {
+                      "name": "tconstruct:piercing",
+                      "level": 2
+                    },
+                    {
+                      "name": "tconstruct:stonebound",
+                      "level": 1
+                    },
+                    {
+                      "name": "tconstruct:sturdy",
+                      "level": 1
+                    }
+                  ],
+                  "tic_materials": [
+                    "tconstruct:iron",
+                    "tconstruct:wood",
+                    "tconstruct:stone"
+                  ],
+                  "Damage": 0,
+                  "tic_persistent_data": {
+                    "abilities": 1,
+                    "traits": 0,
+                    "upgrades": 3
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "b9441465-da0b-4d56-98ae-12f909eb3404"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 16
+        },
+        {
+          "id": "kubejs:skill_point",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "ab23897f-afe3-4299-81cb-961664105698",
+      "name": "The Melter",
+      "description": "To access higher-end materials we need to make the melter first. Place the melter on top of the heater and the faucets on it\u0027s sides. Place the Casting Table and Basin below the faucets.",
+      "x": 234,
+      "y": 24,
+      "icon": {
+        "id": "tconstruct:seared_melter",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "tconstruct:seared_melter",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "tconstruct:seared_heater",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "tconstruct:seared_table",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "tconstruct:seared_basin",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "tconstruct:seared_faucet",
+                "Count": 2
+              },
+              "required": 2
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "28a74cc1-dc82-46b2-a688-7aea36e58108"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 16
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "55157d6d-5de6-4bf9-97cc-61169aad7926",
+      "name": "Bigger, Better tools",
+      "description": "The Anvil is used to make mroe types of tools.\n\nCraft a hammer to complete this quest line.",
+      "x": 192,
+      "y": 128,
+      "bigicon": true,
+      "icon": {
+        "id": "tconstruct:sledge_hammer",
+        "Count": 1,
+        "tag": {
+          "tic_stats": {
+            "tconstruct:attack_speed": 0.82500005,
+            "tconstruct:mining_speed": 2.65,
+            "tconstruct:attack_damage": 7.2393756,
+            "tconstruct:harvest_level": 3.0,
+            "tconstruct:durability": 1460.8
+          },
+          "tic_broken": 0,
+          "tic_modifiers": [
+            {
+              "name": "tconstruct:dwarven",
+              "level": 1
+            },
+            {
+              "name": "tconstruct:maintained",
+              "level": 1
+            },
+            {
+              "name": "tconstruct:scorching",
+              "level": 1
+            },
+            {
+              "name": "tconstruct:smite",
+              "level": 2
+            },
+            {
+              "name": "tconstruct:sturdy",
+              "level": 1
+            },
+            {
+              "name": "tconstruct:two_handed",
+              "level": 1
+            }
+          ],
+          "tic_materials": [
+            "tconstruct:tinkers_bronze",
+            "tconstruct:scorched_stone",
+            "tconstruct:copper",
+            "tconstruct:iron"
+          ],
+          "Damage": 0,
+          "tic_volatile_data": {
+            "tconstruct:tank_capacity": 288,
+            "tconstruct:durability": 1328
+          },
+          "tic_persistent_data": {
+            "abilities": 1,
+            "traits": 0,
+            "upgrades": 2
+          }
+        }
+      },
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "tconstruct:sledge_hammer",
+                "Count": 1,
+                "tag": {
+                  "tic_stats": {
+                    "tconstruct:attack_speed": 0.75,
+                    "tconstruct:mining_speed": 0.8,
+                    "tconstruct:attack_damage": 4.05,
+                    "tconstruct:harvest_level": 0.0,
+                    "tconstruct:durability": 240.0
+                  },
+                  "tic_broken": 0,
+                  "tic_modifiers": [
+                    {
+                      "name": "tconstruct:cultivated",
+                      "level": 4
+                    },
+                    {
+                      "name": "tconstruct:smite",
+                      "level": 2
+                    },
+                    {
+                      "name": "tconstruct:two_handed",
+                      "level": 1
+                    }
+                  ],
+                  "tic_materials": [
+                    "tconstruct:wood",
+                    "tconstruct:wood",
+                    "tconstruct:wood",
+                    "tconstruct:wood"
+                  ],
+                  "Damage": 0,
+                  "tic_persistent_data": {
+                    "abilities": 1,
+                    "traits": 0,
+                    "upgrades": 2
+                  }
+                }
+              },
+              "precision": "TAG_NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "c17114bb-66e2-4a86-bf95-fe9a559ec9fa"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 40
+        },
+        {
+          "id": "kubejs:skill_point",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "28a74cc1-dc82-46b2-a688-7aea36e58108",
+      "name": "Unnamed",
+      "description": "Unnamed quest",
+      "x": 277,
+      "y": 24,
+      "trigger": "QUEST_TRIGGER",
+      "tasks": [
+        {
+          "type": "COMPLETION",
+          "completed_quests": [
+            {
+              "quest_uuid": "47b2351b-3399-4433-a224-65ce4dc18b64"
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "47b2351b-3399-4433-a224-65ce4dc18b64"
+      ],
+      "optionlinks": [],
+      "reward": [],
+      "rewardchoice": [],
+      "commandrewards": []
+    }
+  ],
+  "reputationBar": [],
+  "description": "The Chapter about Tinker\u0027s Construct"
+}

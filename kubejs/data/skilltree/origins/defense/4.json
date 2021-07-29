@@ -1,0 +1,12 @@
+{
+  "powers":[
+		"skilltree:defense/base_4",
+		"skilltree:defense/upgrade_1"
+	],
+  "icon": "minecraft:shield",
+	"order": 4,
+	"impact": 1,
+  "name":"Defense IV",
+  "description":" ",
+  "unchoosable": true
+}

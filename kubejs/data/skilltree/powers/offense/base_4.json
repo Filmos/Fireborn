@@ -1,0 +1,31 @@
+
+{
+  "type": "origins:target_action_on_hit",
+  "entity_action": {
+    "type": "origins:chance",
+    "action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:set_on_fire",
+          "duration": 8
+        },{
+          "type": "origins:chance",
+          "action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "minecraft:wither",
+                
+                "duration": 160
+            }
+          },
+          "chance": 0.16
+        }
+      ]
+    },
+    "chance": 0.16
+  },
+  "cooldown": 5,
+	"name": "Fire touch",
+	"description": "You have 16% chance to set the hit entity on fire."
+}

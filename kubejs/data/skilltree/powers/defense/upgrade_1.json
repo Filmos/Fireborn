@@ -1,0 +1,5 @@
+{
+  "type": "origins:multiple",
+  "name": "Longer effect",
+  "description": "Resistance now lasts 4 seconds."
+}

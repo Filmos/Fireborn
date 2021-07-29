@@ -1,0 +1,11 @@
+{
+  "powers":[
+		"skilltree:agility/base_2"
+	],
+  "icon": "minecraft:sugar",
+	"order": 2,
+	"impact": 1,
+  "name":"Agility II",
+  "description":" ",
+  "unchoosable": true
+}

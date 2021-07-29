@@ -1,0 +1,11 @@
+{
+  "powers":[
+		"skilltree:defense/base_2"
+	],
+  "icon": "minecraft:shield",
+	"order": 2,
+	"impact": 1,
+  "name":"Defense II",
+  "description":" ",
+  "unchoosable": true
+}

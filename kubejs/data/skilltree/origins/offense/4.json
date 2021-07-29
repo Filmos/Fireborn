@@ -1,0 +1,12 @@
+{
+  "powers":[
+		"skilltree:offense/base_4",
+		"skilltree:offense/upgrade_1"
+	],
+  "icon": "twilightforest:fiery_sword",
+	"order": 4,
+	"impact": 1,
+  "name":"Offense IV",
+  "description":" ",
+  "unchoosable": true
+}

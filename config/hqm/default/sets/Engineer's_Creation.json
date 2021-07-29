@@ -1,0 +1,909 @@
+{
+  "name": "Engineer\u0027s Creation",
+  "quests": [
+    {
+      "uuid": "00120065-a5c0-4f75-82fd-968f2b2f04ff",
+      "name": "The Mechanical Mixer",
+      "description": "The Mechanical Mixer is used to create alloys like Brass.",
+      "x": 229,
+      "y": 171,
+      "bigicon": true,
+      "icon": {
+        "id": "create:mechanical_mixer",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "create:mechanical_mixer",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "create:basin",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "2046a542-0d95-4894-a6fa-02b9cabeccac"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 16
+        },
+        {
+          "id": "kubejs:skill_point",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "3ee5835d-a56f-45ed-a3d9-afc47bc8e58e",
+      "name": "Rotation Controllers",
+      "description": "Gearboxes can be used to change the direction of rotation transfer. Clutches can stop rotation transfer given a redstone signal. Gearshifts can control the rotation speed.",
+      "x": 134,
+      "y": 84,
+      "icon": {
+        "id": "create:gearbox",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "create:gearbox",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "create:gearshift",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "create:clutch",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "e7b3a851-fdd3-4582-a718-6f7020507970"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 8
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "d2ce49f4-81dd-4e43-8f39-92e146c72938",
+      "name": "Brass",
+      "description": "Brass is required for crafting higher tier machines.",
+      "x": 229,
+      "y": 117,
+      "bigicon": true,
+      "icon": {
+        "id": "create:brass_ingot",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "create:brass_ingot",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "00120065-a5c0-4f75-82fd-968f2b2f04ff"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 24
+        },
+        {
+          "id": "kubejs:skill_point",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "f37341b3-7b22-43c1-9847-51c913cdbe25",
+      "name": "Fans",
+      "description": "Fans are quite useful here. Aside from being able to push items laying on the ground, they can also be used to bulk wash, smelt and cook items. To wash some crushed ore, place the fan in front of a water source, and throw the crushed ore on the other side of the water source. The smelting and cooking process work the same way, but require respectively a lava source block and a fire source. Fans can also be used to generate power if placed above an open fire.",
+      "x": 130,
+      "y": 116,
+      "icon": {
+        "id": "create:encased_fan",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "create:encased_fan",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "e7b3a851-fdd3-4582-a718-6f7020507970"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 8
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "e70d5ee1-e00c-49de-bfe1-e9e54b5b33c4",
+      "name": "Introduction",
+      "description": "The Create Mod is the most expansive mod in this entire modpack. I\u0027ll try to talk about as many things as possible, but of you still don\u0027t understand how something works, just find it in JEI and hold \u0027w\u0027 to ponder. An animation depicting an exemplary use of the selected part will play. Have fun and Create something grand ;)\n\nTo start this quest line gather some copper.",
+      "x": 75,
+      "y": 11,
+      "icon": {
+        "id": "create:cogwheel",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "BLOCK_BREAK",
+          "blocks": [
+            {
+              "item": {
+                "id": "create:copper_ore",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "0af61e81-e5fb-4a00-a769-c8be888946e5"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 8
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "6bdf62f5-2c1d-4b41-a501-55ed62794345",
+      "name": "Casings",
+      "description": "Casings are a way to hide shafts.",
+      "x": 41,
+      "y": 56,
+      "icon": {
+        "id": "create:andesite_casing",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "create:andesite_casing",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "e7b3a851-fdd3-4582-a718-6f7020507970"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 8
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "5310b12d-bca7-45ea-a512-6bbc10035d9b",
+      "name": "Liquid Systems",
+      "description": "Create provides the player with a way of automatic liquid pumping and storing. Use the Hose Pulley to pump liquids from below it, and transfer it through pipes to tanks.",
+      "x": 34,
+      "y": 139,
+      "icon": {
+        "id": "create:hose_pulley",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "create:hose_pulley",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "create:fluid_pipe",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "create:fluid_tank",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "create:mechanical_pump",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "e7b3a851-fdd3-4582-a718-6f7020507970"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 8
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "63cc184b-065e-454a-a193-f755b0fe06cc",
+      "name": "The Millstone",
+      "description": "The Millstone is used to crush ores and effectively increase the yielded amount of materials. Make sure to wash the crushed ores. Washing is explained in the Fans Quest.",
+      "x": 21,
+      "y": 80,
+      "icon": {
+        "id": "create:millstone",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "create:millstone",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "e7b3a851-fdd3-4582-a718-6f7020507970"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 8
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "24dd82dd-6815-41dd-9c6c-399113a63914",
+      "name": "Automating gathering",
+      "description": "Attaching Mechanical Tools to a minecart can allow you to automate gathering.",
+      "x": 147,
+      "y": 146,
+      "icon": {
+        "id": "create:mechanical_drill",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "create:mechanical_drill",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "create:mechanical_saw",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "create:mechanical_harvester",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "create:mechanical_plough",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "7142f21f-8ebf-45e6-b53c-a0927fd60606"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 8
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "7751cc66-7e38-43ef-87fd-86fd38b7b9d0",
+      "name": "The Crushing Wheel",
+      "description": "The Crushing Wheel works just like the Millstone, for the exception of... It can process much larger amounts of ore in a short time.",
+      "x": 275,
+      "y": 41,
+      "bigicon": true,
+      "icon": {
+        "id": "create:crushing_wheel",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "create:crushing_wheel",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "7de6a814-110a-42b5-85e3-ed224fcbafda"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 80
+        },
+        {
+          "id": "kubejs:skill_point",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "d59e1fb6-f1b8-4e3e-ad50-a5c3611305e6",
+      "name": "Cogwheels",
+      "description": "Aside from transfering rotational energy to the sides of the shafts, cogwheels can be used to increase or decrease rotation speed. Connect a small cogwheel to a large one to increase it, or connect a large cogwheel to a small one to decrease it. You can do it as many times as you need, just make sure to do every increase/decrease in another layer.",
+      "x": 20,
+      "y": 110,
+      "icon": {
+        "id": "create:large_cogwheel",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "create:cogwheel",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "create:large_cogwheel",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "e7b3a851-fdd3-4582-a718-6f7020507970"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 8
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "b78e4e95-0f5d-477e-9cdd-21e69d4938a6",
+      "name": "Basic Materials",
+      "description": "First we\u0027ll need some basic materials:\nZinc, Copper, Iron and Andesite. We\u0027ll also need a lot of Andesite Alloys so be prepared.",
+      "x": 75,
+      "y": 48,
+      "icon": {
+        "id": "create:andesite_alloy",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "create:copper_ore",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "minecraft:iron_ore",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "create:zinc_ore",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "minecraft:andesite",
+                "Count": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "create:andesite_alloy",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "e70d5ee1-e00c-49de-bfe1-e9e54b5b33c4"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 8
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "90ace103-cffa-4235-beb0-c3d1102d9640",
+      "name": "Even More Power",
+      "description": "The most sophisticated power source is the Furnace Engine. Combined with the Flywheel it can sustain a lot of stess.",
+      "x": 184,
+      "y": 40,
+      "bigicon": true,
+      "icon": {
+        "id": "create:furnace_engine",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "create:furnace_engine",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "create:flywheel",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "7de6a814-110a-42b5-85e3-ed224fcbafda"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 80
+        },
+        {
+          "id": "kubejs:skill_point",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "f30ed52d-0c71-4fb7-b90d-132a6e3430f9",
+      "name": "The Mechanical Press",
+      "description": "To make metal sheets you will need a Mechanical Press. ",
+      "x": 46,
+      "y": 171,
+      "bigicon": true,
+      "icon": {
+        "id": "create:mechanical_press",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "create:mechanical_press",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "e7b3a851-fdd3-4582-a718-6f7020507970"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 16
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "9c24b2da-9add-4185-98a6-9c651a5f96a9",
+      "name": "Gadgets",
+      "description": "Now you can make various, eariler inaccessible gadgets. Try making the Extendo Grip.",
+      "x": 229,
+      "y": 11,
+      "bigicon": true,
+      "icon": {
+        "id": "create:extendo_grip",
+        "Count": 1,
+        "tag": {
+          "Damage": 0
+        }
+      },
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "create:extendo_grip",
+                "Count": 1,
+                "tag": {
+                  "Damage": 0
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "7de6a814-110a-42b5-85e3-ed224fcbafda"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 80
+        },
+        {
+          "id": "kubejs:skill_point",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "2046a542-0d95-4894-a6fa-02b9cabeccac",
+      "name": "More Power",
+      "description": "At this time you\u0027ll probably need more power, and don\u0027t worry, we\u0027ve got you covered. Just make a windmill - a Windmill Bearing with enough wool attached in the front layer of the bearing can generate you enough power for the next section of the progression. And also the Wrench and the Engineer\u0027s Goggles will come very useful now.",
+      "x": 97,
+      "y": 171,
+      "bigicon": true,
+      "icon": {
+        "id": "create:windmill_bearing",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "create:windmill_bearing",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "create:goggles",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "create:wrench",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "e7b3a851-fdd3-4582-a718-6f7020507970",
+        "f30ed52d-0c71-4fb7-b90d-132a6e3430f9"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 16
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "7142f21f-8ebf-45e6-b53c-a0927fd60606",
+      "name": "Cart Assemblers",
+      "description": "The Cart Assembler will attach any structure above it to a minecart going through it.",
+      "x": 114,
+      "y": 146,
+      "icon": {
+        "id": "create:cart_assembler",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "create:cart_assembler",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "e7b3a851-fdd3-4582-a718-6f7020507970"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 8
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "89945099-58ea-4cf4-b008-f6540d476a32",
+      "name": "Pistons and stuff",
+      "description": "Pistons, Mechanical Bearings, Linear Chasis and Radial Chasis can be used to move, rotate objects or transfer linear or radial movement to larger structures via the use of slimeballs or superglue.\nYou can also use belts to transfer items on them from point A to point B.",
+      "x": 111,
+      "y": 59,
+      "icon": {
+        "id": "create:mechanical_piston",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "create:sticky_mechanical_piston",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "create:mechanical_bearing",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "create:linear_chassis",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "create:radial_chassis",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "create:belt_connector",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "e7b3a851-fdd3-4582-a718-6f7020507970"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 8
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "e7b3a851-fdd3-4582-a718-6f7020507970",
+      "name": "First Power",
+      "description": "Our first source of power will be the water wheel. To see how it works play the animation as instructed in the introduction. We\u0027ll also need shafts to transfer the rotational power to our machines.",
+      "x": 72,
+      "y": 95,
+      "bigicon": true,
+      "icon": {
+        "id": "create:water_wheel",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "create:water_wheel",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "create:shaft",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "b78e4e95-0f5d-477e-9cdd-21e69d4938a6"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 8
+        },
+        {
+          "id": "kubejs:skill_point",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "7de6a814-110a-42b5-85e3-ed224fcbafda",
+      "name": "Automation",
+      "description": "It\u0027s time. Make a Mechanical Crafter and craft the biggest machines yet. Also automate crafting.",
+      "x": 229,
+      "y": 68,
+      "bigicon": true,
+      "icon": {
+        "id": "create:mechanical_crafter",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "create:mechanical_crafter",
+                "Count": 9
+              },
+              "required": 9
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "d2ce49f4-81dd-4e43-8f39-92e146c72938"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 80
+        },
+        {
+          "id": "kubejs:skill_point",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    }
+  ],
+  "reputationBar": [],
+  "description": "The Chapter about Create"
+}

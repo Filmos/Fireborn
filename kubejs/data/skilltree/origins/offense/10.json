@@ -1,0 +1,13 @@
+{
+  "powers":[
+		"skilltree:offense/base_10",
+		"skilltree:offense/upgrade_1",
+		"skilltree:offense/upgrade_3"
+	],
+  "icon": "twilightforest:fiery_sword",
+	"order": 10,
+	"impact": 1,
+  "name":"Offense X",
+  "description":" ",
+  "unchoosable": true
+}

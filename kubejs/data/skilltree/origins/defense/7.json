@@ -1,0 +1,13 @@
+{
+  "powers":[
+		"skilltree:defense/base_7",
+		"skilltree:defense/upgrade_1",
+		"skilltree:defense/upgrade_2"
+	],
+  "icon": "minecraft:shield",
+	"order": 7,
+	"impact": 1,
+  "name":"Defense VII",
+  "description":" ",
+  "unchoosable": true
+}

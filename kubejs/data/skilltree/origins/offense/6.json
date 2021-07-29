@@ -1,0 +1,12 @@
+{
+  "powers":[
+		"skilltree:offense/base_6",
+		"skilltree:offense/upgrade_1"
+	],
+  "icon": "twilightforest:fiery_sword",
+	"order": 6,
+	"impact": 1,
+  "name":"Offense VI",
+  "description":" ",
+  "unchoosable": true
+}

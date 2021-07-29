@@ -1,0 +1,2468 @@
+{
+	id: "354D29F66C12B3DA",
+	group: "",
+	order_index: 0,
+	filename: "skill_tree",
+	title: "Skill Tree",
+	icon: "kubejs:skill_point",
+	default_quest_shape: "",
+	quests: [
+		{
+			title: "Affordable",
+			icon: {
+				id: "ftbquests:custom_icon",
+				Count: 1b,
+				tag: {
+					Icon: "ftbquests:textures/gui/shop.png"
+				}
+			},
+			x: 0.0d,
+			y: 0.0d,
+			disable_toast: true,
+			hide_dependency_lines: true,
+			hide: true,
+			hide_text_until_complete: true,
+			size: 0.07d,
+			id: "10F0F0F0F0F0F000",
+			tasks: [
+				{
+					id: "10F0F0F0F0F0F001",
+					type: "custom",
+					title: "1 skill point",
+					icon: "kubejs:skill_point",
+					disable_toast: true
+				},
+				{
+					id: "10F0F0F0F0F0F002",
+					type: "custom",
+					title: "2 skill points",
+					icon: {
+						id: "kubejs:skill_point",
+						Count: 2b
+					},
+					disable_toast: true
+				}
+			]
+		},
+		
+    {
+	title: "Haste I",
+	icon: "minecraft:golden_pickaxe",
+	x: -1.5d,
+	y: -1.5d,
+	subtitle: "15% mining speed boost per level",
+	description: [
+		"&8Level 4: Fists can break natural stone",
+		"&8Level 7: Fists can break ores",
+		"&8Level 10: Fists can break obsidian"
+	],
+	dependencies: ["10F0F0F0F0F0F001"],
+	id: "00000000000007C3", 
+	tasks: [{
+		id: "00000000000007C4",
+		type: "checkmark",
+		title: "Cost: 1 skill point"
+	}],
+	rewards: [{
+		id: "00000000000007C5",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:haste skilltree:haste/1",
+		player_command: false
+	},{
+		id: "00000000000007C6",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 1",
+		player_command: false
+	},{
+		id: "00000000000007C7",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 1",
+		player_command: false
+	},{
+		id: "00000000000007C8",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "00000000000007C9",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "00000000000007CA",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}, {
+	title: "Haste II",
+	icon: "minecraft:golden_pickaxe",
+	x: -2d,
+	y: -2d,
+	subtitle: "15% mining speed boost per level",
+	description: [
+		"&8Level 4: Fists can break natural stone",
+		"&8Level 7: Fists can break ores",
+		"&8Level 10: Fists can break obsidian"
+	],
+	dependencies: ["00000000000007C4","10F0F0F0F0F0F001"],
+	id: "00000000000007D2", 
+	tasks: [{
+		id: "00000000000007D3",
+		type: "checkmark",
+		title: "Cost: 1 skill point"
+	}],
+	rewards: [{
+		id: "00000000000007D4",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:haste skilltree:haste/2",
+		player_command: false
+	},{
+		id: "00000000000007D5",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 1",
+		player_command: false
+	},{
+		id: "00000000000007D6",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 1",
+		player_command: false
+	},{
+		id: "00000000000007D7",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "00000000000007D8",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "00000000000007D9",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}, {
+	title: "Haste III",
+	icon: "minecraft:golden_pickaxe",
+	x: -2.5d,
+	y: -2.5d,
+	subtitle: "15% mining speed boost per level",
+	description: [
+		"&8Level 4: Fists can break natural stone",
+		"&8Level 7: Fists can break ores",
+		"&8Level 10: Fists can break obsidian"
+	],
+	dependencies: ["00000000000007D3","10F0F0F0F0F0F001"],
+	id: "00000000000007E1", 
+	tasks: [{
+		id: "00000000000007E2",
+		type: "checkmark",
+		title: "Cost: 1 skill point"
+	}],
+	rewards: [{
+		id: "00000000000007E3",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:haste skilltree:haste/3",
+		player_command: false
+	},{
+		id: "00000000000007E4",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 1",
+		player_command: false
+	},{
+		id: "00000000000007E5",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 1",
+		player_command: false
+	},{
+		id: "00000000000007E6",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "00000000000007E7",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "00000000000007E8",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}, {
+	title: "Haste IV",
+	icon: {
+		id: "minecraft:golden_pickaxe",
+		Count: 1b,
+		tag: {
+			Enchantments: [{
+				lvl: 1s,
+				id: "minecraft:power"
+			}]
+		}
+	},
+	x: -3d,
+	y: -3d,
+	subtitle: "15% mining speed boost per level",
+	description: [
+		"&aLevel 4: Fists can break natural stone",
+		"&8Level 7: Fists can break ores",
+		"&8Level 10: Fists can break obsidian"
+	],
+	dependencies: ["00000000000007E2","10F0F0F0F0F0F002"],
+	id: "00000000000007F0", 
+	tasks: [{
+		id: "00000000000007F1",
+		type: "checkmark",
+		title: "Cost: 2 skill points"
+	}],
+	rewards: [{
+		id: "00000000000007F2",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:haste skilltree:haste/4",
+		player_command: false
+	},{
+		id: "00000000000007F3",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 2",
+		player_command: false
+	},{
+		id: "00000000000007F4",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 2",
+		player_command: false
+	},{
+		id: "00000000000007F5",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "00000000000007F6",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "00000000000007F7",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}, {
+	title: "Haste V",
+	icon: "minecraft:golden_pickaxe",
+	x: -3.5d,
+	y: -3.5d,
+	subtitle: "15% mining speed boost per level",
+	description: [
+		"&7Level 4: Fists can break natural stone",
+		"&8Level 7: Fists can break ores",
+		"&8Level 10: Fists can break obsidian"
+	],
+	dependencies: ["00000000000007F1","10F0F0F0F0F0F001"],
+	id: "00000000000007FF", 
+	tasks: [{
+		id: "0000000000000800",
+		type: "checkmark",
+		title: "Cost: 1 skill point"
+	}],
+	rewards: [{
+		id: "0000000000000801",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:haste skilltree:haste/5",
+		player_command: false
+	},{
+		id: "0000000000000802",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 1",
+		player_command: false
+	},{
+		id: "0000000000000803",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 1",
+		player_command: false
+	},{
+		id: "0000000000000804",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "0000000000000805",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "0000000000000806",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}, {
+	title: "Haste VI",
+	icon: "minecraft:golden_pickaxe",
+	x: -4d,
+	y: -4d,
+	subtitle: "15% mining speed boost per level",
+	description: [
+		"&7Level 4: Fists can break natural stone",
+		"&8Level 7: Fists can break ores",
+		"&8Level 10: Fists can break obsidian"
+	],
+	dependencies: ["0000000000000800","10F0F0F0F0F0F001"],
+	id: "000000000000080E", 
+	tasks: [{
+		id: "000000000000080F",
+		type: "checkmark",
+		title: "Cost: 1 skill point"
+	}],
+	rewards: [{
+		id: "0000000000000810",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:haste skilltree:haste/6",
+		player_command: false
+	},{
+		id: "0000000000000811",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 1",
+		player_command: false
+	},{
+		id: "0000000000000812",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 1",
+		player_command: false
+	},{
+		id: "0000000000000813",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "0000000000000814",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "0000000000000815",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}, {
+	title: "Haste VII",
+	icon: {
+		id: "minecraft:golden_pickaxe",
+		Count: 1b,
+		tag: {
+			Enchantments: [{
+				lvl: 1s,
+				id: "minecraft:power"
+			}]
+		}
+	},
+	x: -4.5d,
+	y: -4.5d,
+	subtitle: "15% mining speed boost per level",
+	description: [
+		"&7Level 4: Fists can break natural stone",
+		"&aLevel 7: Fists can break ores",
+		"&8Level 10: Fists can break obsidian"
+	],
+	dependencies: ["000000000000080F","10F0F0F0F0F0F002"],
+	id: "000000000000081D", 
+	tasks: [{
+		id: "000000000000081E",
+		type: "checkmark",
+		title: "Cost: 2 skill points"
+	}],
+	rewards: [{
+		id: "000000000000081F",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:haste skilltree:haste/7",
+		player_command: false
+	},{
+		id: "0000000000000820",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 2",
+		player_command: false
+	},{
+		id: "0000000000000821",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 2",
+		player_command: false
+	},{
+		id: "0000000000000822",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "0000000000000823",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "0000000000000824",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}, {
+	title: "Haste VIII",
+	icon: "minecraft:golden_pickaxe",
+	x: -5d,
+	y: -5d,
+	subtitle: "15% mining speed boost per level",
+	description: [
+		"&7Level 4: Fists can break natural stone",
+		"&7Level 7: Fists can break ores",
+		"&8Level 10: Fists can break obsidian"
+	],
+	dependencies: ["000000000000081E","10F0F0F0F0F0F001"],
+	id: "000000000000082C", 
+	tasks: [{
+		id: "000000000000082D",
+		type: "checkmark",
+		title: "Cost: 1 skill point"
+	}],
+	rewards: [{
+		id: "000000000000082E",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:haste skilltree:haste/8",
+		player_command: false
+	},{
+		id: "000000000000082F",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 1",
+		player_command: false
+	},{
+		id: "0000000000000830",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 1",
+		player_command: false
+	},{
+		id: "0000000000000831",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "0000000000000832",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "0000000000000833",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}, {
+	title: "Haste IX",
+	icon: "minecraft:golden_pickaxe",
+	x: -5.5d,
+	y: -5.5d,
+	subtitle: "15% mining speed boost per level",
+	description: [
+		"&7Level 4: Fists can break natural stone",
+		"&7Level 7: Fists can break ores",
+		"&8Level 10: Fists can break obsidian"
+	],
+	dependencies: ["000000000000082D","10F0F0F0F0F0F001"],
+	id: "000000000000083B", 
+	tasks: [{
+		id: "000000000000083C",
+		type: "checkmark",
+		title: "Cost: 1 skill point"
+	}],
+	rewards: [{
+		id: "000000000000083D",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:haste skilltree:haste/9",
+		player_command: false
+	},{
+		id: "000000000000083E",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 1",
+		player_command: false
+	},{
+		id: "000000000000083F",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 1",
+		player_command: false
+	},{
+		id: "0000000000000840",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "0000000000000841",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "0000000000000842",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}, {
+	title: "Haste X",
+	icon: {
+		id: "minecraft:golden_pickaxe",
+		Count: 1b,
+		tag: {
+			Enchantments: [{
+				lvl: 1s,
+				id: "minecraft:power"
+			}]
+		}
+	},
+	x: -6d,
+	y: -6d,
+	subtitle: "15% mining speed boost per level",
+	description: [
+		"&7Level 4: Fists can break natural stone",
+		"&7Level 7: Fists can break ores",
+		"&aLevel 10: Fists can break obsidian"
+	],
+	dependencies: ["000000000000083C","10F0F0F0F0F0F002"],
+	id: "000000000000084A", 
+	tasks: [{
+		id: "000000000000084B",
+		type: "checkmark",
+		title: "Cost: 2 skill points"
+	}],
+	rewards: [{
+		id: "000000000000084C",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:haste skilltree:haste/10",
+		player_command: false
+	},{
+		id: "000000000000084D",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 2",
+		player_command: false
+	},{
+		id: "000000000000084E",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 2",
+		player_command: false
+	},{
+		id: "000000000000084F",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "0000000000000850",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "0000000000000851",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}
+
+,
+		{
+	title: "Offense I",
+	icon: "twilightforest:fiery_sword",
+	x: 1.5d,
+	y: -1.5d,
+	subtitle: "4% chance per level to lit enemy on fire",
+	description: [
+		"&8Level 4: Fire lasts longer",
+		"&8Level 7: Chance for wither effect as well",
+		"&8Level 10: Wither effect is now level 2"
+	],
+	dependencies: ["10F0F0F0F0F0F001"],
+	id: "0000000000000F86", 
+	tasks: [{
+		id: "0000000000000F87",
+		type: "checkmark",
+		title: "Cost: 1 skill point"
+	}],
+	rewards: [{
+		id: "0000000000000F88",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:offense skilltree:offense/1",
+		player_command: false
+	},{
+		id: "0000000000000F89",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 1",
+		player_command: false
+	},{
+		id: "0000000000000F8A",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 1",
+		player_command: false
+	},{
+		id: "0000000000000F8B",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "0000000000000F8C",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "0000000000000F8D",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}, {
+	title: "Offense II",
+	icon: "twilightforest:fiery_sword",
+	x: 2d,
+	y: -2d,
+	subtitle: "4% chance per level to lit enemy on fire",
+	description: [
+		"&8Level 4: Fire lasts longer",
+		"&8Level 7: Chance for wither effect as well",
+		"&8Level 10: Wither effect is now level 2"
+	],
+	dependencies: ["0000000000000F87","10F0F0F0F0F0F001"],
+	id: "0000000000000F95", 
+	tasks: [{
+		id: "0000000000000F96",
+		type: "checkmark",
+		title: "Cost: 1 skill point"
+	}],
+	rewards: [{
+		id: "0000000000000F97",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:offense skilltree:offense/2",
+		player_command: false
+	},{
+		id: "0000000000000F98",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 1",
+		player_command: false
+	},{
+		id: "0000000000000F99",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 1",
+		player_command: false
+	},{
+		id: "0000000000000F9A",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "0000000000000F9B",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "0000000000000F9C",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}, {
+	title: "Offense III",
+	icon: "twilightforest:fiery_sword",
+	x: 2.5d,
+	y: -2.5d,
+	subtitle: "4% chance per level to lit enemy on fire",
+	description: [
+		"&8Level 4: Fire lasts longer",
+		"&8Level 7: Chance for wither effect as well",
+		"&8Level 10: Wither effect is now level 2"
+	],
+	dependencies: ["0000000000000F96","10F0F0F0F0F0F001"],
+	id: "0000000000000FA4", 
+	tasks: [{
+		id: "0000000000000FA5",
+		type: "checkmark",
+		title: "Cost: 1 skill point"
+	}],
+	rewards: [{
+		id: "0000000000000FA6",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:offense skilltree:offense/3",
+		player_command: false
+	},{
+		id: "0000000000000FA7",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 1",
+		player_command: false
+	},{
+		id: "0000000000000FA8",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 1",
+		player_command: false
+	},{
+		id: "0000000000000FA9",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "0000000000000FAA",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "0000000000000FAB",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}, {
+	title: "Offense IV",
+	icon: {
+		id: "twilightforest:fiery_sword",
+		Count: 1b,
+		tag: {
+			Enchantments: [{
+				lvl: 1s,
+				id: "minecraft:power"
+			}]
+		}
+	},
+	x: 3d,
+	y: -3d,
+	subtitle: "4% chance per level to lit enemy on fire",
+	description: [
+		"&aLevel 4: Fire lasts longer",
+		"&8Level 7: Chance for wither effect as well",
+		"&8Level 10: Wither effect is now level 2"
+	],
+	dependencies: ["0000000000000FA5","10F0F0F0F0F0F002"],
+	id: "0000000000000FB3", 
+	tasks: [{
+		id: "0000000000000FB4",
+		type: "checkmark",
+		title: "Cost: 2 skill points"
+	}],
+	rewards: [{
+		id: "0000000000000FB5",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:offense skilltree:offense/4",
+		player_command: false
+	},{
+		id: "0000000000000FB6",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 2",
+		player_command: false
+	},{
+		id: "0000000000000FB7",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 2",
+		player_command: false
+	},{
+		id: "0000000000000FB8",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "0000000000000FB9",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "0000000000000FBA",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}, {
+	title: "Offense V",
+	icon: "twilightforest:fiery_sword",
+	x: 3.5d,
+	y: -3.5d,
+	subtitle: "4% chance per level to lit enemy on fire",
+	description: [
+		"&7Level 4: Fire lasts longer",
+		"&8Level 7: Chance for wither effect as well",
+		"&8Level 10: Wither effect is now level 2"
+	],
+	dependencies: ["0000000000000FB4","10F0F0F0F0F0F001"],
+	id: "0000000000000FC2", 
+	tasks: [{
+		id: "0000000000000FC3",
+		type: "checkmark",
+		title: "Cost: 1 skill point"
+	}],
+	rewards: [{
+		id: "0000000000000FC4",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:offense skilltree:offense/5",
+		player_command: false
+	},{
+		id: "0000000000000FC5",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 1",
+		player_command: false
+	},{
+		id: "0000000000000FC6",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 1",
+		player_command: false
+	},{
+		id: "0000000000000FC7",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "0000000000000FC8",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "0000000000000FC9",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}, {
+	title: "Offense VI",
+	icon: "twilightforest:fiery_sword",
+	x: 4d,
+	y: -4d,
+	subtitle: "4% chance per level to lit enemy on fire",
+	description: [
+		"&7Level 4: Fire lasts longer",
+		"&8Level 7: Chance for wither effect as well",
+		"&8Level 10: Wither effect is now level 2"
+	],
+	dependencies: ["0000000000000FC3","10F0F0F0F0F0F001"],
+	id: "0000000000000FD1", 
+	tasks: [{
+		id: "0000000000000FD2",
+		type: "checkmark",
+		title: "Cost: 1 skill point"
+	}],
+	rewards: [{
+		id: "0000000000000FD3",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:offense skilltree:offense/6",
+		player_command: false
+	},{
+		id: "0000000000000FD4",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 1",
+		player_command: false
+	},{
+		id: "0000000000000FD5",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 1",
+		player_command: false
+	},{
+		id: "0000000000000FD6",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "0000000000000FD7",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "0000000000000FD8",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}, {
+	title: "Offense VII",
+	icon: {
+		id: "twilightforest:fiery_sword",
+		Count: 1b,
+		tag: {
+			Enchantments: [{
+				lvl: 1s,
+				id: "minecraft:power"
+			}]
+		}
+	},
+	x: 4.5d,
+	y: -4.5d,
+	subtitle: "4% chance per level to lit enemy on fire",
+	description: [
+		"&7Level 4: Fire lasts longer",
+		"&aLevel 7: Chance for wither effect as well",
+		"&8Level 10: Wither effect is now level 2"
+	],
+	dependencies: ["0000000000000FD2","10F0F0F0F0F0F002"],
+	id: "0000000000000FE0", 
+	tasks: [{
+		id: "0000000000000FE1",
+		type: "checkmark",
+		title: "Cost: 2 skill points"
+	}],
+	rewards: [{
+		id: "0000000000000FE2",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:offense skilltree:offense/7",
+		player_command: false
+	},{
+		id: "0000000000000FE3",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 2",
+		player_command: false
+	},{
+		id: "0000000000000FE4",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 2",
+		player_command: false
+	},{
+		id: "0000000000000FE5",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "0000000000000FE6",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "0000000000000FE7",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}, {
+	title: "Offense VIII",
+	icon: "twilightforest:fiery_sword",
+	x: 5d,
+	y: -5d,
+	subtitle: "4% chance per level to lit enemy on fire",
+	description: [
+		"&7Level 4: Fire lasts longer",
+		"&7Level 7: Chance for wither effect as well",
+		"&8Level 10: Wither effect is now level 2"
+	],
+	dependencies: ["0000000000000FE1","10F0F0F0F0F0F001"],
+	id: "0000000000000FEF", 
+	tasks: [{
+		id: "0000000000000FF0",
+		type: "checkmark",
+		title: "Cost: 1 skill point"
+	}],
+	rewards: [{
+		id: "0000000000000FF1",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:offense skilltree:offense/8",
+		player_command: false
+	},{
+		id: "0000000000000FF2",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 1",
+		player_command: false
+	},{
+		id: "0000000000000FF3",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 1",
+		player_command: false
+	},{
+		id: "0000000000000FF4",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "0000000000000FF5",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "0000000000000FF6",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}, {
+	title: "Offense IX",
+	icon: "twilightforest:fiery_sword",
+	x: 5.5d,
+	y: -5.5d,
+	subtitle: "4% chance per level to lit enemy on fire",
+	description: [
+		"&7Level 4: Fire lasts longer",
+		"&7Level 7: Chance for wither effect as well",
+		"&8Level 10: Wither effect is now level 2"
+	],
+	dependencies: ["0000000000000FF0","10F0F0F0F0F0F001"],
+	id: "0000000000000FFE", 
+	tasks: [{
+		id: "0000000000000FFF",
+		type: "checkmark",
+		title: "Cost: 1 skill point"
+	}],
+	rewards: [{
+		id: "0000000000001000",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:offense skilltree:offense/9",
+		player_command: false
+	},{
+		id: "0000000000001001",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 1",
+		player_command: false
+	},{
+		id: "0000000000001002",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 1",
+		player_command: false
+	},{
+		id: "0000000000001003",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "0000000000001004",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "0000000000001005",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}, {
+	title: "Offense X",
+	icon: {
+		id: "twilightforest:fiery_sword",
+		Count: 1b,
+		tag: {
+			Enchantments: [{
+				lvl: 1s,
+				id: "minecraft:power"
+			}]
+		}
+	},
+	x: 6d,
+	y: -6d,
+	subtitle: "4% chance per level to lit enemy on fire",
+	description: [
+		"&7Level 4: Fire lasts longer",
+		"&7Level 7: Chance for wither effect as well",
+		"&aLevel 10: Wither effect is now level 2"
+	],
+	dependencies: ["0000000000000FFF","10F0F0F0F0F0F002"],
+	id: "000000000000100D", 
+	tasks: [{
+		id: "000000000000100E",
+		type: "checkmark",
+		title: "Cost: 2 skill points"
+	}],
+	rewards: [{
+		id: "000000000000100F",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:offense skilltree:offense/10",
+		player_command: false
+	},{
+		id: "0000000000001010",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 2",
+		player_command: false
+	},{
+		id: "0000000000001011",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 2",
+		player_command: false
+	},{
+		id: "0000000000001012",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "0000000000001013",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "0000000000001014",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}
+
+,
+    {
+	title: "Defense I",
+	icon: "minecraft:shield",
+	x: -1.5d,
+	y: 1.5d,
+	subtitle: "5% chance per level for resistance effect on being hit",
+	description: [
+		"&8Level 4: The effect lasts 4 seconds",
+		"&8Level 7: The effect is now level 2",
+		"&8Level 10: The effect lasts 6 seconds"
+	],
+	dependencies: ["10F0F0F0F0F0F001"],
+	id: "0000000000001749", 
+	tasks: [{
+		id: "000000000000174A",
+		type: "checkmark",
+		title: "Cost: 1 skill point"
+	}],
+	rewards: [{
+		id: "000000000000174B",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:defense skilltree:defense/1",
+		player_command: false
+	},{
+		id: "000000000000174C",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 1",
+		player_command: false
+	},{
+		id: "000000000000174D",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 1",
+		player_command: false
+	},{
+		id: "000000000000174E",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "000000000000174F",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "0000000000001750",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}, {
+	title: "Defense II",
+	icon: "minecraft:shield",
+	x: -2d,
+	y: 2d,
+	subtitle: "5% chance per level for resistance effect on being hit",
+	description: [
+		"&8Level 4: The effect lasts 4 seconds",
+		"&8Level 7: The effect is now level 2",
+		"&8Level 10: The effect lasts 6 seconds"
+	],
+	dependencies: ["000000000000174A","10F0F0F0F0F0F001"],
+	id: "0000000000001758", 
+	tasks: [{
+		id: "0000000000001759",
+		type: "checkmark",
+		title: "Cost: 1 skill point"
+	}],
+	rewards: [{
+		id: "000000000000175A",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:defense skilltree:defense/2",
+		player_command: false
+	},{
+		id: "000000000000175B",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 1",
+		player_command: false
+	},{
+		id: "000000000000175C",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 1",
+		player_command: false
+	},{
+		id: "000000000000175D",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "000000000000175E",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "000000000000175F",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}, {
+	title: "Defense III",
+	icon: "minecraft:shield",
+	x: -2.5d,
+	y: 2.5d,
+	subtitle: "5% chance per level for resistance effect on being hit",
+	description: [
+		"&8Level 4: The effect lasts 4 seconds",
+		"&8Level 7: The effect is now level 2",
+		"&8Level 10: The effect lasts 6 seconds"
+	],
+	dependencies: ["0000000000001759","10F0F0F0F0F0F001"],
+	id: "0000000000001767", 
+	tasks: [{
+		id: "0000000000001768",
+		type: "checkmark",
+		title: "Cost: 1 skill point"
+	}],
+	rewards: [{
+		id: "0000000000001769",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:defense skilltree:defense/3",
+		player_command: false
+	},{
+		id: "000000000000176A",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 1",
+		player_command: false
+	},{
+		id: "000000000000176B",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 1",
+		player_command: false
+	},{
+		id: "000000000000176C",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "000000000000176D",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "000000000000176E",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}, {
+	title: "Defense IV",
+	icon: {
+		id: "minecraft:shield",
+		Count: 1b,
+		tag: {
+			Enchantments: [{
+				lvl: 1s,
+				id: "minecraft:power"
+			}]
+		}
+	},
+	x: -3d,
+	y: 3d,
+	subtitle: "5% chance per level for resistance effect on being hit",
+	description: [
+		"&aLevel 4: The effect lasts 4 seconds",
+		"&8Level 7: The effect is now level 2",
+		"&8Level 10: The effect lasts 6 seconds"
+	],
+	dependencies: ["0000000000001768","10F0F0F0F0F0F002"],
+	id: "0000000000001776", 
+	tasks: [{
+		id: "0000000000001777",
+		type: "checkmark",
+		title: "Cost: 2 skill points"
+	}],
+	rewards: [{
+		id: "0000000000001778",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:defense skilltree:defense/4",
+		player_command: false
+	},{
+		id: "0000000000001779",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 2",
+		player_command: false
+	},{
+		id: "000000000000177A",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 2",
+		player_command: false
+	},{
+		id: "000000000000177B",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "000000000000177C",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "000000000000177D",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}, {
+	title: "Defense V",
+	icon: "minecraft:shield",
+	x: -3.5d,
+	y: 3.5d,
+	subtitle: "5% chance per level for resistance effect on being hit",
+	description: [
+		"&7Level 4: The effect lasts 4 seconds",
+		"&8Level 7: The effect is now level 2",
+		"&8Level 10: The effect lasts 6 seconds"
+	],
+	dependencies: ["0000000000001777","10F0F0F0F0F0F001"],
+	id: "0000000000001785", 
+	tasks: [{
+		id: "0000000000001786",
+		type: "checkmark",
+		title: "Cost: 1 skill point"
+	}],
+	rewards: [{
+		id: "0000000000001787",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:defense skilltree:defense/5",
+		player_command: false
+	},{
+		id: "0000000000001788",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 1",
+		player_command: false
+	},{
+		id: "0000000000001789",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 1",
+		player_command: false
+	},{
+		id: "000000000000178A",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "000000000000178B",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "000000000000178C",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}, {
+	title: "Defense VI",
+	icon: "minecraft:shield",
+	x: -4d,
+	y: 4d,
+	subtitle: "5% chance per level for resistance effect on being hit",
+	description: [
+		"&7Level 4: The effect lasts 4 seconds",
+		"&8Level 7: The effect is now level 2",
+		"&8Level 10: The effect lasts 6 seconds"
+	],
+	dependencies: ["0000000000001786","10F0F0F0F0F0F001"],
+	id: "0000000000001794", 
+	tasks: [{
+		id: "0000000000001795",
+		type: "checkmark",
+		title: "Cost: 1 skill point"
+	}],
+	rewards: [{
+		id: "0000000000001796",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:defense skilltree:defense/6",
+		player_command: false
+	},{
+		id: "0000000000001797",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 1",
+		player_command: false
+	},{
+		id: "0000000000001798",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 1",
+		player_command: false
+	},{
+		id: "0000000000001799",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "000000000000179A",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "000000000000179B",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}, {
+	title: "Defense VII",
+	icon: {
+		id: "minecraft:shield",
+		Count: 1b,
+		tag: {
+			Enchantments: [{
+				lvl: 1s,
+				id: "minecraft:power"
+			}]
+		}
+	},
+	x: -4.5d,
+	y: 4.5d,
+	subtitle: "5% chance per level for resistance effect on being hit",
+	description: [
+		"&7Level 4: The effect lasts 4 seconds",
+		"&aLevel 7: The effect is now level 2",
+		"&8Level 10: The effect lasts 6 seconds"
+	],
+	dependencies: ["0000000000001795","10F0F0F0F0F0F002"],
+	id: "00000000000017A3", 
+	tasks: [{
+		id: "00000000000017A4",
+		type: "checkmark",
+		title: "Cost: 2 skill points"
+	}],
+	rewards: [{
+		id: "00000000000017A5",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:defense skilltree:defense/7",
+		player_command: false
+	},{
+		id: "00000000000017A6",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 2",
+		player_command: false
+	},{
+		id: "00000000000017A7",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 2",
+		player_command: false
+	},{
+		id: "00000000000017A8",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "00000000000017A9",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "00000000000017AA",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}, {
+	title: "Defense VIII",
+	icon: "minecraft:shield",
+	x: -5d,
+	y: 5d,
+	subtitle: "5% chance per level for resistance effect on being hit",
+	description: [
+		"&7Level 4: The effect lasts 4 seconds",
+		"&7Level 7: The effect is now level 2",
+		"&8Level 10: The effect lasts 6 seconds"
+	],
+	dependencies: ["00000000000017A4","10F0F0F0F0F0F001"],
+	id: "00000000000017B2", 
+	tasks: [{
+		id: "00000000000017B3",
+		type: "checkmark",
+		title: "Cost: 1 skill point"
+	}],
+	rewards: [{
+		id: "00000000000017B4",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:defense skilltree:defense/8",
+		player_command: false
+	},{
+		id: "00000000000017B5",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 1",
+		player_command: false
+	},{
+		id: "00000000000017B6",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 1",
+		player_command: false
+	},{
+		id: "00000000000017B7",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "00000000000017B8",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "00000000000017B9",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}, {
+	title: "Defense IX",
+	icon: "minecraft:shield",
+	x: -5.5d,
+	y: 5.5d,
+	subtitle: "5% chance per level for resistance effect on being hit",
+	description: [
+		"&7Level 4: The effect lasts 4 seconds",
+		"&7Level 7: The effect is now level 2",
+		"&8Level 10: The effect lasts 6 seconds"
+	],
+	dependencies: ["00000000000017B3","10F0F0F0F0F0F001"],
+	id: "00000000000017C1", 
+	tasks: [{
+		id: "00000000000017C2",
+		type: "checkmark",
+		title: "Cost: 1 skill point"
+	}],
+	rewards: [{
+		id: "00000000000017C3",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:defense skilltree:defense/9",
+		player_command: false
+	},{
+		id: "00000000000017C4",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 1",
+		player_command: false
+	},{
+		id: "00000000000017C5",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 1",
+		player_command: false
+	},{
+		id: "00000000000017C6",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "00000000000017C7",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "00000000000017C8",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}, {
+	title: "Defense X",
+	icon: {
+		id: "minecraft:shield",
+		Count: 1b,
+		tag: {
+			Enchantments: [{
+				lvl: 1s,
+				id: "minecraft:power"
+			}]
+		}
+	},
+	x: -6d,
+	y: 6d,
+	subtitle: "5% chance per level for resistance effect on being hit",
+	description: [
+		"&7Level 4: The effect lasts 4 seconds",
+		"&7Level 7: The effect is now level 2",
+		"&aLevel 10: The effect lasts 6 seconds"
+	],
+	dependencies: ["00000000000017C2","10F0F0F0F0F0F002"],
+	id: "00000000000017D0", 
+	tasks: [{
+		id: "00000000000017D1",
+		type: "checkmark",
+		title: "Cost: 2 skill points"
+	}],
+	rewards: [{
+		id: "00000000000017D2",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:defense skilltree:defense/10",
+		player_command: false
+	},{
+		id: "00000000000017D3",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 2",
+		player_command: false
+	},{
+		id: "00000000000017D4",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 2",
+		player_command: false
+	},{
+		id: "00000000000017D5",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "00000000000017D6",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "00000000000017D7",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}
+
+,
+		{
+	title: "Agility I",
+	icon: "minecraft:sugar",
+	x: 1.5d,
+	y: 1.5d,
+	subtitle: "5% speed boost per level",
+	description: [
+		"&8Level 4: Permanent speed I effect",
+		"&8Level 7: Resistance to slowness",
+		"&8Level 10: Permanent speed II effect"
+	],
+	dependencies: ["10F0F0F0F0F0F001"],
+	id: "0000000000001F0C", 
+	tasks: [{
+		id: "0000000000001F0D",
+		type: "checkmark",
+		title: "Cost: 1 skill point"
+	}],
+	rewards: [{
+		id: "0000000000001F0E",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:agility skilltree:agility/1",
+		player_command: false
+	},{
+		id: "0000000000001F0F",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 1",
+		player_command: false
+	},{
+		id: "0000000000001F10",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 1",
+		player_command: false
+	},{
+		id: "0000000000001F11",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "0000000000001F12",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "0000000000001F13",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}, {
+	title: "Agility II",
+	icon: "minecraft:sugar",
+	x: 2d,
+	y: 2d,
+	subtitle: "5% speed boost per level",
+	description: [
+		"&8Level 4: Permanent speed I effect",
+		"&8Level 7: Resistance to slowness",
+		"&8Level 10: Permanent speed II effect"
+	],
+	dependencies: ["0000000000001F0D","10F0F0F0F0F0F001"],
+	id: "0000000000001F1B", 
+	tasks: [{
+		id: "0000000000001F1C",
+		type: "checkmark",
+		title: "Cost: 1 skill point"
+	}],
+	rewards: [{
+		id: "0000000000001F1D",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:agility skilltree:agility/2",
+		player_command: false
+	},{
+		id: "0000000000001F1E",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 1",
+		player_command: false
+	},{
+		id: "0000000000001F1F",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 1",
+		player_command: false
+	},{
+		id: "0000000000001F20",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "0000000000001F21",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "0000000000001F22",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}, {
+	title: "Agility III",
+	icon: "minecraft:sugar",
+	x: 2.5d,
+	y: 2.5d,
+	subtitle: "5% speed boost per level",
+	description: [
+		"&8Level 4: Permanent speed I effect",
+		"&8Level 7: Resistance to slowness",
+		"&8Level 10: Permanent speed II effect"
+	],
+	dependencies: ["0000000000001F1C","10F0F0F0F0F0F001"],
+	id: "0000000000001F2A", 
+	tasks: [{
+		id: "0000000000001F2B",
+		type: "checkmark",
+		title: "Cost: 1 skill point"
+	}],
+	rewards: [{
+		id: "0000000000001F2C",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:agility skilltree:agility/3",
+		player_command: false
+	},{
+		id: "0000000000001F2D",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 1",
+		player_command: false
+	},{
+		id: "0000000000001F2E",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 1",
+		player_command: false
+	},{
+		id: "0000000000001F2F",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "0000000000001F30",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "0000000000001F31",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}, {
+	title: "Agility IV",
+	icon: {
+		id: "minecraft:sugar",
+		Count: 1b,
+		tag: {
+			Enchantments: [{
+				lvl: 1s,
+				id: "minecraft:power"
+			}]
+		}
+	},
+	x: 3d,
+	y: 3d,
+	subtitle: "5% speed boost per level",
+	description: [
+		"&aLevel 4: Permanent speed I effect",
+		"&8Level 7: Resistance to slowness",
+		"&8Level 10: Permanent speed II effect"
+	],
+	dependencies: ["0000000000001F2B","10F0F0F0F0F0F002"],
+	id: "0000000000001F39", 
+	tasks: [{
+		id: "0000000000001F3A",
+		type: "checkmark",
+		title: "Cost: 2 skill points"
+	}],
+	rewards: [{
+		id: "0000000000001F3B",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:agility skilltree:agility/4",
+		player_command: false
+	},{
+		id: "0000000000001F3C",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 2",
+		player_command: false
+	},{
+		id: "0000000000001F3D",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 2",
+		player_command: false
+	},{
+		id: "0000000000001F3E",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "0000000000001F3F",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "0000000000001F40",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}, {
+	title: "Agility V",
+	icon: "minecraft:sugar",
+	x: 3.5d,
+	y: 3.5d,
+	subtitle: "5% speed boost per level",
+	description: [
+		"&7Level 4: Permanent speed I effect",
+		"&8Level 7: Resistance to slowness",
+		"&8Level 10: Permanent speed II effect"
+	],
+	dependencies: ["0000000000001F3A","10F0F0F0F0F0F001"],
+	id: "0000000000001F48", 
+	tasks: [{
+		id: "0000000000001F49",
+		type: "checkmark",
+		title: "Cost: 1 skill point"
+	}],
+	rewards: [{
+		id: "0000000000001F4A",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:agility skilltree:agility/5",
+		player_command: false
+	},{
+		id: "0000000000001F4B",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 1",
+		player_command: false
+	},{
+		id: "0000000000001F4C",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 1",
+		player_command: false
+	},{
+		id: "0000000000001F4D",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "0000000000001F4E",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "0000000000001F4F",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}, {
+	title: "Agility VI",
+	icon: "minecraft:sugar",
+	x: 4d,
+	y: 4d,
+	subtitle: "5% speed boost per level",
+	description: [
+		"&7Level 4: Permanent speed I effect",
+		"&8Level 7: Resistance to slowness",
+		"&8Level 10: Permanent speed II effect"
+	],
+	dependencies: ["0000000000001F49","10F0F0F0F0F0F001"],
+	id: "0000000000001F57", 
+	tasks: [{
+		id: "0000000000001F58",
+		type: "checkmark",
+		title: "Cost: 1 skill point"
+	}],
+	rewards: [{
+		id: "0000000000001F59",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:agility skilltree:agility/6",
+		player_command: false
+	},{
+		id: "0000000000001F5A",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 1",
+		player_command: false
+	},{
+		id: "0000000000001F5B",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 1",
+		player_command: false
+	},{
+		id: "0000000000001F5C",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "0000000000001F5D",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "0000000000001F5E",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}, {
+	title: "Agility VII",
+	icon: {
+		id: "minecraft:sugar",
+		Count: 1b,
+		tag: {
+			Enchantments: [{
+				lvl: 1s,
+				id: "minecraft:power"
+			}]
+		}
+	},
+	x: 4.5d,
+	y: 4.5d,
+	subtitle: "5% speed boost per level",
+	description: [
+		"&7Level 4: Permanent speed I effect",
+		"&aLevel 7: Resistance to slowness",
+		"&8Level 10: Permanent speed II effect"
+	],
+	dependencies: ["0000000000001F58","10F0F0F0F0F0F002"],
+	id: "0000000000001F66", 
+	tasks: [{
+		id: "0000000000001F67",
+		type: "checkmark",
+		title: "Cost: 2 skill points"
+	}],
+	rewards: [{
+		id: "0000000000001F68",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:agility skilltree:agility/7",
+		player_command: false
+	},{
+		id: "0000000000001F69",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 2",
+		player_command: false
+	},{
+		id: "0000000000001F6A",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 2",
+		player_command: false
+	},{
+		id: "0000000000001F6B",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "0000000000001F6C",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "0000000000001F6D",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}, {
+	title: "Agility VIII",
+	icon: "minecraft:sugar",
+	x: 5d,
+	y: 5d,
+	subtitle: "5% speed boost per level",
+	description: [
+		"&7Level 4: Permanent speed I effect",
+		"&7Level 7: Resistance to slowness",
+		"&8Level 10: Permanent speed II effect"
+	],
+	dependencies: ["0000000000001F67","10F0F0F0F0F0F001"],
+	id: "0000000000001F75", 
+	tasks: [{
+		id: "0000000000001F76",
+		type: "checkmark",
+		title: "Cost: 1 skill point"
+	}],
+	rewards: [{
+		id: "0000000000001F77",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:agility skilltree:agility/8",
+		player_command: false
+	},{
+		id: "0000000000001F78",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 1",
+		player_command: false
+	},{
+		id: "0000000000001F79",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 1",
+		player_command: false
+	},{
+		id: "0000000000001F7A",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "0000000000001F7B",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "0000000000001F7C",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}, {
+	title: "Agility IX",
+	icon: "minecraft:sugar",
+	x: 5.5d,
+	y: 5.5d,
+	subtitle: "5% speed boost per level",
+	description: [
+		"&7Level 4: Permanent speed I effect",
+		"&7Level 7: Resistance to slowness",
+		"&8Level 10: Permanent speed II effect"
+	],
+	dependencies: ["0000000000001F76","10F0F0F0F0F0F001"],
+	id: "0000000000001F84", 
+	tasks: [{
+		id: "0000000000001F85",
+		type: "checkmark",
+		title: "Cost: 1 skill point"
+	}],
+	rewards: [{
+		id: "0000000000001F86",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:agility skilltree:agility/9",
+		player_command: false
+	},{
+		id: "0000000000001F87",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 1",
+		player_command: false
+	},{
+		id: "0000000000001F88",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 1",
+		player_command: false
+	},{
+		id: "0000000000001F89",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "0000000000001F8A",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "0000000000001F8B",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}, {
+	title: "Agility X",
+	icon: {
+		id: "minecraft:sugar",
+		Count: 1b,
+		tag: {
+			Enchantments: [{
+				lvl: 1s,
+				id: "minecraft:power"
+			}]
+		}
+	},
+	x: 6d,
+	y: 6d,
+	subtitle: "5% speed boost per level",
+	description: [
+		"&7Level 4: Permanent speed I effect",
+		"&7Level 7: Resistance to slowness",
+		"&aLevel 10: Permanent speed II effect"
+	],
+	dependencies: ["0000000000001F85","10F0F0F0F0F0F002"],
+	id: "0000000000001F93", 
+	tasks: [{
+		id: "0000000000001F94",
+		type: "checkmark",
+		title: "Cost: 2 skill points"
+	}],
+	rewards: [{
+		id: "0000000000001F95",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:agility skilltree:agility/10",
+		player_command: false
+	},{
+		id: "0000000000001F96",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 2",
+		player_command: false
+	},{
+		id: "0000000000001F97",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 2",
+		player_command: false
+	},{
+		id: "0000000000001F98",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "0000000000001F99",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "0000000000001F9A",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}
+
+,
+		{
+			title: "I AM ALL",
+			icon: {
+				id: "ftbquests:custom_icon",
+				Count: 1b,
+				tag: {
+					Icon: "ftbquests:textures/gui/shop.png"
+				}
+			},
+			x: 0.0d,
+			y: 0.0d,
+			disable_toast: true,
+			hide_dependency_lines: true,
+			hide: true,
+			hide_text_until_complete: true,
+			size: 0.07d,
+			id: "0F0F0F0F0F0F0F0F",
+			dependencies: ["10F0F0F0F0F0F000","6BF09FDD8D77E0B1","00000000000007C3","00000000000007D2","00000000000007E1","00000000000007F0","00000000000007FF","000000000000080E","000000000000081D","000000000000082C","000000000000083B","000000000000084A","0000000000000F86","0000000000000F95","0000000000000FA4","0000000000000FB3","0000000000000FC2","0000000000000FD1","0000000000000FE0","0000000000000FEF","0000000000000FFE","000000000000100D","0000000000001749","0000000000001758","0000000000001767","0000000000001776","0000000000001785","0000000000001794","00000000000017A3","00000000000017B2","00000000000017C1","00000000000017D0","0000000000001F0C","0000000000001F1B","0000000000001F2A","0000000000001F39","0000000000001F48","0000000000001F57","0000000000001F66","0000000000001F75","0000000000001F84","0000000000001F93"],
+			tasks: [
+				{
+					id: "FC4AAC6225DE5000",
+					type: "custom",
+					title: "THERE IS NOTHING LEFT",
+					icon: "kubejs:skill_point",
+					disable_toast: true
+				}
+			]
+		},
+    {
+			title: "Reset skills",
+			icon: "minecraft:barrier",
+			x: 0.0d,
+			y: 0.0d,
+			subtitle: "Reset all your skills and return your skill points",
+			id: "6BF09FDD8D77E0B1",
+			tasks: [{
+				id: "2A0BE8FE38B7AC52",
+				type: "item",
+				title: "Cost: 1 dollar",
+				item: "calemiutils:coin_dollar",
+				consume_items: true,
+				only_from_crafting: false
+			}],
+			rewards: [{
+				id: "BF47367051C97000",
+				type: "command",
+				auto: "invisible",
+				command: "/scoreboard players operation @p SkillPoints = @p TotalSkillPoints",
+				player_command: false
+			},{
+				id: "2E323D644792C000",
+				type: "command",
+				auto: "invisible",
+				command: "/scoreboard players set @p UsedSkillPoints 0",
+				player_command: false
+			},{
+    		id: "DF03409CEC067000",
+    		type: "command",
+    		auto: "invisible",
+    		command: "/ftbquests change_progress @p reset_deps 0F0F0F0F0F0F0F0F",
+    		player_command: false
+    	},{
+    		id: "831832E4526F6000",
+    		type: "command",
+    		auto: "invisible",
+    		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+    		player_command: false
+    	},{
+    		id: "A74AFBF6A34F4000",
+    		type: "command",
+    		auto: "invisible",
+    		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+    		player_command: false
+    	},{
+  id: "00000000000000CB",
+  type: "command",
+  auto: "invisible",
+  command: "/origin set @p skilltree:haste skilltree:blank",
+  player_command: false
+},{
+  id: "00000000000000D0",
+  type: "command",
+  auto: "invisible",
+  command: "/origin set @p skilltree:offense skilltree:blank",
+  player_command: false
+},{
+  id: "00000000000000D5",
+  type: "command",
+  auto: "invisible",
+  command: "/origin set @p skilltree:defense skilltree:blank",
+  player_command: false
+},{
+  id: "00000000000000DA",
+  type: "command",
+  auto: "invisible",
+  command: "/origin set @p skilltree:agility skilltree:blank",
+  player_command: false
+}]
+		}
+	]
+}

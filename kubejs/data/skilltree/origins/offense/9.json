@@ -1,0 +1,13 @@
+{
+  "powers":[
+		"skilltree:offense/base_9",
+		"skilltree:offense/upgrade_1",
+		"skilltree:offense/upgrade_2"
+	],
+  "icon": "twilightforest:fiery_sword",
+	"order": 9,
+	"impact": 1,
+  "name":"Offense IX",
+  "description":" ",
+  "unchoosable": true
+}

@@ -1,0 +1,12 @@
+{
+  "powers":[
+		"skilltree:haste/base_6",
+		"skilltree:haste/upgrade_1"
+	],
+  "icon": "minecraft:golden_pickaxe",
+	"order": 6,
+	"impact": 1,
+  "name":"Haste VI",
+  "description":" ",
+  "unchoosable": true
+}

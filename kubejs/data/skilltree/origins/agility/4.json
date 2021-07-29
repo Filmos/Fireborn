@@ -1,0 +1,12 @@
+{
+  "powers":[
+		"skilltree:agility/base_4",
+		"skilltree:agility/upgrade_1"
+	],
+  "icon": "minecraft:sugar",
+	"order": 4,
+	"impact": 1,
+  "name":"Agility IV",
+  "description":" ",
+  "unchoosable": true
+}

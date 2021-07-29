@@ -1,0 +1,1050 @@
+[
+  {
+    "name": "Good",
+    "colour": "GREEN",
+    "weights": [
+      0,
+      100,
+      0,
+      0,
+      0
+    ],
+    "groups": [
+      {
+        "id": "c792641d-5d0d-4ce4-a5cb-3ffbeb90ee46",
+        "name": "Rainbow Oak Sapling",
+        "limit": 0,
+        "items": [
+          {
+            "id": "twilightforest:rainboak_sapling",
+            "Count": 2
+          }
+        ]
+      },
+      {
+        "id": "eb832544-2ecd-4dcb-96cf-76cad44b140c",
+        "name": "Vanilla Saplings",
+        "limit": 0,
+        "items": [
+          {
+            "id": "minecraft:oak_sapling",
+            "Count": 1
+          },
+          {
+            "id": "minecraft:birch_sapling",
+            "Count": 1
+          },
+          {
+            "id": "minecraft:jungle_sapling",
+            "Count": 1
+          },
+          {
+            "id": "minecraft:spruce_sapling",
+            "Count": 1
+          }
+        ]
+      },
+      {
+        "id": "e3f8ab2c-3d55-44ff-b52a-fb188b921f5d",
+        "name": "Blackberry",
+        "limit": 0,
+        "items": [
+          {
+            "id": "pamhc2crops:blackberryitem",
+            "Count": 4
+          }
+        ]
+      },
+      {
+        "id": "da62e60c-3d14-489f-bace-06c97e7fc98a",
+        "name": "Fruit Punch",
+        "limit": 0,
+        "items": [
+          {
+            "id": "pamhc2foodcore:melonsmoothieitem",
+            "Count": 1
+          },
+          {
+            "id": "pamhc2foodextended:lemonsmoothieitem",
+            "Count": 1
+          }
+        ]
+      },
+      {
+        "id": "0e69d52a-59d3-4d60-b4cc-baa2d8dc76db",
+        "name": "Compact Machine (Small)",
+        "limit": 0,
+        "items": [
+          {
+            "id": "compactmachines:machine_small",
+            "Count": 1
+          }
+        ]
+      },
+      {
+        "id": "a42800a6-b339-4fce-9176-fcfa3c8233d6",
+        "name": "Gummy Bears",
+        "limit": 0,
+        "items": [
+          {
+            "id": "pamhc2foodcore:gummybearsitem",
+            "Count": 4
+          }
+        ]
+      },
+      {
+        "id": "a23dd064-d71b-4cbc-bd33-c9f6cd8f409c",
+        "name": "Iron Barrel",
+        "limit": 0,
+        "items": [
+          {
+            "id": "metalbarrels:iron_barrel",
+            "Count": 1
+          }
+        ]
+      },
+      {
+        "id": "e2fdb3f3-c30f-4916-acaa-81cf18f406b6",
+        "name": "Apple Sapling",
+        "limit": 0,
+        "items": [
+          {
+            "id": "pamhc2trees:apple_sapling",
+            "Count": 1
+          }
+        ]
+      },
+      {
+        "id": "f50fe8ee-0f90-455b-80f1-bc89b4d07231",
+        "name": "Quartz Shuriken",
+        "limit": 0,
+        "items": [
+          {
+            "id": "tconstruct:quartz_shuriken",
+            "Count": 8
+          }
+        ]
+      },
+      {
+        "id": "3c66cb15-a15d-489e-ad26-cce9e57ee435",
+        "name": "Chicken Pot Pie",
+        "limit": 0,
+        "items": [
+          {
+            "id": "pamhc2foodcore:chickenpotpieitem",
+            "Count": 1
+          }
+        ]
+      },
+      {
+        "id": "8e26a080-a91a-45f0-af01-d484b667df99",
+        "name": "Cooking for Blockheads I",
+        "limit": 0,
+        "items": [
+          {
+            "id": "cookingforblockheads:recipe_book",
+            "Count": 1
+          }
+        ]
+      },
+      {
+        "id": "20d70d40-85f3-4c18-a6b2-26450b65e5d3",
+        "name": "Cranberry",
+        "limit": 0,
+        "items": [
+          {
+            "id": "pamhc2crops:cranberryitem",
+            "Count": 4
+          }
+        ]
+      },
+      {
+        "id": "5b8bdb8d-912d-4a14-a5fd-64179508949c",
+        "name": "Auto Chisel",
+        "limit": 0,
+        "items": [
+          {
+            "id": "chisel:auto_chisel",
+            "Count": 1
+          }
+        ]
+      },
+      {
+        "id": "f3ef57c3-c6a7-47b5-a8f3-11de289663c6",
+        "name": "Black and White Vision",
+        "limit": 0,
+        "items": [
+          {
+            "id": "chisel:antiblock/white",
+            "Count": 16
+          },
+          {
+            "id": "chisel:antiblock/black",
+            "Count": 16
+          }
+        ]
+      },
+      {
+        "id": "d744effd-423d-4eb6-b981-432ec17f40aa",
+        "name": "Glowball",
+        "limit": 0,
+        "items": [
+          {
+            "id": "tconstruct:glow_ball",
+            "Count": 12
+          }
+        ]
+      },
+      {
+        "id": "9d2fd61f-d5aa-40e3-a43b-83246b8fb926",
+        "name": "Candleberry",
+        "limit": 0,
+        "items": [
+          {
+            "id": "pamhc2crops:candleberryitem",
+            "Count": 4
+          }
+        ]
+      },
+      {
+        "id": "03117083-89bd-49ba-af58-4b32dc35d810",
+        "name": "Bucket of Blobfish",
+        "limit": 0,
+        "items": [
+          {
+            "id": "alexsmobs:blobfish_bucket",
+            "Count": 1
+          }
+        ]
+      },
+      {
+        "id": "0eba0173-e515-48a4-8d40-c0795ca0943b",
+        "name": "Lemon Sapling",
+        "limit": 0,
+        "items": [
+          {
+            "id": "pamhc2trees:lemon_sapling",
+            "Count": 1
+          }
+        ]
+      },
+      {
+        "id": "249f8281-9aba-4117-bca9-640a4d6d6326",
+        "name": "Bucket of Mimic Octopus",
+        "limit": 0,
+        "items": [
+          {
+            "id": "alexsmobs:mimic_octopus_bucket",
+            "Count": 1,
+            "tag": {}
+          }
+        ]
+      },
+      {
+        "id": "4f1076f8-fd4f-4119-98b6-d49de0471e8f",
+        "name": "Flint Shuriken",
+        "limit": 0,
+        "items": [
+          {
+            "id": "tconstruct:flint_shuriken",
+            "Count": 16
+          }
+        ]
+      },
+      {
+        "id": "fee9f6b3-5697-4ee8-beae-6709639061cf",
+        "name": "Orange Sapling",
+        "limit": 0,
+        "items": [
+          {
+            "id": "pamhc2trees:orange_sapling",
+            "Count": 1
+          }
+        ]
+      },
+      {
+        "id": "db273f09-9131-4973-8a2e-16c597093d53",
+        "name": "Glass",
+        "limit": 0,
+        "items": [
+          {
+            "id": "tconstruct:clear_glass",
+            "Count": 16
+          },
+          {
+            "id": "tconstruct:light_blue_clear_stained_glass",
+            "Count": 16
+          },
+          {
+            "id": "tconstruct:lime_clear_stained_glass",
+            "Count": 16
+          }
+        ]
+      },
+      {
+        "id": "6bd5a535-1c7c-4d8f-9751-092af4357438",
+        "name": "Firefly",
+        "limit": 0,
+        "items": [
+          {
+            "id": "twilightforest:firefly",
+            "Count": 4
+          }
+        ]
+      },
+      {
+        "id": "bd37f2fc-9538-4ed5-9053-422d67774bc9",
+        "name": "Chiseled Bit Storage",
+        "limit": 0,
+        "items": [
+          {
+            "id": "chiselsandbits:bit_storage",
+            "Count": 1
+          }
+        ]
+      },
+      {
+        "id": "666dc70d-f6af-4c72-afb8-9d9a6a233a5b",
+        "name": "Iron Chest",
+        "limit": 0,
+        "items": [
+          {
+            "id": "ironchest:iron_chest",
+            "Count": 1
+          }
+        ]
+      },
+      {
+        "id": "79095bd9-6dd5-4267-b88e-717bf636f24d",
+        "name": "Pumpkin Cheese Cake",
+        "limit": 0,
+        "items": [
+          {
+            "id": "pamhc2foodcore:pumpkincheesecakeitem",
+            "Count": 1
+          }
+        ]
+      },
+      {
+        "id": "878fd027-5b87-4ff4-8ca7-0603ef78e7eb",
+        "name": "Magical Saplings",
+        "limit": 0,
+        "items": [
+          {
+            "id": "byg:ether_sapling",
+            "Count": 1
+          },
+          {
+            "id": "byg:blue_enchanted_sapling",
+            "Count": 1
+          }
+        ]
+      },
+      {
+        "id": "dac117bd-fb01-45ab-b4f8-980f56f2cc3d",
+        "name": "Bucket of Platypus",
+        "limit": 0,
+        "items": [
+          {
+            "id": "alexsmobs:platypus_bucket",
+            "Count": 1,
+            "tag": {}
+          }
+        ]
+      },
+      {
+        "id": "c0a4ff2f-66d1-46a2-8e7e-9fb054d39d9d",
+        "name": "Fancy Saplings",
+        "limit": 0,
+        "items": [
+          {
+            "id": "byg:red_spruce_sapling",
+            "Count": 1
+          },
+          {
+            "id": "byg:indigo_jacaranda_sapling",
+            "Count": 1
+          },
+          {
+            "id": "byg:yellow_birch_sapling",
+            "Count": 1
+          },
+          {
+            "id": "byg:fir_sapling",
+            "Count": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Epic",
+    "colour": "ORANGE",
+    "weights": [
+      0,
+      0,
+      0,
+      100,
+      0
+    ],
+    "groups": [
+      {
+        "id": "c7319d71-710f-4d18-b140-fd85ce2e19bc",
+        "name": "Ender Fluid Storage",
+        "limit": 0,
+        "items": [
+          {
+            "id": "endertanks:ender_tank",
+            "Count": 1,
+            "tag": {
+              "owner": "all",
+              "code": "000"
+            }
+          },
+          {
+            "id": "endertanks:ender_bucket",
+            "Count": 1,
+            "tag": {
+              "owner": "all",
+              "code": "000"
+            }
+          }
+        ]
+      },
+      {
+        "id": "547b5431-e4e0-4385-9578-48542ac7acc6",
+        "name": "Nightshade Flora",
+        "limit": 0,
+        "items": [
+          {
+            "id": "byg:nightshade_berries",
+            "Count": 1
+          },
+          {
+            "id": "byg:nightshade_phylium",
+            "Count": 1
+          }
+        ]
+      },
+      {
+        "id": "a611bc34-b84d-4f51-b6b4-8c8b42f1aa73",
+        "name": "Skyroot Sapling",
+        "limit": 0,
+        "items": [
+          {
+            "id": "tconstruct:sky_slime_sapling",
+            "Count": 1
+          },
+          {
+            "id": "tconstruct:sky_slime_grass_seeds",
+            "Count": 1
+          }
+        ]
+      },
+      {
+        "id": "49f0f3d9-a7a1-4e35-b754-114a5dc76aea",
+        "name": "Scaffolding",
+        "limit": 0,
+        "items": [
+          {
+            "id": "minecraft:scaffolding",
+            "Count": 32
+          }
+        ]
+      },
+      {
+        "id": "6270bc95-ebf0-4e92-b583-c8e8953b63d9",
+        "name": "Cooking for Blockheads II",
+        "limit": 0,
+        "items": [
+          {
+            "id": "cookingforblockheads:crafting_book",
+            "Count": 1
+          }
+        ]
+      },
+      {
+        "id": "11045fa2-048e-4cef-8cec-dc56d259ad37",
+        "name": "Greenheart Sapling",
+        "limit": 0,
+        "items": [
+          {
+            "id": "tconstruct:earth_slime_sapling",
+            "Count": 1
+          },
+          {
+            "id": "tconstruct:earth_slime_grass_seeds",
+            "Count": 1
+          }
+        ]
+      },
+      {
+        "id": "8b0f4e4b-91eb-48c5-9447-8215e38cf72c",
+        "name": "Cobble Destroyer",
+        "limit": 0,
+        "items": [
+          {
+            "id": "twilightforest:crumble_horn",
+            "Count": 1,
+            "tag": {
+              "Damage": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "bad7f766-a197-4d92-9bf9-37e43339ea8d",
+        "name": "Obsidian Chest",
+        "limit": 0,
+        "items": [
+          {
+            "id": "ironchest:obsidian_chest",
+            "Count": 1
+          }
+        ]
+      },
+      {
+        "id": "096f41e6-95bd-4919-afce-454db635eebe",
+        "name": "Netherite Chisel",
+        "limit": 0,
+        "items": [
+          {
+            "id": "chiselsandbits:chisel_netherite",
+            "Count": 1,
+            "tag": {
+              "Damage": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "7a15b081-0662-4037-8850-8be559b7d6e8",
+        "name": "Shulker Box",
+        "limit": 0,
+        "items": [
+          {
+            "id": "minecraft:shulker_box",
+            "Count": 1
+          }
+        ]
+      },
+      {
+        "id": "fd0e0dc2-3fad-4fb9-a4d4-03f51975dfa0",
+        "name": "iChisel",
+        "limit": 0,
+        "items": [
+          {
+            "id": "chisel:hitech_chisel",
+            "Count": 1,
+            "tag": {
+              "Damage": 0,
+              "chiseldata": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "f56f260a-6235-4eab-90bb-4fcf224ac669",
+        "name": "Fruitier Punch",
+        "limit": 0,
+        "items": [
+          {
+            "id": "pamhc2crops:blueberryitem",
+            "Count": 4
+          },
+          {
+            "id": "pamhc2crops:elderberryitem",
+            "Count": 4
+          },
+          {
+            "id": "pamhc2crops:greengrapeitem",
+            "Count": 4
+          },
+          {
+            "id": "pamhc2crops:raspberryitem",
+            "Count": 4
+          }
+        ]
+      },
+      {
+        "id": "bacc523a-7c9c-44f6-9617-c213799f65b5",
+        "name": "Used Enderslime Sling",
+        "limit": 0,
+        "items": [
+          {
+            "id": "tconstruct:ender_slime_sling",
+            "Count": 1,
+            "tag": {
+              "Damage": 125
+            }
+          }
+        ]
+      },
+      {
+        "id": "d9223b72-06cd-497b-a93c-0d770a909a89",
+        "name": "Obsidian Barrel",
+        "limit": 0,
+        "items": [
+          {
+            "id": "metalbarrels:obsidian_barrel",
+            "Count": 1
+          }
+        ]
+      },
+      {
+        "id": "04b66d06-7a6a-4319-ae9e-6c2ad18e5fc1",
+        "name": "Cow in a Jar",
+        "limit": 0,
+        "items": [
+          {
+            "id": "cookingforblockheads:cow_jar",
+            "Count": 1
+          }
+        ]
+      },
+      {
+        "id": "15bc1fec-50cd-42cf-9365-aa67367d8d15",
+        "name": "Slightly Exotic Saplings",
+        "limit": 0,
+        "items": [
+          {
+            "id": "pamhc2trees:cherry_sapling",
+            "Count": 1
+          },
+          {
+            "id": "pamhc2trees:banana_sapling",
+            "Count": 1
+          },
+          {
+            "id": "pamhc2trees:dragonfruit_sapling",
+            "Count": 1
+          }
+        ]
+      },
+      {
+        "id": "aa86539f-ff21-4dc0-becf-d98198f94376",
+        "name": "Mending",
+        "limit": 0,
+        "items": [
+          {
+            "id": "minecraft:enchanted_book",
+            "Count": 1,
+            "tag": {
+              "StoredEnchantments": [
+                {
+                  "lvl": 1,
+                  "id": "minecraft:mending"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "8968d01e-18e6-4347-9c18-43906155feb3",
+        "name": "Ore Magnet",
+        "limit": 0,
+        "items": [
+          {
+            "id": "twilightforest:ore_magnet",
+            "Count": 1,
+            "tag": {
+              "Damage": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "03715900-fa8f-4da5-82e7-6fe5d77ca39a",
+        "name": "Exotic Saplings",
+        "limit": 0,
+        "items": [
+          {
+            "id": "pamhc2trees:lychee_sapling",
+            "Count": 1
+          },
+          {
+            "id": "pamhc2trees:passionfruit_sapling",
+            "Count": 1
+          },
+          {
+            "id": "pamhc2trees:starfruit_sapling",
+            "Count": 1
+          }
+        ]
+      },
+      {
+        "id": "39706739-e72b-4c3e-9937-5f204ebb40b9",
+        "name": "Ice Crystal",
+        "limit": 0,
+        "items": [
+          {
+            "id": "mowziesmobs:ice_crystal",
+            "Count": 1,
+            "tag": {
+              "Damage": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "d22991f8-7292-45ba-b996-ac1a8394142d",
+        "name": "Bloodshroom",
+        "limit": 0,
+        "items": [
+          {
+            "id": "tconstruct:blood_slime_sapling",
+            "Count": 1
+          },
+          {
+            "id": "tconstruct:blood_slime_grass_seeds",
+            "Count": 1
+          }
+        ]
+      },
+      {
+        "id": "28f3cf6c-4069-4c99-873e-ef2bfca63113",
+        "name": "Piggybackpack",
+        "limit": 0,
+        "items": [
+          {
+            "id": "tconstruct:piggy_backpack",
+            "Count": 1
+          }
+        ]
+      },
+      {
+        "id": "cc8d4797-2b87-4f07-a98a-cda59a06b069",
+        "name": "Compact Machine (MAXIMUM SPACE!!!)",
+        "limit": 0,
+        "items": [
+          {
+            "id": "compactmachines:machine_maximum",
+            "Count": 1
+          }
+        ]
+      },
+      {
+        "id": "fc00bb2e-2075-40a7-b7ac-072fe39ebc3b",
+        "name": "Purple Levitation Flower",
+        "limit": 0,
+        "items": [
+          {
+            "id": "byg:bulbis_phycelium",
+            "Count": 1
+          },
+          {
+            "id": "byg:purple_bulbis_anomaly",
+            "Count": 1
+          }
+        ]
+      },
+      {
+        "id": "c4b22532-689b-49b9-a94f-4fab21a8240a",
+        "name": "Blue Levitation Flower",
+        "limit": 0,
+        "items": [
+          {
+            "id": "byg:bulbis_phycelium",
+            "Count": 1
+          },
+          {
+            "id": "byg:bulbis_anomaly",
+            "Count": 1
+          }
+        ]
+      },
+      {
+        "id": "4a516e3c-3251-491a-b424-7ae2e3d1c557",
+        "name": "Slime Sling \u0026 Boots",
+        "limit": 0,
+        "items": [
+          {
+            "id": "tconstruct:earth_slime_sling",
+            "Count": 1,
+            "tag": {
+              "Damage": 0
+            }
+          },
+          {
+            "id": "tconstruct:earth_slime_boots",
+            "Count": 1
+          }
+        ]
+      },
+      {
+        "id": "15ea9ab3-ddcd-4616-b921-366c30079521",
+        "name": "Whiter Rose",
+        "limit": 0,
+        "items": [
+          {
+            "id": "minecraft:wither_rose",
+            "Count": 2
+          }
+        ]
+      },
+      {
+        "id": "162b921b-eea9-471a-a581-dda76b382b74",
+        "name": "Tinker\u0027s Anvil",
+        "limit": 0,
+        "items": [
+          {
+            "id": "tconstruct:tinkers_anvil",
+            "Count": 1,
+            "tag": {
+              "texture": "create:brass_block"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ec75fb3e-9cd1-41bb-9d22-8b78b90f8f1d",
+        "name": "Ender Item Storage",
+        "limit": 0,
+        "items": [
+          {
+            "id": "enderchests:ender_chest",
+            "Count": 1,
+            "tag": {
+              "owner": "all",
+              "code": "000"
+            }
+          },
+          {
+            "id": "enderchests:ender_bag",
+            "Count": 1,
+            "tag": {
+              "owner": "all",
+              "code": "000",
+              "open": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "6f829d31-baa5-4f56-bae9-a8d1256d627e",
+        "name": "The Movie Box",
+        "limit": 0,
+        "items": [
+          {
+            "id": "pamhc2foodextended:theatreboxitem",
+            "Count": 3
+          }
+        ]
+      },
+      {
+        "id": "67df6f8e-45e3-4121-9dc6-cd37bfbba4b6",
+        "name": "EPIC BLT!!11!!111!",
+        "limit": 0,
+        "items": [
+          {
+            "id": "pamhc2foodextended:epicbltitem",
+            "Count": 2
+          }
+        ]
+      },
+      {
+        "id": "0abc013a-657e-459b-acac-6a4ecbbca1c9",
+        "name": "Luminous Jelly",
+        "limit": 0,
+        "items": [
+          {
+            "id": "mowziesmobs:glowing_jelly",
+            "Count": 12
+          }
+        ]
+      },
+      {
+        "id": "6ddcf74e-e918-4638-8b74-1fcd2be9a695",
+        "name": "Ichor Sling",
+        "limit": 0,
+        "items": [
+          {
+            "id": "tconstruct:ichor_slime_sling",
+            "Count": 1,
+            "tag": {
+              "Damage": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "7738a610-8c5d-4e44-ba62-0a6c6bb9dc7a",
+        "name": "Moonworm Queen",
+        "limit": 0,
+        "items": [
+          {
+            "id": "twilightforest:moonworm_queen",
+            "Count": 1,
+            "tag": {
+              "Damage": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "c53c545c-0dc1-4ddd-958e-1091c92832b6",
+        "name": "Gelatinous Ichor Drop",
+        "limit": 0,
+        "items": [
+          {
+            "id": "tconstruct:ichor_slime_drop",
+            "Count": 6
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Legendary",
+    "colour": "PURPLE",
+    "weights": [
+      0,
+      0,
+      0,
+      0,
+      100
+    ],
+    "groups": [
+      {
+        "id": "46eda9f2-1a72-434b-b516-f60ce26c06d4",
+        "name": "Become God Set",
+        "limit": 0,
+        "items": [
+          {
+            "id": "minecraft:enchanted_golden_apple",
+            "Count": 2
+          }
+        ]
+      },
+      {
+        "id": "f26ff4d0-d547-4993-920d-84846370451c",
+        "name": "Netherite (For Upgrades \u0026 stuff)",
+        "limit": 0,
+        "items": [
+          {
+            "id": "minecraft:netherite_ingot",
+            "Count": 4
+          }
+        ]
+      },
+      {
+        "id": "9661d5c0-1962-4c0f-be24-c3694df5775d",
+        "name": "Nether Star",
+        "limit": 0,
+        "items": [
+          {
+            "id": "minecraft:nether_star",
+            "Count": 1
+          }
+        ]
+      },
+      {
+        "id": "779b35eb-58a4-420a-9234-c73b29b0dd50",
+        "name": "Ultra Blaster",
+        "limit": 0,
+        "items": [
+          {
+            "id": "alexsmobs:hemolymph_blaster",
+            "Count": 1,
+            "tag": {
+              "Damage": 0,
+              "Unbreakable": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "4eae7bc6-18ff-448a-89cc-75e8ab5019d1",
+        "name": "Creative Upgrade",
+        "limit": 0,
+        "items": [
+          {
+            "id": "tconstruct:creative_upgrade",
+            "Count": 1
+          }
+        ]
+      },
+      {
+        "id": "ecd15714-9a12-4f1d-bbde-2a211f8a036e",
+        "name": "Creative Ability",
+        "limit": 0,
+        "items": [
+          {
+            "id": "tconstruct:creative_ability",
+            "Count": 1
+          }
+        ]
+      },
+      {
+        "id": "e5ccde66-32ee-4f66-bb3c-0f5413a5790d",
+        "name": "Ultra Crystal",
+        "limit": 0,
+        "items": [
+          {
+            "id": "mowziesmobs:ice_crystal",
+            "Count": 1,
+            "tag": {
+              "Damage": 0,
+              "Unbreakable": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "d7f55d00-37db-41a0-9d72-dc27ccd6676a",
+        "name": "Gilded Elytra",
+        "limit": 0,
+        "items": [
+          {
+            "id": "alexsmobs:tarantula_hawk_elytra",
+            "Count": 1,
+            "tag": {
+              "Damage": 0,
+              "Unbreakable": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "8a421fc4-1e41-4c6d-9b76-902d02a55fa0",
+        "name": "Ultra Slimesling Set",
+        "limit": 0,
+        "items": [
+          {
+            "id": "tconstruct:earth_slime_sling",
+            "Count": 1,
+            "tag": {
+              "Damage": 0,
+              "Unbreakable": 1
+            }
+          },
+          {
+            "id": "tconstruct:sky_slime_sling",
+            "Count": 1,
+            "tag": {
+              "Damage": 0,
+              "Unbreakable": 1
+            }
+          },
+          {
+            "id": "tconstruct:ichor_slime_sling",
+            "Count": 1,
+            "tag": {
+              "Damage": 0,
+              "Unbreakable": 1
+            }
+          },
+          {
+            "id": "tconstruct:ender_slime_sling",
+            "Count": 1,
+            "tag": {
+              "Damage": 0,
+              "Unbreakable": 1
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

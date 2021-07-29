@@ -1,0 +1,20 @@
+{
+	"name": "offense skill",
+  "replace": false,
+  "origins": [
+    "skilltree:blank",
+	  "skilltree:offense/1",
+		"skilltree:offense/2",
+		"skilltree:offense/3",
+		"skilltree:offense/4",
+		"skilltree:offense/5",
+		"skilltree:offense/6",
+		"skilltree:offense/7",
+		"skilltree:offense/8",
+		"skilltree:offense/9",
+		"skilltree:offense/10"
+  ],
+  "order": 12,
+  "auto_choose": true
+}
+

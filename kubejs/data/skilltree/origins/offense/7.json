@@ -1,0 +1,13 @@
+{
+  "powers":[
+		"skilltree:offense/base_7",
+		"skilltree:offense/upgrade_1",
+		"skilltree:offense/upgrade_2"
+	],
+  "icon": "twilightforest:fiery_sword",
+	"order": 7,
+	"impact": 1,
+  "name":"Offense VII",
+  "description":" ",
+  "unchoosable": true
+}

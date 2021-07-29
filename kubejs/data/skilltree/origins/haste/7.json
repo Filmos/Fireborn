@@ -1,0 +1,13 @@
+{
+  "powers":[
+		"skilltree:haste/base_7",
+		"skilltree:haste/upgrade_1",
+		"skilltree:haste/upgrade_2"
+	],
+  "icon": "minecraft:golden_pickaxe",
+	"order": 7,
+	"impact": 1,
+  "name":"Haste VII",
+  "description":" ",
+  "unchoosable": true
+}

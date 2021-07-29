@@ -1,0 +1,308 @@
+{
+  "name": "A Keepsake Stored",
+  "quests": [
+    {
+      "uuid": "4e3afeff-15a0-4b7e-9942-96330e2b9a13",
+      "name": "Coded Ender Tanks",
+      "description": "Same as Coded Ender Chests, but can store a certain liquid.",
+      "x": 81,
+      "y": 75,
+      "icon": {
+        "id": "endertanks:ender_tank",
+        "Count": 1,
+        "tag": {
+          "owner": "all",
+          "code": "000"
+        }
+      },
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "endertanks:ender_tank",
+                "Count": 1,
+                "tag": {
+                  "owner": "all",
+                  "code": "000"
+                }
+              }
+            },
+            {
+              "item": {
+                "id": "endertanks:ender_bucket",
+                "Count": 1,
+                "tag": {
+                  "owner": "all",
+                  "code": "000"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "0af61e81-e5fb-4a00-a769-c8be888946e5"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 16
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "a0ff49af-72bc-48da-bc95-2d739d221501",
+      "name": "Iron Chests",
+      "description": "There\u0027s a mod that adds larger capacity single block chests. Try making an iron chest.",
+      "x": 25,
+      "y": 26,
+      "icon": {
+        "id": "ironchest:iron_chest",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "ironchest:iron_chest",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "0af61e81-e5fb-4a00-a769-c8be888946e5"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 8
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "f8583feb-7821-443e-9d34-9b07a54a4276",
+      "name": "The Compact Machines",
+      "description": "The Compact Machine block is used to store giant contraptions in a single block space. You can assign item inputs and outputs, as well as redstone inputs and outputs. You can enter the Compact Machine block using a Personal Shrinking Device.",
+      "x": 81,
+      "y": 129,
+      "icon": {
+        "id": "compactmachines:machine_small",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "compactmachines:machine_small",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "compactmachines:personal_shrinking_device",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "0af61e81-e5fb-4a00-a769-c8be888946e5"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 16
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "f48b6f68-148b-4824-bc55-04d1a02d9e50",
+      "name": "Iron Barrels",
+      "description": "Iron and higher tier barrels can store more than one bucket of a certain liquid. Try making an iron barrel.",
+      "x": 81,
+      "y": 26,
+      "icon": {
+        "id": "metalbarrels:iron_barrel",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "metalbarrels:iron_barrel",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "0af61e81-e5fb-4a00-a769-c8be888946e5"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 8
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "8ec866b4-550c-41b9-b656-563810821302",
+      "name": "The Adjustable Crate",
+      "description": "This Crate can mainly be used as a customizable buffer for automation, as the player can choose how much items between 1 and 1024 can this Crate store.",
+      "x": 81,
+      "y": 175,
+      "icon": {
+        "id": "create:adjustable_crate",
+        "Count": 1
+      },
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "create:adjustable_crate",
+                "Count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "0af61e81-e5fb-4a00-a769-c8be888946e5"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 8
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "f0725343-d2f8-4eee-9292-77649f428a3b",
+      "name": "Coded Ender Chests",
+      "description": "There are enderchests that can be coded with a specific combination of colors. The same combination can be applied to a bag in order to remotely access the contents of the chest.",
+      "x": 26,
+      "y": 75,
+      "icon": {
+        "id": "enderchests:ender_chest",
+        "Count": 1,
+        "tag": {
+          "owner": "all",
+          "code": "000"
+        }
+      },
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "enderchests:ender_chest",
+                "Count": 1,
+                "tag": {
+                  "owner": "all",
+                  "code": "000"
+                }
+              }
+            },
+            {
+              "item": {
+                "id": "enderchests:ender_bag",
+                "Count": 1,
+                "tag": {
+                  "owner": "all",
+                  "code": "000",
+                  "open": 0
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "0af61e81-e5fb-4a00-a769-c8be888946e5"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 16
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "2352da73-abd9-4b49-bfce-c724a2b179d7",
+      "name": "The Ender Pouch",
+      "description": "The Ender Pouch can be used to remotely access the contents of your enderchest.",
+      "x": 136,
+      "y": 75,
+      "icon": {
+        "id": "enderchests:ender_pouch",
+        "Count": 1,
+        "tag": {
+          "open": 0
+        }
+      },
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "enderchests:ender_pouch",
+                "Count": 1,
+                "tag": {
+                  "open": 0
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "prerequisites": [
+        "0af61e81-e5fb-4a00-a769-c8be888946e5"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "calemiutils:coin_penny",
+          "Count": 16
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    }
+  ],
+  "reputationBar": [],
+  "description": "The Chapter about the various means of storage"
+}

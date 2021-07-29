@@ -1,0 +1,12 @@
+
+{
+  "type": "origins:attribute",
+  "modifier": {
+      "name": "Skill speed bonus",
+      "attribute": "minecraft:generic.movement_speed",
+      "operation": "multiply_total",
+      "value": 0.15000000000000002
+  },
+	"name": "Speed bonus",
+	"description": "You are moving 15% faster."
+}

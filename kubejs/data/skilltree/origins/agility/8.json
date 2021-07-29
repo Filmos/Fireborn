@@ -1,0 +1,13 @@
+{
+  "powers":[
+		"skilltree:agility/base_8",
+		"skilltree:agility/upgrade_1",
+		"skilltree:agility/upgrade_2"
+	],
+  "icon": "minecraft:sugar",
+	"order": 8,
+	"impact": 1,
+  "name":"Agility VIII",
+  "description":" ",
+  "unchoosable": true
+}

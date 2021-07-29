@@ -1,0 +1,12 @@
+{
+  "powers":[
+		"skilltree:haste/base_5",
+		"skilltree:haste/upgrade_1"
+	],
+  "icon": "minecraft:golden_pickaxe",
+	"order": 5,
+	"impact": 1,
+  "name":"Haste V",
+  "description":" ",
+  "unchoosable": true
+}

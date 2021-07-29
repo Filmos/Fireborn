@@ -1,0 +1,11 @@
+{
+  "powers":[
+		"skilltree:haste/base_2"
+	],
+  "icon": "minecraft:golden_pickaxe",
+	"order": 2,
+	"impact": 1,
+  "name":"Haste II",
+  "description":" ",
+  "unchoosable": true
+}

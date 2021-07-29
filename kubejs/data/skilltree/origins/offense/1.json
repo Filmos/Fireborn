@@ -1,0 +1,11 @@
+{
+  "powers":[
+		"skilltree:offense/base_1"
+	],
+  "icon": "twilightforest:fiery_sword",
+	"order": 1,
+	"impact": 1,
+  "name":"Offense I",
+  "description":" ",
+  "unchoosable": true
+}
