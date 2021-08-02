@@ -197,8 +197,7 @@
               "item": {
                 "id": "create:copper_ore",
                 "Count": 1
-              },
-              "precision": "TAG_NBT_FUZZY"
+              }
             }
           ]
         }
@@ -497,22 +496,19 @@
               "item": {
                 "id": "create:copper_ore",
                 "Count": 1
-              },
-              "precision": "TAG_NBT_FUZZY"
+              }
             },
             {
               "item": {
                 "id": "minecraft:iron_ore",
                 "Count": 1
-              },
-              "precision": "TAG_NBT_FUZZY"
+              }
             },
             {
               "item": {
                 "id": "create:zinc_ore",
                 "Count": 1
-              },
-              "precision": "TAG_NBT_FUZZY"
+              }
             },
             {
               "item": {
