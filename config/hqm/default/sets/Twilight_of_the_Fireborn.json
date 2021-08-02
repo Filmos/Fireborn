@@ -54,16 +54,15 @@
       "trigger": "ANTI_TRIGGER",
       "tasks": [
         {
-          "type": "KILL",
-          "mobs": [
+          "type": "ADVANCEMENT",
+          "advancements": [
             {
               "name": "Snow Queen",
               "icon": {
                 "id": "twilightforest:snow_queen_trophy",
                 "Count": 1
               },
-              "mob": "twilightforest:snow_queen",
-              "kills": 1
+              "adv_name": "twilightforest:progress_glacier"
             }
           ]
         }
@@ -171,16 +170,15 @@
       "trigger": "ANTI_TRIGGER",
       "tasks": [
         {
-          "type": "KILL",
-          "mobs": [
+          "type": "ADVANCEMENT",
+          "advancements": [
             {
               "name": "Knight Phantom",
               "icon": {
                 "id": "twilightforest:knight_phantom_trophy",
                 "Count": 1
               },
-              "mob": "minecraft:pig",
-              "kills": 1
+              "adv_name": "twilightforest:progress_knights"
             }
           ]
         }
@@ -296,16 +294,15 @@
       "trigger": "ANTI_TRIGGER",
       "tasks": [
         {
-          "type": "KILL",
-          "mobs": [
+          "type": "ADVANCEMENT",
+          "advancements": [
             {
               "name": "Ur-Ghast",
               "icon": {
                 "id": "twilightforest:ur_ghast_trophy",
                 "Count": 1
               },
-              "mob": "twilightforest:ur_ghast",
-              "kills": 1
+              "adv_name": "twilightforest:progress_ur_ghast"
             }
           ]
         }
@@ -356,16 +353,15 @@
           ]
         },
         {
-          "type": "KILL",
-          "mobs": [
+          "type": "ADVANCEMENT",
+          "advancements": [
             {
               "name": "Naga",
               "icon": {
                 "id": "twilightforest:naga_trophy",
                 "Count": 1
               },
-              "mob": "twilightforest:naga",
-              "kills": 1
+              "adv_name": "twilightforest:progress_naga"
             }
           ]
         }
@@ -443,16 +439,15 @@
       "trigger": "ANTI_TRIGGER",
       "tasks": [
         {
-          "type": "KILL",
-          "mobs": [
+          "type": "ADVANCEMENT",
+          "advancements": [
             {
               "name": "Twilight Lich",
               "icon": {
                 "id": "twilightforest:lich_trophy",
                 "Count": 1
               },
-              "mob": "twilightforest:lich",
-              "kills": 1
+              "adv_name": "twilightforest:progress_lich"
             }
           ]
         }
@@ -596,27 +591,15 @@
       "trigger": "ANTI_TRIGGER",
       "tasks": [
         {
-          "type": "KILL",
-          "mobs": [
+          "type": "ADVANCEMENT",
+          "advancements": [
             {
               "name": "Minoshroom",
               "icon": {
                 "id": "twilightforest:minoshroom_trophy",
                 "Count": 1
               },
-              "mob": "twilightforest:minoshroom",
-              "kills": 1
-            }
-          ]
-        },
-        {
-          "type": "DETECT",
-          "items": [
-            {
-              "item": {
-                "id": "twilightforest:meef_stroganoff",
-                "Count": 1
-              }
+              "adv_name": "twilightforest:progress_labyrinth"
             }
           ]
         }
@@ -652,27 +635,15 @@
       "trigger": "ANTI_TRIGGER",
       "tasks": [
         {
-          "type": "KILL",
-          "mobs": [
+          "type": "ADVANCEMENT",
+          "advancements": [
             {
               "name": "Alpha Yeti",
               "icon": {
                 "id": "twilightforest:yeti_trophy",
                 "Count": 1
               },
-              "mob": "minecraft:pig",
-              "kills": 1
-            }
-          ]
-        },
-        {
-          "type": "DETECT",
-          "items": [
-            {
-              "item": {
-                "id": "twilightforest:alpha_fur",
-                "Count": 1
-              }
+              "adv_name": "twilightforest:progress_yeti"
             }
           ]
         }
@@ -822,27 +793,15 @@
       "trigger": "ANTI_TRIGGER",
       "tasks": [
         {
-          "type": "KILL",
-          "mobs": [
+          "type": "ADVANCEMENT",
+          "advancements": [
             {
               "name": "Hydra",
               "icon": {
                 "id": "twilightforest:hydra_trophy",
                 "Count": 1
               },
-              "mob": "twilightforest:hydra",
-              "kills": 1
-            }
-          ]
-        },
-        {
-          "type": "DETECT",
-          "items": [
-            {
-              "item": {
-                "id": "twilightforest:fiery_blood",
-                "Count": 1
-              }
+              "adv_name": "twilightforest:progress_hydra"
             }
           ]
         }

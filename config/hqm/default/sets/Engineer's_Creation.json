@@ -4,7 +4,7 @@
     {
       "uuid": "00120065-a5c0-4f75-82fd-968f2b2f04ff",
       "name": "The Mechanical Mixer",
-      "description": "The Mechanical Mixer is used to create alloys like Brass.",
+      "description": "The Mechanical Mixer is used to create alloys like Brass. Use a Blaze Burner placed under the basin as a heat source to melt the metals inside in order to be able to mix them.",
       "x": 229,
       "y": 171,
       "bigicon": true,
@@ -14,7 +14,7 @@
       },
       "tasks": [
         {
-          "type": "CRAFT",
+          "type": "DETECT",
           "items": [
             {
               "item": {
@@ -25,6 +25,12 @@
             {
               "item": {
                 "id": "create:basin",
+                "Count": 1
+              }
+            },
+            {
+              "item": {
+                "id": "create:empty_blaze_burner",
                 "Count": 1
               }
             }
@@ -60,7 +66,7 @@
       },
       "tasks": [
         {
-          "type": "CRAFT",
+          "type": "DETECT",
           "items": [
             {
               "item": {
@@ -109,7 +115,7 @@
       },
       "tasks": [
         {
-          "type": "CRAFT",
+          "type": "DETECT",
           "items": [
             {
               "item": {
@@ -149,7 +155,7 @@
       },
       "tasks": [
         {
-          "type": "CRAFT",
+          "type": "DETECT",
           "items": [
             {
               "item": {
@@ -191,7 +197,8 @@
               "item": {
                 "id": "create:copper_ore",
                 "Count": 1
-              }
+              },
+              "precision": "TAG_NBT_FUZZY"
             }
           ]
         }
@@ -221,7 +228,7 @@
       },
       "tasks": [
         {
-          "type": "CRAFT",
+          "type": "DETECT",
           "items": [
             {
               "item": {
@@ -257,7 +264,7 @@
       },
       "tasks": [
         {
-          "type": "CRAFT",
+          "type": "DETECT",
           "items": [
             {
               "item": {
@@ -311,7 +318,7 @@
       },
       "tasks": [
         {
-          "type": "CRAFT",
+          "type": "DETECT",
           "items": [
             {
               "item": {
@@ -347,7 +354,7 @@
       },
       "tasks": [
         {
-          "type": "CRAFT",
+          "type": "DETECT",
           "items": [
             {
               "item": {
@@ -402,7 +409,7 @@
       },
       "tasks": [
         {
-          "type": "CRAFT",
+          "type": "DETECT",
           "items": [
             {
               "item": {
@@ -442,7 +449,7 @@
       },
       "tasks": [
         {
-          "type": "CRAFT",
+          "type": "DETECT",
           "items": [
             {
               "item": {
@@ -490,19 +497,22 @@
               "item": {
                 "id": "create:copper_ore",
                 "Count": 1
-              }
+              },
+              "precision": "TAG_NBT_FUZZY"
             },
             {
               "item": {
                 "id": "minecraft:iron_ore",
                 "Count": 1
-              }
+              },
+              "precision": "TAG_NBT_FUZZY"
             },
             {
               "item": {
                 "id": "create:zinc_ore",
                 "Count": 1
-              }
+              },
+              "precision": "TAG_NBT_FUZZY"
             },
             {
               "item": {
@@ -513,7 +523,7 @@
           ]
         },
         {
-          "type": "CRAFT",
+          "type": "DETECT",
           "items": [
             {
               "item": {
@@ -550,7 +560,7 @@
       },
       "tasks": [
         {
-          "type": "CRAFT",
+          "type": "DETECT",
           "items": [
             {
               "item": {
@@ -597,7 +607,7 @@
       },
       "tasks": [
         {
-          "type": "CRAFT",
+          "type": "DETECT",
           "items": [
             {
               "item": {
@@ -637,7 +647,7 @@
       },
       "tasks": [
         {
-          "type": "CRAFT",
+          "type": "DETECT",
           "items": [
             {
               "item": {
@@ -681,7 +691,7 @@
       },
       "tasks": [
         {
-          "type": "CRAFT",
+          "type": "DETECT",
           "items": [
             {
               "item": {
@@ -730,7 +740,7 @@
       },
       "tasks": [
         {
-          "type": "CRAFT",
+          "type": "DETECT",
           "items": [
             {
               "item": {
@@ -766,7 +776,7 @@
       },
       "tasks": [
         {
-          "type": "CRAFT",
+          "type": "DETECT",
           "items": [
             {
               "item": {
@@ -827,7 +837,7 @@
       },
       "tasks": [
         {
-          "type": "CRAFT",
+          "type": "DETECT",
           "items": [
             {
               "item": {
@@ -874,7 +884,7 @@
       },
       "tasks": [
         {
-          "type": "CRAFT",
+          "type": "DETECT",
           "items": [
             {
               "item": {
