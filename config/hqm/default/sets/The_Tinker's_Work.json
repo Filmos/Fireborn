@@ -16,7 +16,7 @@
       },
       "tasks": [
         {
-          "type": "CRAFT",
+          "type": "DETECT",
           "items": [
             {
               "item": {
@@ -25,7 +25,8 @@
                 "tag": {
                   "texture": "minecraft:oak_planks"
                 }
-              }
+              },
+              "precision": "TAG_NBT_FUZZY"
             }
           ]
         }
@@ -58,7 +59,7 @@
       },
       "tasks": [
         {
-          "type": "CRAFT",
+          "type": "DETECT",
           "items": [
             {
               "item": {
@@ -67,7 +68,8 @@
                 "tag": {
                   "texture": "minecraft:oak_planks"
                 }
-              }
+              },
+              "precision": "TAG_NBT_FUZZY"
             }
           ]
         }
@@ -97,7 +99,7 @@
       },
       "tasks": [
         {
-          "type": "CRAFT",
+          "type": "DETECT",
           "items": [
             {
               "item": {
@@ -136,7 +138,7 @@
       },
       "tasks": [
         {
-          "type": "CRAFT",
+          "type": "DETECT",
           "items": [
             {
               "item": {
@@ -208,7 +210,7 @@
       },
       "tasks": [
         {
-          "type": "CRAFT",
+          "type": "DETECT",
           "items": [
             {
               "item": {
@@ -282,7 +284,7 @@
       },
       "tasks": [
         {
-          "type": "CRAFT",
+          "type": "DETECT",
           "items": [
             {
               "item": {
@@ -309,7 +311,7 @@
     {
       "uuid": "e59116e3-4b76-455d-a6b6-bccdc80c0680",
       "name": "The Smeltery",
-      "description": "The Smeltery is required to make alloys, and also has a customizable capacity (depends on how big it is). To build a smeltery make a 3x3 seared bricks platform, then above and 1 block out place 4 3x3 seared bricks walls. Replace two bottom blocks on one of the walls for a smeltery controller and a seared tank. Replace one of the middle layer blocks for a drain. Place the faucet on the outward facing side of the drain and place the casting table/basin below it.",
+      "description": "The Smeltery is required to make alloys, and also has a customizable capacity (depends on how big it is). Smeltery has to be made of smeltery parts and requires a smeltery controller, a seared tank, and a drain. It can be of any size, but it must remain rectangular and hollow. The edges can be empty. The roof is not required",
       "x": 192,
       "y": 51,
       "bigicon": true,
@@ -319,32 +321,15 @@
       },
       "tasks": [
         {
-          "type": "CRAFT",
-          "items": [
+          "type": "ADVANCEMENT",
+          "advancements": [
             {
-              "item": {
+              "name": "The Smeltery",
+              "icon": {
                 "id": "tconstruct:smeltery_controller",
                 "Count": 1
-              }
-            },
-            {
-              "item": {
-                "id": "tconstruct:seared_fuel_tank",
-                "Count": 1
-              }
-            },
-            {
-              "item": {
-                "id": "tconstruct:seared_drain",
-                "Count": 1
-              }
-            },
-            {
-              "item": {
-                "id": "tconstruct:seared_bricks",
-                "Count": 42
               },
-              "required": 42
+              "adv_name": "tconstruct:smeltery/structure"
             }
           ]
         }
@@ -381,7 +366,7 @@
       },
       "tasks": [
         {
-          "type": "CRAFT",
+          "type": "DETECT",
           "items": [
             {
               "item": {
@@ -390,7 +375,8 @@
                 "tag": {
                   "texture": "minecraft:oak_planks"
                 }
-              }
+              },
+              "precision": "TAG_NBT_FUZZY"
             }
           ]
         }
@@ -411,7 +397,7 @@
     {
       "uuid": "7a518603-1c5c-494e-bf17-9e31be8121b6",
       "name": "Metal Tools",
-      "description": "Use the crafted metal parts to make better tools with higher mining levels. Craft a pickaxe from an iron pickaxe head, stone binding and a wooden tool rod.",
+      "description": "Use the crafted metal parts to make better tools with higher mining levels. Cast an iron pickaxe head using two iron ingots.",
       "x": 268,
       "y": 90,
       "bigicon": true,
@@ -460,50 +446,14 @@
       },
       "tasks": [
         {
-          "type": "CRAFT",
+          "type": "DETECT",
           "items": [
             {
               "item": {
-                "id": "tconstruct:pickaxe",
+                "id": "tconstruct:pickaxe_head",
                 "Count": 1,
                 "tag": {
-                  "tic_stats": {
-                    "tconstruct:attack_speed": 1.2,
-                    "tconstruct:mining_speed": 6.0,
-                    "tconstruct:attack_damage": 2.0,
-                    "tconstruct:harvest_level": 2.0,
-                    "tconstruct:durability": 275.0
-                  },
-                  "tic_broken": 0,
-                  "tic_modifiers": [
-                    {
-                      "name": "tconstruct:cultivated",
-                      "level": 1
-                    },
-                    {
-                      "name": "tconstruct:piercing",
-                      "level": 2
-                    },
-                    {
-                      "name": "tconstruct:stonebound",
-                      "level": 1
-                    },
-                    {
-                      "name": "tconstruct:sturdy",
-                      "level": 1
-                    }
-                  ],
-                  "tic_materials": [
-                    "tconstruct:iron",
-                    "tconstruct:wood",
-                    "tconstruct:stone"
-                  ],
-                  "Damage": 0,
-                  "tic_persistent_data": {
-                    "abilities": 1,
-                    "traits": 0,
-                    "upgrades": 3
-                  }
+                  "Material": "tconstruct:iron"
                 }
               }
             }
@@ -539,7 +489,7 @@
       },
       "tasks": [
         {
-          "type": "CRAFT",
+          "type": "DETECT",
           "items": [
             {
               "item": {
@@ -653,7 +603,7 @@
       },
       "tasks": [
         {
-          "type": "CRAFT",
+          "type": "DETECT",
           "items": [
             {
               "item": {
