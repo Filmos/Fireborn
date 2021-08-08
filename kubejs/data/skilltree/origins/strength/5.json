@@ -1,0 +1,11 @@
+{
+  "powers":[
+		"skilltree:strength/base_5"
+	],
+  "icon": "mowziesmobs:barakoa_mask_fury",
+	"order": 5,
+	"impact": 1,
+  "name":"Strength V",
+  "description":" ",
+  "unchoosable": true
+}

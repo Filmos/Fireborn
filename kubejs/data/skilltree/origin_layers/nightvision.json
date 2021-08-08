@@ -1,0 +1,14 @@
+{
+	"name": "nightvision skill",
+  "replace": false,
+  "origins": [
+    "skilltree:blank",
+	  "skilltree:nightvision/1",
+		"skilltree:nightvision/2",
+		"skilltree:nightvision/3",
+		"skilltree:nightvision/4",
+		"skilltree:nightvision/5"
+  ],
+  "order": 15
+}
+

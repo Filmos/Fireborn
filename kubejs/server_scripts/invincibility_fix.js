@@ -1,6 +1,6 @@
 // priority: 0
 
-let skilltreeLayers = ["skilltree:haste","skilltree:offense","skilltree:defense","skilltree:agility"]
+let skilltreeLayers = ["skilltree:haste","skilltree:offense","skilltree:defense","skilltree:agility","skilltree:nightvision","skilltree:strength","skilltree:vitality","skilltree:stamina"]
 
 onEvent('player.logged_in', event => {
   for(let layer of skilltreeLayers)

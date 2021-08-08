@@ -1,0 +1,11 @@
+{
+  "powers":[
+		"skilltree:vitality/base_5"
+	],
+  "icon": "alexsmobs:soul_heart",
+	"order": 5,
+	"impact": 1,
+  "name":"Vitality V",
+  "description":" ",
+  "unchoosable": true
+}

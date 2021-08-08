@@ -1,0 +1,11 @@
+{
+  "powers":[
+		"skilltree:stamina/base_4"
+	],
+  "icon": "create:crushed_gold_ore",
+	"order": 4,
+	"impact": 1,
+  "name":"Stamina IV",
+  "description":" ",
+  "unchoosable": true
+}

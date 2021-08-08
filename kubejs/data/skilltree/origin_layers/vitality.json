@@ -1,0 +1,14 @@
+{
+	"name": "vitality skill",
+  "replace": false,
+  "origins": [
+    "skilltree:blank",
+	  "skilltree:vitality/1",
+		"skilltree:vitality/2",
+		"skilltree:vitality/3",
+		"skilltree:vitality/4",
+		"skilltree:vitality/5"
+  ],
+  "order": 17
+}
+

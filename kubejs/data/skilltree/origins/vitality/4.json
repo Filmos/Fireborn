@@ -1,0 +1,11 @@
+{
+  "powers":[
+		"skilltree:vitality/base_4"
+	],
+  "icon": "alexsmobs:soul_heart",
+	"order": 4,
+	"impact": 1,
+  "name":"Vitality IV",
+  "description":" ",
+  "unchoosable": true
+}

@@ -1,0 +1,11 @@
+{
+  "powers":[
+		"skilltree:stamina/base_2"
+	],
+  "icon": "create:crushed_gold_ore",
+	"order": 2,
+	"impact": 1,
+  "name":"Stamina II",
+  "description":" ",
+  "unchoosable": true
+}

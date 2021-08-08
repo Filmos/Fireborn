@@ -44,7 +44,6 @@
 				}
 			]
 		},
-		
     {
 	title: "Haste I",
 	icon: "minecraft:golden_pickaxe",
@@ -623,6 +622,7 @@
 		player_command: false
 	}]
 }
+
 
 ,
 		{
@@ -1204,6 +1204,7 @@
 	}]
 }
 
+
 ,
     {
 	title: "Defense I",
@@ -1783,6 +1784,7 @@
 		player_command: false
 	}]
 }
+
 
 ,
 		{
@@ -2364,6 +2366,1083 @@
 	}]
 }
 
+
+,
+		{
+	title: "Nightvision I",
+	icon: "minecraft:golden_carrot",
+	x: -2.3000000000000003d,
+	y: -3.2d,
+	subtitle: "Improves your vision with each level",
+	description: [
+		
+	],
+	dependencies: ["00000000000007E1","10F0F0F0F0F0F002"],
+	id: "00000000000026CF", 
+	tasks: [{
+		id: "00000000000026D0",
+		type: "checkmark",
+		title: "Cost: 2 skill points"
+	}],
+	rewards: [{
+		id: "00000000000026D1",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:nightvision skilltree:nightvision/1",
+		player_command: false
+	},{
+		id: "00000000000026D2",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 2",
+		player_command: false
+	},{
+		id: "00000000000026D3",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 2",
+		player_command: false
+	},{
+		id: "00000000000026D4",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "00000000000026D5",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "00000000000026D6",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}, {
+	title: "Nightvision II",
+	icon: "minecraft:golden_carrot",
+	x: -2.1d,
+	y: -3.9000000000000004d,
+	subtitle: "Improves your vision with each level",
+	description: [
+		
+	],
+	dependencies: ["00000000000026D0","10F0F0F0F0F0F002"],
+	id: "00000000000026DE", 
+	tasks: [{
+		id: "00000000000026DF",
+		type: "checkmark",
+		title: "Cost: 2 skill points"
+	}],
+	rewards: [{
+		id: "00000000000026E0",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:nightvision skilltree:nightvision/2",
+		player_command: false
+	},{
+		id: "00000000000026E1",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 2",
+		player_command: false
+	},{
+		id: "00000000000026E2",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 2",
+		player_command: false
+	},{
+		id: "00000000000026E3",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "00000000000026E4",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "00000000000026E5",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}, {
+	title: "Nightvision III",
+	icon: "minecraft:golden_carrot",
+	x: -1.9000000000000001d,
+	y: -4.6000000000000005d,
+	subtitle: "Improves your vision with each level",
+	description: [
+		
+	],
+	dependencies: ["00000000000026DF","10F0F0F0F0F0F002"],
+	id: "00000000000026ED", 
+	tasks: [{
+		id: "00000000000026EE",
+		type: "checkmark",
+		title: "Cost: 2 skill points"
+	}],
+	rewards: [{
+		id: "00000000000026EF",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:nightvision skilltree:nightvision/3",
+		player_command: false
+	},{
+		id: "00000000000026F0",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 2",
+		player_command: false
+	},{
+		id: "00000000000026F1",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 2",
+		player_command: false
+	},{
+		id: "00000000000026F2",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "00000000000026F3",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "00000000000026F4",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}, {
+	title: "Nightvision IV",
+	icon: "minecraft:golden_carrot",
+	x: -1.7000000000000002d,
+	y: -5.300000000000001d,
+	subtitle: "Improves your vision with each level",
+	description: [
+		
+	],
+	dependencies: ["00000000000026EE","10F0F0F0F0F0F002"],
+	id: "00000000000026FC", 
+	tasks: [{
+		id: "00000000000026FD",
+		type: "checkmark",
+		title: "Cost: 2 skill points"
+	}],
+	rewards: [{
+		id: "00000000000026FE",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:nightvision skilltree:nightvision/4",
+		player_command: false
+	},{
+		id: "00000000000026FF",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 2",
+		player_command: false
+	},{
+		id: "0000000000002700",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 2",
+		player_command: false
+	},{
+		id: "0000000000002701",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "0000000000002702",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "0000000000002703",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}, {
+	title: "Nightvision V",
+	icon: "minecraft:golden_carrot",
+	x: -1.5d,
+	y: -6d,
+	subtitle: "Improves your vision with each level",
+	description: [
+		
+	],
+	dependencies: ["00000000000026FD","10F0F0F0F0F0F002"],
+	id: "000000000000270B", 
+	tasks: [{
+		id: "000000000000270C",
+		type: "checkmark",
+		title: "Cost: 2 skill points"
+	}],
+	rewards: [{
+		id: "000000000000270D",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:nightvision skilltree:nightvision/5",
+		player_command: false
+	},{
+		id: "000000000000270E",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 2",
+		player_command: false
+	},{
+		id: "000000000000270F",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 2",
+		player_command: false
+	},{
+		id: "0000000000002710",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "0000000000002711",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "0000000000002712",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}
+
+
+,
+		{
+	title: "Strength I",
+	icon: "mowziesmobs:barakoa_mask_fury",
+	x: 2.3000000000000003d,
+	y: -3.2d,
+	subtitle: "10% damage boost per level",
+	description: [
+		
+	],
+	dependencies: ["0000000000000FA4","10F0F0F0F0F0F002"],
+	id: "0000000000002E92", 
+	tasks: [{
+		id: "0000000000002E93",
+		type: "checkmark",
+		title: "Cost: 2 skill points"
+	}],
+	rewards: [{
+		id: "0000000000002E94",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:strength skilltree:strength/1",
+		player_command: false
+	},{
+		id: "0000000000002E95",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 2",
+		player_command: false
+	},{
+		id: "0000000000002E96",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 2",
+		player_command: false
+	},{
+		id: "0000000000002E97",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "0000000000002E98",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "0000000000002E99",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}, {
+	title: "Strength II",
+	icon: "mowziesmobs:barakoa_mask_fury",
+	x: 2.1d,
+	y: -3.9000000000000004d,
+	subtitle: "10% damage boost per level",
+	description: [
+		
+	],
+	dependencies: ["0000000000002E93","10F0F0F0F0F0F002"],
+	id: "0000000000002EA1", 
+	tasks: [{
+		id: "0000000000002EA2",
+		type: "checkmark",
+		title: "Cost: 2 skill points"
+	}],
+	rewards: [{
+		id: "0000000000002EA3",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:strength skilltree:strength/2",
+		player_command: false
+	},{
+		id: "0000000000002EA4",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 2",
+		player_command: false
+	},{
+		id: "0000000000002EA5",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 2",
+		player_command: false
+	},{
+		id: "0000000000002EA6",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "0000000000002EA7",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "0000000000002EA8",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}, {
+	title: "Strength III",
+	icon: "mowziesmobs:barakoa_mask_fury",
+	x: 1.9000000000000001d,
+	y: -4.6000000000000005d,
+	subtitle: "10% damage boost per level",
+	description: [
+		
+	],
+	dependencies: ["0000000000002EA2","10F0F0F0F0F0F002"],
+	id: "0000000000002EB0", 
+	tasks: [{
+		id: "0000000000002EB1",
+		type: "checkmark",
+		title: "Cost: 2 skill points"
+	}],
+	rewards: [{
+		id: "0000000000002EB2",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:strength skilltree:strength/3",
+		player_command: false
+	},{
+		id: "0000000000002EB3",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 2",
+		player_command: false
+	},{
+		id: "0000000000002EB4",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 2",
+		player_command: false
+	},{
+		id: "0000000000002EB5",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "0000000000002EB6",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "0000000000002EB7",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}, {
+	title: "Strength IV",
+	icon: "mowziesmobs:barakoa_mask_fury",
+	x: 1.7000000000000002d,
+	y: -5.300000000000001d,
+	subtitle: "10% damage boost per level",
+	description: [
+		
+	],
+	dependencies: ["0000000000002EB1","10F0F0F0F0F0F002"],
+	id: "0000000000002EBF", 
+	tasks: [{
+		id: "0000000000002EC0",
+		type: "checkmark",
+		title: "Cost: 2 skill points"
+	}],
+	rewards: [{
+		id: "0000000000002EC1",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:strength skilltree:strength/4",
+		player_command: false
+	},{
+		id: "0000000000002EC2",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 2",
+		player_command: false
+	},{
+		id: "0000000000002EC3",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 2",
+		player_command: false
+	},{
+		id: "0000000000002EC4",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "0000000000002EC5",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "0000000000002EC6",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}, {
+	title: "Strength V",
+	icon: "mowziesmobs:barakoa_mask_fury",
+	x: 1.5d,
+	y: -6d,
+	subtitle: "10% damage boost per level",
+	description: [
+		
+	],
+	dependencies: ["0000000000002EC0","10F0F0F0F0F0F002"],
+	id: "0000000000002ECE", 
+	tasks: [{
+		id: "0000000000002ECF",
+		type: "checkmark",
+		title: "Cost: 2 skill points"
+	}],
+	rewards: [{
+		id: "0000000000002ED0",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:strength skilltree:strength/5",
+		player_command: false
+	},{
+		id: "0000000000002ED1",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 2",
+		player_command: false
+	},{
+		id: "0000000000002ED2",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 2",
+		player_command: false
+	},{
+		id: "0000000000002ED3",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "0000000000002ED4",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "0000000000002ED5",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}
+
+
+,
+		{
+	title: "Vitality I",
+	icon: "alexsmobs:soul_heart",
+	x: -2.3000000000000003d,
+	y: 3.2d,
+	subtitle: "1 additional heart per level",
+	description: [
+		
+	],
+	dependencies: ["0000000000001767","10F0F0F0F0F0F002"],
+	id: "0000000000003655", 
+	tasks: [{
+		id: "0000000000003656",
+		type: "checkmark",
+		title: "Cost: 2 skill points"
+	}],
+	rewards: [{
+		id: "0000000000003657",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:vitality skilltree:vitality/1",
+		player_command: false
+	},{
+		id: "0000000000003658",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 2",
+		player_command: false
+	},{
+		id: "0000000000003659",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 2",
+		player_command: false
+	},{
+		id: "000000000000365A",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "000000000000365B",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "000000000000365C",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}, {
+	title: "Vitality II",
+	icon: "alexsmobs:soul_heart",
+	x: -2.1d,
+	y: 3.9000000000000004d,
+	subtitle: "1 additional heart per level",
+	description: [
+		
+	],
+	dependencies: ["0000000000003656","10F0F0F0F0F0F002"],
+	id: "0000000000003664", 
+	tasks: [{
+		id: "0000000000003665",
+		type: "checkmark",
+		title: "Cost: 2 skill points"
+	}],
+	rewards: [{
+		id: "0000000000003666",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:vitality skilltree:vitality/2",
+		player_command: false
+	},{
+		id: "0000000000003667",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 2",
+		player_command: false
+	},{
+		id: "0000000000003668",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 2",
+		player_command: false
+	},{
+		id: "0000000000003669",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "000000000000366A",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "000000000000366B",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}, {
+	title: "Vitality III",
+	icon: "alexsmobs:soul_heart",
+	x: -1.9000000000000001d,
+	y: 4.6000000000000005d,
+	subtitle: "1 additional heart per level",
+	description: [
+		
+	],
+	dependencies: ["0000000000003665","10F0F0F0F0F0F002"],
+	id: "0000000000003673", 
+	tasks: [{
+		id: "0000000000003674",
+		type: "checkmark",
+		title: "Cost: 2 skill points"
+	}],
+	rewards: [{
+		id: "0000000000003675",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:vitality skilltree:vitality/3",
+		player_command: false
+	},{
+		id: "0000000000003676",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 2",
+		player_command: false
+	},{
+		id: "0000000000003677",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 2",
+		player_command: false
+	},{
+		id: "0000000000003678",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "0000000000003679",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "000000000000367A",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}, {
+	title: "Vitality IV",
+	icon: "alexsmobs:soul_heart",
+	x: -1.7000000000000002d,
+	y: 5.300000000000001d,
+	subtitle: "1 additional heart per level",
+	description: [
+		
+	],
+	dependencies: ["0000000000003674","10F0F0F0F0F0F002"],
+	id: "0000000000003682", 
+	tasks: [{
+		id: "0000000000003683",
+		type: "checkmark",
+		title: "Cost: 2 skill points"
+	}],
+	rewards: [{
+		id: "0000000000003684",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:vitality skilltree:vitality/4",
+		player_command: false
+	},{
+		id: "0000000000003685",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 2",
+		player_command: false
+	},{
+		id: "0000000000003686",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 2",
+		player_command: false
+	},{
+		id: "0000000000003687",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "0000000000003688",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "0000000000003689",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}, {
+	title: "Vitality V",
+	icon: "alexsmobs:soul_heart",
+	x: -1.5d,
+	y: 6d,
+	subtitle: "1 additional heart per level",
+	description: [
+		
+	],
+	dependencies: ["0000000000003683","10F0F0F0F0F0F002"],
+	id: "0000000000003691", 
+	tasks: [{
+		id: "0000000000003692",
+		type: "checkmark",
+		title: "Cost: 2 skill points"
+	}],
+	rewards: [{
+		id: "0000000000003693",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:vitality skilltree:vitality/5",
+		player_command: false
+	},{
+		id: "0000000000003694",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 2",
+		player_command: false
+	},{
+		id: "0000000000003695",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 2",
+		player_command: false
+	},{
+		id: "0000000000003696",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "0000000000003697",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "0000000000003698",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}
+
+
+,
+		{
+	title: "Stamina I",
+	icon: "create:crushed_gold_ore",
+	x: 2.3000000000000003d,
+	y: 3.2d,
+	subtitle: "20% less exhaustion per level",
+	description: [
+		
+	],
+	dependencies: ["0000000000001F2A","10F0F0F0F0F0F002"],
+	id: "0000000000003E18", 
+	tasks: [{
+		id: "0000000000003E19",
+		type: "checkmark",
+		title: "Cost: 2 skill points"
+	}],
+	rewards: [{
+		id: "0000000000003E1A",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:stamina skilltree:stamina/1",
+		player_command: false
+	},{
+		id: "0000000000003E1B",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 2",
+		player_command: false
+	},{
+		id: "0000000000003E1C",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 2",
+		player_command: false
+	},{
+		id: "0000000000003E1D",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "0000000000003E1E",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "0000000000003E1F",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}, {
+	title: "Stamina II",
+	icon: "create:crushed_gold_ore",
+	x: 2.1d,
+	y: 3.9000000000000004d,
+	subtitle: "20% less exhaustion per level",
+	description: [
+		
+	],
+	dependencies: ["0000000000003E19","10F0F0F0F0F0F002"],
+	id: "0000000000003E27", 
+	tasks: [{
+		id: "0000000000003E28",
+		type: "checkmark",
+		title: "Cost: 2 skill points"
+	}],
+	rewards: [{
+		id: "0000000000003E29",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:stamina skilltree:stamina/2",
+		player_command: false
+	},{
+		id: "0000000000003E2A",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 2",
+		player_command: false
+	},{
+		id: "0000000000003E2B",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 2",
+		player_command: false
+	},{
+		id: "0000000000003E2C",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "0000000000003E2D",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "0000000000003E2E",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}, {
+	title: "Stamina III",
+	icon: "create:crushed_gold_ore",
+	x: 1.9000000000000001d,
+	y: 4.6000000000000005d,
+	subtitle: "20% less exhaustion per level",
+	description: [
+		
+	],
+	dependencies: ["0000000000003E28","10F0F0F0F0F0F002"],
+	id: "0000000000003E36", 
+	tasks: [{
+		id: "0000000000003E37",
+		type: "checkmark",
+		title: "Cost: 2 skill points"
+	}],
+	rewards: [{
+		id: "0000000000003E38",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:stamina skilltree:stamina/3",
+		player_command: false
+	},{
+		id: "0000000000003E39",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 2",
+		player_command: false
+	},{
+		id: "0000000000003E3A",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 2",
+		player_command: false
+	},{
+		id: "0000000000003E3B",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "0000000000003E3C",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "0000000000003E3D",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}, {
+	title: "Stamina IV",
+	icon: "create:crushed_gold_ore",
+	x: 1.7000000000000002d,
+	y: 5.300000000000001d,
+	subtitle: "20% less exhaustion per level",
+	description: [
+		
+	],
+	dependencies: ["0000000000003E37","10F0F0F0F0F0F002"],
+	id: "0000000000003E45", 
+	tasks: [{
+		id: "0000000000003E46",
+		type: "checkmark",
+		title: "Cost: 2 skill points"
+	}],
+	rewards: [{
+		id: "0000000000003E47",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:stamina skilltree:stamina/4",
+		player_command: false
+	},{
+		id: "0000000000003E48",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 2",
+		player_command: false
+	},{
+		id: "0000000000003E49",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 2",
+		player_command: false
+	},{
+		id: "0000000000003E4A",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "0000000000003E4B",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "0000000000003E4C",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}, {
+	title: "Stamina V",
+	icon: "create:crushed_gold_ore",
+	x: 1.5d,
+	y: 6d,
+	subtitle: "20% less exhaustion per level",
+	description: [
+		
+	],
+	dependencies: ["0000000000003E46","10F0F0F0F0F0F002"],
+	id: "0000000000003E54", 
+	tasks: [{
+		id: "0000000000003E55",
+		type: "checkmark",
+		title: "Cost: 2 skill points"
+	}],
+	rewards: [{
+		id: "0000000000003E56",
+		type: "command",
+		auto: "invisible",
+		command: "/origin set @p skilltree:stamina skilltree:stamina/5",
+		player_command: false
+	},{
+		id: "0000000000003E57",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players remove @p SkillPoints 2",
+		player_command: false
+	},{
+		id: "0000000000003E58",
+		type: "command",
+		auto: "invisible",
+		command: "/scoreboard players add @p UsedSkillPoints 2",
+		player_command: false
+	},{
+		id: "0000000000003E59",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p reset 10F0F0F0F0F0F000",
+		player_command: false
+	},{
+		id: "0000000000003E5A",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001",
+		player_command: false
+	},{
+		id: "0000000000003E5B",
+		type: "command",
+		auto: "invisible",
+		command: "/ftbquests change_progress @p[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002",
+		player_command: false
+	}]
+}
+
+
 ,
 		{
 			title: "I AM ALL",
@@ -2382,7 +3461,7 @@
 			hide_text_until_complete: true,
 			size: 0.07d,
 			id: "0F0F0F0F0F0F0F0F",
-			dependencies: ["10F0F0F0F0F0F000","6BF09FDD8D77E0B1","00000000000007C3","00000000000007D2","00000000000007E1","00000000000007F0","00000000000007FF","000000000000080E","000000000000081D","000000000000082C","000000000000083B","000000000000084A","0000000000000F86","0000000000000F95","0000000000000FA4","0000000000000FB3","0000000000000FC2","0000000000000FD1","0000000000000FE0","0000000000000FEF","0000000000000FFE","000000000000100D","0000000000001749","0000000000001758","0000000000001767","0000000000001776","0000000000001785","0000000000001794","00000000000017A3","00000000000017B2","00000000000017C1","00000000000017D0","0000000000001F0C","0000000000001F1B","0000000000001F2A","0000000000001F39","0000000000001F48","0000000000001F57","0000000000001F66","0000000000001F75","0000000000001F84","0000000000001F93"],
+			dependencies: ["10F0F0F0F0F0F000","6BF09FDD8D77E0B1","00000000000007C3","00000000000007D2","00000000000007E1","00000000000007F0","00000000000007FF","000000000000080E","000000000000081D","000000000000082C","000000000000083B","000000000000084A","0000000000000F86","0000000000000F95","0000000000000FA4","0000000000000FB3","0000000000000FC2","0000000000000FD1","0000000000000FE0","0000000000000FEF","0000000000000FFE","000000000000100D","0000000000001749","0000000000001758","0000000000001767","0000000000001776","0000000000001785","0000000000001794","00000000000017A3","00000000000017B2","00000000000017C1","00000000000017D0","0000000000001F0C","0000000000001F1B","0000000000001F2A","0000000000001F39","0000000000001F48","0000000000001F57","0000000000001F66","0000000000001F75","0000000000001F84","0000000000001F93","00000000000026CF","00000000000026DE","00000000000026ED","00000000000026FC","000000000000270B","0000000000002E92","0000000000002EA1","0000000000002EB0","0000000000002EBF","0000000000002ECE","0000000000003655","0000000000003664","0000000000003673","0000000000003682","0000000000003691","0000000000003E18","0000000000003E27","0000000000003E36","0000000000003E45","0000000000003E54"],
 			tasks: [
 				{
 					id: "FC4AAC6225DE5000",
@@ -2461,6 +3540,30 @@
   type: "command",
   auto: "invisible",
   command: "/origin set @p skilltree:agility skilltree:blank",
+  player_command: false
+},{
+  id: "00000000000000DF",
+  type: "command",
+  auto: "invisible",
+  command: "/origin set @p skilltree:nightvision skilltree:blank",
+  player_command: false
+},{
+  id: "00000000000000E4",
+  type: "command",
+  auto: "invisible",
+  command: "/origin set @p skilltree:strength skilltree:blank",
+  player_command: false
+},{
+  id: "00000000000000E9",
+  type: "command",
+  auto: "invisible",
+  command: "/origin set @p skilltree:vitality skilltree:blank",
+  player_command: false
+},{
+  id: "00000000000000EE",
+  type: "command",
+  auto: "invisible",
+  command: "/origin set @p skilltree:stamina skilltree:blank",
   player_command: false
 }]
 		}

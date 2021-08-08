@@ -1,0 +1,11 @@
+
+{
+  "type": "origins:modify_exhaustion",
+  "modifier": {
+      "name": "Stamina boost",
+      "value": -0.2,
+      "operation": "multiply_total"
+  },
+  "name": "Endurance",
+  "description": "You take 20% less exhaustion from movement."
+}

@@ -1,0 +1,11 @@
+{
+  "powers":[
+		"skilltree:stamina/base_3"
+	],
+  "icon": "create:crushed_gold_ore",
+	"order": 3,
+	"impact": 1,
+  "name":"Stamina III",
+  "description":" ",
+  "unchoosable": true
+}

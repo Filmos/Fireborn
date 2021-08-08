@@ -1,0 +1,11 @@
+{
+  "powers":[
+		"skilltree:nightvision/base_4"
+	],
+  "icon": "minecraft:golden_carrot",
+	"order": 4,
+	"impact": 1,
+  "name":"Nightvision IV",
+  "description":" ",
+  "unchoosable": true
+}

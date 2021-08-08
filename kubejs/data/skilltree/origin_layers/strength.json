@@ -1,0 +1,14 @@
+{
+	"name": "strength skill",
+  "replace": false,
+  "origins": [
+    "skilltree:blank",
+	  "skilltree:strength/1",
+		"skilltree:strength/2",
+		"skilltree:strength/3",
+		"skilltree:strength/4",
+		"skilltree:strength/5"
+  ],
+  "order": 16
+}
+

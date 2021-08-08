@@ -1,0 +1,11 @@
+{
+  "powers":[
+		"skilltree:strength/base_4"
+	],
+  "icon": "mowziesmobs:barakoa_mask_fury",
+	"order": 4,
+	"impact": 1,
+  "name":"Strength IV",
+  "description":" ",
+  "unchoosable": true
+}

@@ -1,0 +1,22 @@
+
+{
+  "type": "origins:multiple",
+  "melee": {
+    "type": "origins:modify_damage_dealt",
+    "modifier": {
+        "name": "Strength boost",
+        "value": 0.4,
+        "operation": "multiply_total"
+    }
+  },
+  "ranged": {
+    "type": "origins:modify_projectile_damage",
+    "modifier": {
+        "name": "Strength boost",
+        "value": 0.4,
+        "operation": "multiply_total"
+    }
+  },
+  "name": "Endurance",
+  "description": "You deal 40% more damage."
+}

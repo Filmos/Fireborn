@@ -1,0 +1,14 @@
+{
+	"name": "stamina skill",
+  "replace": false,
+  "origins": [
+    "skilltree:blank",
+	  "skilltree:stamina/1",
+		"skilltree:stamina/2",
+		"skilltree:stamina/3",
+		"skilltree:stamina/4",
+		"skilltree:stamina/5"
+  ],
+  "order": 18
+}
+

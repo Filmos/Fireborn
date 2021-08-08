@@ -1,0 +1,11 @@
+{
+  "powers":[
+		"skilltree:nightvision/base_2"
+	],
+  "icon": "minecraft:golden_carrot",
+	"order": 2,
+	"impact": 1,
+  "name":"Nightvision II",
+  "description":" ",
+  "unchoosable": true
+}

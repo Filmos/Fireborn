@@ -1,0 +1,11 @@
+{
+  "powers":[
+		"skilltree:strength/base_1"
+	],
+  "icon": "mowziesmobs:barakoa_mask_fury",
+	"order": 1,
+	"impact": 1,
+  "name":"Strength I",
+  "description":" ",
+  "unchoosable": true
+}
