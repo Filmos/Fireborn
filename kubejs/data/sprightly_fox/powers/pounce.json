@@ -1,0 +1,44 @@
+{
+  "type": "origins:active_self",
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {    
+  	    "type": "origins:execute_command",
+  	    "command": "playsound minecraft:entity.fox.ambient player @a[distance=..10] ~ ~ ~ 1 1 1",
+        "permission_level": 4
+      },
+  		{
+    		"type": "origins:add_velocity",
+    		"y": 0.5,
+        "set": true
+  		},
+  		{
+    		"type": "origins:add_velocity",
+    		"z": 0.5,
+    		"space": "local"
+  		},
+  		{
+    		"type": "origins:change_resource",
+    		"resource": "sprightly_fox:sprightly",
+        "change": -20
+  		}
+    ]
+  },
+  "key": {
+      "key": "key.origins.primary_active",
+      "continuous": false
+  },
+	"cooldown": 2,
+  "hud_render": {
+    "should_render": false
+	},
+  "condition": {
+    "type": "origins:resource",
+    "resource": "sprightly_fox:sprightly",
+    "comparison": ">=",
+    "compare_to": 20
+  },
+	"name": "Pounce",
+	"description": "You can jump high into the air by pressing your primary key!"
+}

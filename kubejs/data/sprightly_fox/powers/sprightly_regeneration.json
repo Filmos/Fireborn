@@ -1,0 +1,307 @@
+{
+  "type":"origins:multiple",
+  "speed": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 7,
+    "start_value": 0,
+    "hud_render": {
+      "should_render": false
+  	}
+  },
+  "calculate": {
+    "type": "origins:action_over_time",
+    "interval": 20,
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [{
+        "type": "origins:change_resource",
+        "resource": "sprightly_fox:sprightly_regeneration_speed",
+        "change": -100
+      }, {
+        "type": "origins:change_resource",
+        "resource": "sprightly_fox:sprightly_regeneration_speed",
+        "change": 2
+      }, {
+        "type": "origins:if_else",
+        "condition": {
+          "type": "origins:food_level",
+          "comparison": ">=",
+          "compare_to": 10
+        },
+        "if_action": {
+          "type": "origins:change_resource",
+          "resource": "sprightly_fox:sprightly_regeneration_speed",
+          "change": 1
+        }
+      }, {
+        "type": "origins:if_else",
+        "condition": {
+          "type": "origins:food_level",
+          "comparison": ">=",
+          "compare_to": 16
+        },
+        "if_action": {
+          "type": "origins:change_resource",
+          "resource": "sprightly_fox:sprightly_regeneration_speed",
+          "change": 1
+        }
+      }, {
+        "type": "origins:if_else",
+        "condition": {
+          "type": "origins:status_effect",
+          "effect": "minecraft:speed",
+          "min_amplifier": 0
+        },
+        "if_action": {
+          "type": "origins:change_resource",
+          "resource": "sprightly_fox:sprightly_regeneration_speed",
+          "change": 1
+        }
+      }, {
+        "type": "origins:if_else",
+        "condition": {
+          "type": "origins:status_effect",
+          "effect": "minecraft:speed",
+          "min_amplifier": 1
+        },
+        "if_action": {
+          "type": "origins:change_resource",
+          "resource": "sprightly_fox:sprightly_regeneration_speed",
+          "change": 1
+        }
+      }, {
+        "type": "origins:if_else",
+        "condition": {
+          "type": "origins:status_effect",
+          "effect": "minecraft:speed",
+          "min_amplifier": 2
+        },
+        "if_action": {
+          "type": "origins:change_resource",
+          "resource": "sprightly_fox:sprightly_regeneration_speed",
+          "change": 1
+        }
+      }, {
+        "type": "origins:if_else",
+        "condition": {
+          "type": "origins:status_effect",
+          "effect": "minecraft:slowness",
+          "min_amplifier": 0
+        },
+        "if_action": {
+          "type": "origins:change_resource",
+          "resource": "sprightly_fox:sprightly_regeneration_speed",
+          "change": -1
+        }
+      }, {
+        "type": "origins:if_else",
+        "condition": {
+          "type": "origins:status_effect",
+          "effect": "minecraft:slowness",
+          "min_amplifier": 2
+        },
+        "if_action": {
+          "type": "origins:change_resource",
+          "resource": "sprightly_fox:sprightly_regeneration_speed",
+          "change": -1
+        }
+      }, {
+        "type": "origins:if_else",
+        "condition": {
+          "type": "origins:status_effect",
+          "effect": "minecraft:slowness",
+          "min_amplifier": 4
+        },
+        "if_action": {
+          "type": "origins:change_resource",
+          "resource": "sprightly_fox:sprightly_regeneration_speed",
+          "change": -1
+        }
+      }]
+    }
+  },
+  "regen_stage_1": {
+    "type": "origins:action_over_time",
+    "interval": 15,
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "sprightly_fox:sprightly",
+      "change": 1
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:resource",
+          "resource": "sprightly_fox:sprightly_regeneration_speed",
+          "comparison": "==",
+          "compare_to": 1
+        },
+        {
+          "type": "origins:resource",
+          "resource": "sprightly_fox:sprightly_capacity_regen",
+          "comparison": ">",
+          "compare_to": 0
+        }
+      ]
+    }
+  },
+  "regen_stage_2": {
+    "type": "origins:action_over_time",
+    "interval": 9,
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "sprightly_fox:sprightly",
+      "change": 1
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:resource",
+          "resource": "sprightly_fox:sprightly_regeneration_speed",
+          "comparison": "==",
+          "compare_to": 2
+        },
+        {
+          "type": "origins:resource",
+          "resource": "sprightly_fox:sprightly_capacity_regen",
+          "comparison": ">",
+          "compare_to": 0
+        }
+      ]
+    }
+  },
+  "regen_stage_3": {
+    "type": "origins:action_over_time",
+    "interval": 6,
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "sprightly_fox:sprightly",
+      "change": 1
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:resource",
+          "resource": "sprightly_fox:sprightly_regeneration_speed",
+          "comparison": "==",
+          "compare_to": 3
+        },
+        {
+          "type": "origins:resource",
+          "resource": "sprightly_fox:sprightly_capacity_regen",
+          "comparison": ">",
+          "compare_to": 0
+        }
+      ]
+    }
+  },
+  "regen_stage_4": {
+    "type": "origins:action_over_time",
+    "interval": 3,
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "sprightly_fox:sprightly",
+      "change": 1
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:resource",
+          "resource": "sprightly_fox:sprightly_regeneration_speed",
+          "comparison": "==",
+          "compare_to": 4
+        },
+        {
+          "type": "origins:resource",
+          "resource": "sprightly_fox:sprightly_capacity_regen",
+          "comparison": ">",
+          "compare_to": 0
+        }
+      ]
+    }
+  },
+  "regen_stage_5": {
+    "type": "origins:action_over_time",
+    "interval": 2,
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "sprightly_fox:sprightly",
+      "change": 1
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:resource",
+          "resource": "sprightly_fox:sprightly_regeneration_speed",
+          "comparison": "==",
+          "compare_to": 5
+        },
+        {
+          "type": "origins:resource",
+          "resource": "sprightly_fox:sprightly_capacity_regen",
+          "comparison": ">",
+          "compare_to": 0
+        }
+      ]
+    }
+  },
+  "regen_stage_6": {
+    "type": "origins:action_over_time",
+    "interval": 1,
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "sprightly_fox:sprightly",
+      "change": 1
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:resource",
+          "resource": "sprightly_fox:sprightly_regeneration_speed",
+          "comparison": "==",
+          "compare_to": 6
+        },
+        {
+          "type": "origins:resource",
+          "resource": "sprightly_fox:sprightly_capacity_regen",
+          "comparison": ">",
+          "compare_to": 0
+        }
+      ]
+    }
+  },
+  "regen_stage_7": {
+    "type": "origins:action_over_time",
+    "interval": 1,
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "sprightly_fox:sprightly",
+      "change": 2
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:resource",
+          "resource": "sprightly_fox:sprightly_regeneration_speed",
+          "comparison": "==",
+          "compare_to": 7
+        },
+        {
+          "type": "origins:resource",
+          "resource": "sprightly_fox:sprightly_capacity_regen",
+          "comparison": ">",
+          "compare_to": 0
+        }
+      ]
+    }
+  },
+  "hidden": true
+}

@@ -1,0 +1,24 @@
+{
+    "powers":[
+      "sprightly_fox:sprightly",
+      "sprightly_fox:sprightly_capacity",
+      "sprightly_fox:sprightly_regeneration",
+      "sprightly_fox:vulnerability",
+      "sprightly_fox:speed",
+      
+      "sprightly_fox:fall_penalty",
+      "sprightly_fox:pounce",
+      
+      "sprightly_fox:super_smell",
+      "sprightly_fox:smell_vision",
+      
+      "sprightly_fox:small_frame",
+      "sprightly_fox:bite_sized",
+      "origins:no_shield"
+    ],
+    "icon": "minecraft:fox_spawn_egg",
+  	"order": 6,
+  	"impact": 2,
+    "name": "Sprightly Fox",
+    "description":"A sprightly fox possessing acrobatic abilities."
+}

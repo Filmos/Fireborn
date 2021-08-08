@@ -1,0 +1,9 @@
+{
+  "type": "origins:toggle",
+  "key": {
+    "key": "key.origins.secondary_active",
+    "continuous": false
+  },
+	"name": "Keen sense of smell",
+	"description": "You can smell other mobs through walls by pressing your secondary key."
+}

@@ -1,0 +1,11 @@
+{
+    "type":"origins:attribute",
+    "modifier": {
+        "name": "Health reduction",
+        "attribute": "minecraft:generic.max_health",
+        "value": -4.0,
+        "operation": "addition"
+    },
+    "name":"Small Frame",
+    "description":"Your small frame leaves you with less health."
+}

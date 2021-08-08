@@ -1,0 +1,46 @@
+{
+  "type":"origins:multiple",
+  "shader": {
+    "type":"origins:shader",
+    "shader":"minecraft:shaders/post/sobel.json",
+    "condition":{
+        "type":"origins:power_active",
+        "power":"sprightly_fox:super_smell"
+    }
+  },
+  "anti-shader": {
+    "type":"origins:shader",
+    "shader":"minecraft:shaders/post/color_convolve.json",
+    "condition":{
+        "type":"origins:power_active",
+        "power":"sprightly_fox:super_smell",
+        "inverted": true
+    }
+  },
+  "blindness": {
+    "type": "origins:stacking_status_effect",
+    "min_stacks": 0,
+    "max_stacks": 1,
+    "duration_per_stack": 45,
+    "effects": [
+        {
+            "effect": "minecraft:blindness",
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": false
+        }
+    ],
+    "condition":{
+        "type":"origins:power_active",
+        "power":"sprightly_fox:super_smell"
+    }
+  },
+  "mobs": {
+    "type":"origins:entity_glow",
+    "condition":{
+        "type":"origins:power_active",
+        "power":"sprightly_fox:super_smell"
+    }
+  },
+	"hidden": true
+}
