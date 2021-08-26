@@ -17,12 +17,13 @@ onEvent('server.tick', event => {
 
 onEvent('player.inventory.changed', event => {
   if(event.item.id != "kubejs:skill_point") return
-  event.player.runCommandSilent("clear @s kubejs:skill_point")
-  event.player.runCommandSilent("scoreboard players add @s TotalSkillPoints "+event.item.count)
-  event.player.runCommandSilent("scoreboard players add @s SkillPoints "+event.item.count)
-  event.player.runCommandSilent('ftbquests change_progress @s reset 10F0F0F0F0F0F000')
-  event.player.runCommandSilent('ftbquests change_progress @s[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001')
-  event.player.runCommandSilent('ftbquests change_progress @s[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002')
+  let server = event.getServer()
+  server.runCommandSilent("clear "+event.player.name+" kubejs:skill_point")
+  server.runCommandSilent("scoreboard players add "+event.player.name+" TotalSkillPoints "+event.item.count)
+  server.runCommandSilent("scoreboard players add "+event.player.name+" SkillPoints "+event.item.count)
+  server.runCommandSilent('ftbquests change_progress '+event.player.name+' reset 10F0F0F0F0F0F000')
+  server.runCommandSilent('execute as '+event.player.name+' run ftbquests change_progress @s[scores={SkillPoints=1..}] complete 10F0F0F0F0F0F001')
+  server.runCommandSilent('execute as '+event.player.name+' run ftbquests change_progress @s[scores={SkillPoints=2..}] complete 10F0F0F0F0F0F002')
 })
 deepSearch = function(object, lookingFor, maxLevel, prefix) {
   if(maxLevel == 0) return
