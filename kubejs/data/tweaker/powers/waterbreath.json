@@ -1,0 +1,20 @@
+{
+  "type": "origins:active_self",
+  "cooldown": 200,
+  "hud_render": {
+    "should_render": true,
+    "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
+    "bar_index":4
+  },
+  "entity_action": {
+    "type": "origins:gain_air",
+    "value": 100
+  },
+  "condition": {
+    "type": "origins:air",
+    "comparison": "<=",
+    "compare_to": 270
+  },
+  "name":"Waterbreath",
+  "description":"Gain 5 more seconds of oxygen by pressing your primary button (10 second cooldown)."
+}

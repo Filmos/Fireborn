@@ -1,0 +1,18 @@
+{
+	"powers": [
+		"peng:blue_skin",
+		"origins:water_vision",
+		"origins:swim_speed",
+		"origins:tailwind",
+		"origins:carnivore",
+		"tweaker:snowballz",
+		"origins:fragile",
+		"peng:fastonice",
+		"tweaker:waterbreath"
+	],
+	"icon": "minecraft:snow_block",
+	"order": 10,
+	"impact": 2,
+	"name": "Penguin (tweaked)",
+	"description": "A group of icy furry birds that enjoy the ice and snow! Same as penguin, but has waterbreath and doesn't spawn in the tundra."
+}

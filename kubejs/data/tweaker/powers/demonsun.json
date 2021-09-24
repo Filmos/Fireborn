@@ -1,0 +1,90 @@
+{
+	"type": "origins:multiple",
+	"disable_food_regen": {
+		"type": "origins:disable_regen",
+		"condition": {
+			"type": "origins:exposed_to_sun"
+		}
+	},
+	"disable_insta_health": {
+    "type": "origins:effect_immunity",
+    "effect": "minecraft:instant_health",
+		"condition": {
+			"type": "origins:exposed_to_sun"
+		}
+	},	
+	"withering": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+		"type": "origins:and",
+		"actions": [{
+        "type": "origins:apply_effect",
+        "effects": 
+            [{
+				"effect": "minecraft:wither",
+                "duration": 20,
+				"amplifier": 1,
+				"is_ambient": true,
+                "show_particles": false,
+                "show_icon" : false
+			},
+			{
+                "effect": "minecraft:hunger",
+                "duration": 20,
+				"amplifier": 9,
+				"is_ambient": true,
+                "show_particles": false,
+                "show_icon" : false
+		}]
+		}]
+		},
+    "interval": 10,
+    "condition": {
+				"type": "origins:and",
+				"conditions": [
+					{
+		        "type": "origins:exposed_to_sun"
+					},
+					
+					{
+						"type": "origins:equipped_item",
+  					"equipment_slot": "head",
+						"item_condition": {
+						    "type": "origins:armor_value",
+						    "comparison": ">=",
+						    "compare_to": 1
+						},
+						"inverted": true
+					}
+				]
+	  }
+	},
+	"through_helmet": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+		"type": "origins:and",
+		"actions": [{
+        "type": "origins:apply_effect",
+        "effects": 
+            [{
+                "effect": "minecraft:hunger",
+                "duration": 20,
+				"amplifier": 0,
+				"is_ambient": true,
+                "show_particles": false,
+                "show_icon" : false
+		}]
+		},
+		{
+			"type": "origins:clear_effect",
+			"effect": "minecraft:regeneration"
+		}]
+		},
+    "interval": 10,
+    "condition": {
+        "type": "origins:exposed_to_sun"
+	  }
+	},
+  "name":"Extreme Heliophobia",
+  "description":"As a demon, you'll weaken and wither, on top of that, any form of healing will be disabled from being exposed to sun."
+}

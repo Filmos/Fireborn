@@ -1,0 +1,31 @@
+{
+	"powers": [
+				"caldera:demon/effects",
+				"caldera:demon/kill_count",
+				"caldera:demon/kill_count_on_kill",
+				"caldera:demon/kill_count_on_death",
+				"caldera:demon/kill_count_evolve",
+				"caldera:demon/jump",
+				"caldera:demon/jump_count",
+				"caldera:demon/jump_cooldown",
+				"caldera:demon/compass",
+				"caldera:demon/night_vision",
+				"origins:fall_immunity",
+				"caldera:demon/exhaust",
+				"caldera:demon/man_eater",
+				"caldera:demon/no_eating",
+				"origins:nether_spawn",
+				"caldera:demon/bed",
+				"tweaker:demonsun",
+				"caldera:demon/cursed",
+				"caldera:demon/no_shield",
+				"caldera:demon/particles",
+				"caldera:credits"
+	],
+	"icon": "minecraft:crimson_fungus",
+	"order": 7,
+	"impact": 3,
+	"unchoosable": false,
+	"name": "Demon (tweaked)",
+	"description": "A race of monstrous, supernatural, and malevolent beings, demons possess a murderous instinct to kill and devour humans, and have lost most of their memories from their human life. Just like demons, but can partially protect themselves from the sun with a helmet."
+}

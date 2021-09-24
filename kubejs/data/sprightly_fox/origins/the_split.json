@@ -1,0 +1,23 @@
+{
+    "powers":[
+      "sprightly_fox:sprightly",
+      "sprightly_fox:sprightly_capacity",
+      "sprightly_fox:sprightly_regeneration",
+      "sprightly_fox:vulnerability",
+      "sprightly_fox:speed",
+      
+      "sprightly_fox:fall_penalty",
+      "sprightly_fox:pounce",
+      
+      "sprightly_fox:the_split",
+      
+      "sprightly_fox:small_frame",
+      "sprightly_fox:bite_sized",
+      "origins:no_shield"
+    ],
+    "icon": "alexsmobs:void_worm_eye",
+  	"order": 7,
+  	"impact": 2,
+    "name": "The Split",
+    "description":"\u00A77A fox-like \u00A7kxiuhkksm, oytbklax mmhu sgv llrn, ndtamki ef udqcw\u00A77 acrobatic\u00A7k ovrom am tlmh av yepalbm\u00A77 teleportation\u00A7k kutfclppq\u00A77."
+}

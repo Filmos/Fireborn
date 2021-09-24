@@ -1,0 +1,146 @@
+{
+  "type":"origins:multiple",
+  "MonPosX": {
+    "type": "origins:resource",
+    "start_value": 0,
+    "min": -100000,
+    "max": 100000,
+    "hud_render": {
+      "should_render": false
+  	}
+  },
+  "MonPosY": {
+    "type": "origins:resource",
+    "start_value": -333,
+    "min": -100000,
+    "max": 100000,
+    "hud_render": {
+      "should_render": false
+  	}
+  },
+  "MonPosZ": {
+    "type": "origins:resource",
+    "start_value": 0,
+    "min": -100000,
+    "max": 100000,
+    "hud_render": {
+      "should_render": false
+  	}
+  },
+  "RetPosX": {
+    "type": "origins:resource",
+    "start_value": 0,
+    "min": -100000,
+    "max": 100000,
+    "hud_render": {
+      "should_render": false
+  	}
+  },
+  "RetPosY": {
+    "type": "origins:resource",
+    "start_value": -333,
+    "min": -100000,
+    "max": 100000,
+    "hud_render": {
+      "should_render": false
+  	}
+  },
+  "RetPosZ": {
+    "type": "origins:resource",
+    "start_value": 0,
+    "min": -100000,
+    "max": 100000,
+    "hud_render": {
+      "should_render": false
+  	}
+  },
+  "BilocState": {
+    "type": "origins:resource",
+    "start_value": 1,
+    "min": 0,
+    "max": 1,
+    "hud_render": {
+      "should_render": false
+  	}
+  },
+  "TeleportTrigger": {
+    "type": "origins:active_self",
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:resource",
+          "resource": "sprightly_fox:the_split_Teleport",
+          "comparison": ">=",
+          "compare_to": 2000
+        },
+        {
+          "type": "origins:resource",
+          "resource": "sprightly_fox:the_split_MonPosY",
+          "comparison": "!=",
+          "compare_to": -333
+        }
+      ]
+    },
+    "entity_action": {
+      "type": "origins:apply_effect",
+      "effect": {
+        "effect": "minecraft:levitation",
+        "duration": 30,
+        "amplifier": 0,
+        "is_ambient": true,
+        "show_particles": false,
+        "show_icon": false
+      }
+    },
+    "key": {
+        "key": "key.origins.secondary_active"
+    },
+    "cooldown": 30,
+    "hud_render": {
+      "should_render": false,
+      "sprite_location": "kubejs:textures/gui/resource_bar.png",
+      "bar_index": 0
+  	}
+  },
+  "Teleport": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 2000,
+    "start_value": 2000,
+    "hud_render": {
+      "should_render": true,
+      "sprite_location": "kubejs:textures/gui/resource_bar.png",
+      "bar_index": 0,
+      "condition": {
+        "type": "origins:resource",
+        "resource": "sprightly_fox:the_split_Teleport",
+        "comparison": "<",
+        "compare_to": 2000
+      }
+  	}
+  },
+  "TeleportRegen": {
+    "type": "origins:action_over_time",
+    "interval": 3,
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "sprightly_fox:the_split_Teleport",
+      "change": 1
+    }
+  },
+  "TeleportIndicator": {
+    "type": "origins:model_color",
+    "red": 0.38,
+    "green": 0.29,
+    "blue": 0.7,
+    "condition": {
+      "type": "origins:resource",
+      "resource": "sprightly_fox:the_split_BilocState",
+      "comparison": "==",
+      "compare_to": 0
+    }
+  },
+	"name": "Bilocation",
+	"description": "By binding yourself to a monument you can teleport to and from it. Beware, low quality of the monument can result in unexpected consequences."
+}
