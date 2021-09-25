@@ -1,0 +1,19 @@
+{
+    "powers":[
+		"hacker:computer_strength",
+		"hacker:weak_punch",
+		"hacker:sobriety",
+		"hacker:invis_proxy",
+		"hacker:invisibility_generator",
+		"hacker:hacking_punch",
+		"hacker:parkour_proxy",
+		"hacker:parkour",
+		
+		"hacker:social_phobia"
+    ],
+    "icon": "advancedperipherals:ar_goggles",
+  	"order": 6,
+  	"impact": 2,
+    "name": "Hackerman",
+    "description":"A hacker with a dream."
+}

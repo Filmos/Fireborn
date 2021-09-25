@@ -1,0 +1,30 @@
+{
+	"type": "origins:multiple",
+	"invis":{
+		"type": "origins:invisibility",
+		"render_armor": false,
+		"condition": {
+			"type": "origins:power_active",
+			"power": "hacker:invis_proxy"
+		}
+	},
+	"shader": {
+		"type": "origins:shader",
+		"shader": "minecraft:shaders/post/desaturate.json",
+		"condition": {
+			"type": "origins:power_active",
+			"power": "hacker:invis_proxy"
+		}
+	},
+	"shaderInv": {
+		"type": "origins:shader",
+		"shader": "minecraft:shaders/post/blit.json",
+		"condition": {
+			"type": "origins:power_active",
+			"power": "hacker:invis_proxy",
+			"inverted": true
+		}
+	},
+	"name": "Invisibility",
+	"description": "You can be invisibile."
+}

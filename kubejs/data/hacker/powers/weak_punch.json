@@ -1,0 +1,12 @@
+{
+	"type": "origins:attribute",
+	"modifier": {
+		"name": "Weak punch",
+		"attribute": "minecraft:generic.attack_damage",
+		"operation": "multiply_total",
+		"value": 0.9
+	},
+	"hidden": false,
+	"name":"Weak punch",
+    "description":"You deal less melee damage."
+}

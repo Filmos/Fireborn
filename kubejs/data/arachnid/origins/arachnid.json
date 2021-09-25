@@ -1,0 +1,31 @@
+{
+	"powers": [
+		"origins:climbing",
+		"origins:carnivore",
+		"origins:fragile",
+		"origins:arthropod",
+		"origins:no_cobweb_slowdown",
+		"arachnid:fire_panic",
+		"arachnid:fire_lover",
+		"arachnid:i_like_dark",
+		"arachnid:nether_hurts",
+		"arachnid:spider_sight",
+		"arachnid:neutral_cave_spider",
+		"arachnid:neutral_spider",
+		"arachnid:summon_cave_spiders",
+		"arachnid:master_of_webs_up",
+		"arachnid:kill_count",
+		"arachnid:kill_count_evolve",
+		"arachnid:kill_count_on_death",
+		"arachnid:kill_count_on_kill",
+		"arachnid:combweb_vedette"
+	],
+	"icon": {
+		"item": "minecraft:cobweb"
+	},
+	"order": 1,
+	"impact": 1,
+	"name":"Arachnid",
+	"description":"Their climbing abilities and the ability to trap their foes in spiderweb make the Arachnid perfect hunters."
+
+}

@@ -1,0 +1,60 @@
+{
+	"type": "origins:conditioned_attribute",
+	"modifiers": [
+		{
+			"name": "Computer power speed",
+			"attribute": "minecraft:generic.movement_speed",
+			"operation": "multiply_total",
+			"value": 0.2
+		},
+		{
+			"name": "Computer power defense",
+			"attribute": "minecraft:generic.armor",
+			"operation": "addition",
+			"value": 2
+		},
+		{
+			"name": "Computer power tough defense",
+			"attribute": "minecraft:generic.armor_toughness",
+			"operation": "addition",
+			"value": 2
+		},
+		{
+			"name": "Computer power health",
+			"attribute": "minecraft:generic.max_health",
+			"operation": "addition",
+			"value": 2
+		},
+		{
+			"name": "Computer power speed",
+			"attribute": "minecraft:generic.attack_speed",
+			"operation": "multiply_total",
+			"value": 0.2
+		}
+	],
+	"update_health" : true,
+	"tick_rate": 20,
+	"condition": {
+		"type": "origins:block_in_radius",
+		"block_condition": {
+			"type": "origins:or",
+			"conditions": [
+				{
+					"type": "origins:block",
+					"block": "computercraft:computer_normal"
+				},
+				{
+					"type": "origins:block",
+					"block": "computercraft:computer_advanced"
+				}
+			]
+		},
+		"radius": 10,
+		"shape": "cube",
+		"comparison": ">=",
+		"compare_to": 1
+	},
+	"hidden": false,
+	"name":"Computer strength",
+    "description":"You get stronger near computers."
+}
