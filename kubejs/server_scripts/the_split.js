@@ -57,25 +57,25 @@ function saveStoredTag(player, tag, value) {
 function getMonumentPos(player, type) {
   let dim = loadStoredTag(player, type+"PosD")
   let nbt = loadNbtStorage(player)
-  let pref = "sprightly_fox:the_split_"+type+"Pos"
-  return {x: nbt[pref+"X"]/10, y: nbt[pref+"Y"]/10, z: nbt[pref+"Z"]/10, d: dim}
+  let pref = "sprightly_fox:the_split_"+type+"_pos"
+  return {x: nbt[pref+"_x"]/10, y: nbt[pref+"_y"]/10, z: nbt[pref+"_z"]/10, d: dim}
 }
 function setMonumentPos(player, type, value) {
   let nbt = loadNbtStorage(player)
-  let pref = "sprightly_fox:the_split_"+type+"Pos"
-  nbt[pref+"X"] = Math.round(value.x*10)
-  nbt[pref+"Y"] = Math.round(value.y*10)
-  nbt[pref+"Z"] = Math.round(value.z*10)
+  let pref = "sprightly_fox:the_split_"+type+"_pos"
+  nbt[pref+"_x"] = Math.round(value.x*10)
+  nbt[pref+"_y"] = Math.round(value.y*10)
+  nbt[pref+"_z"] = Math.round(value.z*10)
   saveNbtStorage(player, nbt)
   saveStoredTag(player, type+"PosD", value.d)
 }
 function getBilocState(player) {
-  return loadNbtStorage(player)["sprightly_fox:the_split_BilocState"]
+  return loadNbtStorage(player)["sprightly_fox:the_split_biloc_state"]
 }
 function setBilocState(player, state, extraData) {
   extraData = extraData || {}
   let nbt = loadNbtStorage(player)
-  nbt["sprightly_fox:the_split_BilocState"] = state
+  nbt["sprightly_fox:the_split_biloc_state"] = state
   for(let e in extraData) nbt[e] = extraData[e]
   saveNbtStorage(player, nbt)
 }
@@ -199,10 +199,10 @@ events.listen('player.tick', function (event) {
   if (event.player.server && event.player.ticksExisted % 10 === 0) {
     if(!event.player.getPotionEffects().isActive("minecraft:levitation")
     || event.server.runCommandSilent("origin has power "+event.player.name+" sprightly_fox:the_split")==0) return
-    if(loadNbtStorage(event.player)["sprightly_fox:the_split_Teleport"]<2000) return
+    if(loadNbtStorage(event.player)["sprightly_fox:the_split_teleport"]<2000) return
     
     event.server.scheduleInTicks(7, event.server, callback => {
-      let pos = getMonumentPos(event.player, "Mon"); if(!pos.d) return
+      let pos = getMonumentPos(event.player, "mon"); if(!pos.d) return
       let retPos = {
         x: event.player.x-0.5,
         y: event.player.y-0.5,
@@ -229,16 +229,16 @@ events.listen('player.tick', function (event) {
           z: randPlayer.z-0.5,
           d: randPlayer.getWorld().getDimension()
         }
-        if(toMon == 1) setMonumentPos(event.player, "Ret", retPos)
+        if(toMon == 1) setMonumentPos(event.player, "ret", retPos)
         toMon = 1
         event.server.scheduleInTicks(3, event.server, callback => {animateMonument(event.server, pos, "fromMon")})
       } else if(toMon == 1) {
         let animPos = {x: pos.x, y: pos.y, z: pos.z, d: pos.d}
         event.server.scheduleInTicks(3, event.server, callback => {animateMonument(event.server, animPos, "toMon")})
         pos.y++
-        setMonumentPos(event.player, "Ret", retPos)
+        setMonumentPos(event.player, "ret", retPos)
       } else {
-        pos = getMonumentPos(event.player, "Ret"); if(!pos.d) return
+        pos = getMonumentPos(event.player, "ret"); if(!pos.d) return
         event.server.scheduleInTicks(3, event.server, callback => {animateMonument(event.server, pos, "fromMon")})
       }
       event.server.runCommandSilent("/effect clear "+event.player.name+" minecraft:levitation")
@@ -254,7 +254,7 @@ events.listen('player.tick', function (event) {
       
       let cooldown = monStats.Stability*monStats.Stability*(Math.pow(2, monStats.Potential/10)-1)
       cooldown = 1-cooldown/(dist+cooldown)
-      setBilocState(event.player, 1-toMon, {"sprightly_fox:sprightly": 0, "sprightly_fox:the_split_Teleport": Math.round((1-cooldown)*2000)})
+      setBilocState(event.player, 1-toMon, {"sprightly_fox:sprightly": 0, "sprightly_fox:the_split_teleport": Math.round((1-cooldown)*2000)})
     })
     
   }
@@ -267,7 +267,7 @@ onEvent('block.right_click', event => {
   if(event.server.runCommandSilent("origin has power "+event.player.name+" sprightly_fox:the_split")==0) return
   
   
-  let curMon = getMonumentPos(event.player, "Mon")
+  let curMon = getMonumentPos(event.player, "mon")
   let isActive = (curMon.d == event.block.getDimension() && curMon.x == event.block.x && curMon.y == event.block.y && curMon.z == event.block.z)
   let stats = displayMonumentStats(event.block, event.player, event.server, 'MONUMENT '+(isActive?"ACTIVE":"CREATED"))
   
@@ -281,7 +281,7 @@ onEvent('block.right_click', event => {
       z: event.block.z,
       d: event.block.getDimension()
     }
-    setMonumentPos(event.player, "Mon", newPos)
+    setMonumentPos(event.player, "mon", newPos)
     animateMonument(event.server, newPos, "initial")
     setBilocState(event.player, 1)
   }

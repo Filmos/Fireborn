@@ -1,6 +1,6 @@
 {
   "type":"origins:multiple",
-  "MonPosX": {
+  "mon_pos_x": {
     "type": "origins:resource",
     "start_value": 0,
     "min": -100000,
@@ -9,7 +9,7 @@
       "should_render": false
   	}
   },
-  "MonPosY": {
+  "mon_pos_y": {
     "type": "origins:resource",
     "start_value": -333,
     "min": -100000,
@@ -18,7 +18,7 @@
       "should_render": false
   	}
   },
-  "MonPosZ": {
+  "mon_pos_z": {
     "type": "origins:resource",
     "start_value": 0,
     "min": -100000,
@@ -27,7 +27,7 @@
       "should_render": false
   	}
   },
-  "RetPosX": {
+  "ret_pos_x": {
     "type": "origins:resource",
     "start_value": 0,
     "min": -100000,
@@ -36,7 +36,7 @@
       "should_render": false
   	}
   },
-  "RetPosY": {
+  "ret_pos_y": {
     "type": "origins:resource",
     "start_value": -333,
     "min": -100000,
@@ -45,7 +45,7 @@
       "should_render": false
   	}
   },
-  "RetPosZ": {
+  "ret_pos_z": {
     "type": "origins:resource",
     "start_value": 0,
     "min": -100000,
@@ -54,7 +54,7 @@
       "should_render": false
   	}
   },
-  "BilocState": {
+  "biloc_state": {
     "type": "origins:resource",
     "start_value": 1,
     "min": 0,
@@ -63,20 +63,20 @@
       "should_render": false
   	}
   },
-  "TeleportTrigger": {
+  "teleport_trigger": {
     "type": "origins:active_self",
     "condition": {
       "type": "origins:and",
       "conditions": [
         {
           "type": "origins:resource",
-          "resource": "sprightly_fox:the_split_Teleport",
+          "resource": "sprightly_fox:the_split_teleport",
           "comparison": ">=",
           "compare_to": 2000
         },
         {
           "type": "origins:resource",
-          "resource": "sprightly_fox:the_split_MonPosY",
+          "resource": "sprightly_fox:the_split_mon_pos_y",
           "comparison": "!=",
           "compare_to": -333
         }
@@ -103,7 +103,7 @@
       "bar_index": 0
   	}
   },
-  "Teleport": {
+  "teleport": {
     "type": "origins:resource",
     "min": 0,
     "max": 2000,
@@ -114,29 +114,29 @@
       "bar_index": 0,
       "condition": {
         "type": "origins:resource",
-        "resource": "sprightly_fox:the_split_Teleport",
+        "resource": "sprightly_fox:the_split_teleport",
         "comparison": "<",
         "compare_to": 2000
       }
   	}
   },
-  "TeleportRegen": {
+  "teleport_regen": {
     "type": "origins:action_over_time",
     "interval": 3,
     "entity_action": {
       "type": "origins:change_resource",
-      "resource": "sprightly_fox:the_split_Teleport",
+      "resource": "sprightly_fox:the_split_teleport",
       "change": 1
     }
   },
-  "TeleportIndicator": {
+  "teleport_indicator": {
     "type": "origins:model_color",
     "red": 0.38,
     "green": 0.29,
     "blue": 0.7,
     "condition": {
       "type": "origins:resource",
-      "resource": "sprightly_fox:the_split_BilocState",
+      "resource": "sprightly_fox:the_split_biloc_state",
       "comparison": "==",
       "compare_to": 0
     }

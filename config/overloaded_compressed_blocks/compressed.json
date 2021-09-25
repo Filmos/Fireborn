@@ -1,0 +1,213 @@
+[
+{
+  "baseRegistryName": "compactmachines:wall",
+  
+  "depth": 9,
+  "hardnessMultiplier": 1.1,
+  "recipeEnabled": true
+},{
+  "baseRegistryName": "minecraft:iron_block",
+  
+  "depth": 9,
+  "hardnessMultiplier": 1.1,
+  "recipeEnabled": true
+},{
+  "baseRegistryName": "tconstruct:pig_iron_block",
+  "texturePath": "tconstruct:textures/block/storage/pig_iron/top.png",
+  "depth": 9,
+  "hardnessMultiplier": 1.1,
+  "recipeEnabled": true
+},{
+  "baseRegistryName": "tconstruct:slimesteel_block",
+  "texturePath": "tconstruct:textures/block/storage/slimesteel.png",
+  "depth": 9,
+  "hardnessMultiplier": 1.1,
+  "recipeEnabled": true
+},{
+  "baseRegistryName": "minecraft:ancient_debris",
+  "texturePath": "minecraft:textures/block/ancient_debris_side.png",
+  "depth": 9,
+  "hardnessMultiplier": 1.1,
+  "recipeEnabled": true
+},{
+  "baseRegistryName": "byg:pendorite_block",
+  
+  "depth": 9,
+  "hardnessMultiplier": 1.1,
+  "recipeEnabled": true
+},{
+  "baseRegistryName": "byg:ametrine_block",
+  
+  "depth": 9,
+  "hardnessMultiplier": 1.1,
+  "recipeEnabled": true
+},{
+  "baseRegistryName": "minecraft:netherite_block",
+  
+  "depth": 9,
+  "hardnessMultiplier": 1.1,
+  "recipeEnabled": true
+},{
+  "baseRegistryName": "minecraft:coal_block",
+  
+  "depth": 9,
+  "hardnessMultiplier": 1.1,
+  "recipeEnabled": true
+},{
+  "baseRegistryName": "minecraft:obsidian",
+  
+  "depth": 9,
+  "hardnessMultiplier": 1.1,
+  "recipeEnabled": true
+},{
+  "baseRegistryName": "minecraft:lapis_block",
+  
+  "depth": 9,
+  "hardnessMultiplier": 1.1,
+  "recipeEnabled": true
+},{
+  "baseRegistryName": "minecraft:redstone_block",
+  
+  "depth": 9,
+  "hardnessMultiplier": 1.1,
+  "recipeEnabled": true
+},{
+  "baseRegistryName": "minecraft:quartz_block",
+  
+  "depth": 9,
+  "hardnessMultiplier": 1.1,
+  "recipeEnabled": true
+},{
+  "baseRegistryName": "minecraft:gold_block",
+  
+  "depth": 9,
+  "hardnessMultiplier": 1.1,
+  "recipeEnabled": true
+},{
+  "baseRegistryName": "tconstruct:rose_gold_block",
+  "texturePath": "tconstruct:textures/block/storage/rose_gold.png",
+  "depth": 9,
+  "hardnessMultiplier": 1.1,
+  "recipeEnabled": true
+},{
+  "baseRegistryName": "materialis:fairy_block",
+  
+  "depth": 9,
+  "hardnessMultiplier": 1.1,
+  "recipeEnabled": true
+},{
+  "baseRegistryName": "minecraft:crying_obsidian",
+  
+  "depth": 9,
+  "hardnessMultiplier": 1.1,
+  "recipeEnabled": true
+},{
+  "baseRegistryName": "minecraft:emerald_block",
+  
+  "depth": 9,
+  "hardnessMultiplier": 1.1,
+  "recipeEnabled": true
+},{
+  "baseRegistryName": "minecraft:diamond_block",
+  
+  "depth": 9,
+  "hardnessMultiplier": 1.1,
+  "recipeEnabled": true
+},{
+  "baseRegistryName": "twilightforest:arctic_fur_block",
+  
+  "depth": 9,
+  "hardnessMultiplier": 1.1,
+  "recipeEnabled": true
+},{
+  "baseRegistryName": "twilightforest:ironwood_block",
+  
+  "depth": 9,
+  "hardnessMultiplier": 1.1,
+  "recipeEnabled": true
+},{
+  "baseRegistryName": "tconstruct:tinkers_bronze_block",
+  "texturePath": "tconstruct:textures/block/storage/tinkers_bronze.png",
+  "depth": 9,
+  "hardnessMultiplier": 1.1,
+  "recipeEnabled": true
+},{
+  "baseRegistryName": "tconstruct:copper_block",
+  "texturePath": "tconstruct:textures/block/storage/copper.png",
+  "depth": 9,
+  "hardnessMultiplier": 1.1,
+  "recipeEnabled": true
+},{
+  "baseRegistryName": "create:brass_block",
+  
+  "depth": 9,
+  "hardnessMultiplier": 1.1,
+  "recipeEnabled": true
+},{
+  "baseRegistryName": "create:zinc_block",
+  
+  "depth": 9,
+  "hardnessMultiplier": 1.1,
+  "recipeEnabled": true
+},{
+  "baseRegistryName": "twilightforest:steeleaf_block",
+  
+  "depth": 9,
+  "hardnessMultiplier": 1.1,
+  "recipeEnabled": true
+},{
+  "baseRegistryName": "twilightforest:carminite_block",
+  
+  "depth": 9,
+  "hardnessMultiplier": 1.1,
+  "recipeEnabled": true
+},{
+  "baseRegistryName": "tconstruct:hepatizon_block",
+  "texturePath": "tconstruct:textures/block/storage/hepatizon.png",
+  "depth": 9,
+  "hardnessMultiplier": 1.1,
+  "recipeEnabled": true
+},{
+  "baseRegistryName": "tconstruct:cobalt_block",
+  "texturePath": "tconstruct:textures/block/storage/cobalt.png",
+  "depth": 9,
+  "hardnessMultiplier": 1.1,
+  "recipeEnabled": true
+},{
+  "baseRegistryName": "tconstruct:manyullyn_block",
+  "texturePath": "tconstruct:textures/block/storage/manyullyn.png",
+  "depth": 9,
+  "hardnessMultiplier": 1.1,
+  "recipeEnabled": true
+},{
+  "baseRegistryName": "tconstruct:queens_slime_block",
+  "texturePath": "tconstruct:textures/block/storage/queens_slime.png",
+  "depth": 9,
+  "hardnessMultiplier": 1.1,
+  "recipeEnabled": true
+},{
+  "baseRegistryName": "twilightforest:fiery_block",
+  
+  "depth": 9,
+  "hardnessMultiplier": 1.1,
+  "recipeEnabled": true
+},{
+  "baseRegistryName": "twilightforest:knightmetal_block",
+  
+  "depth": 9,
+  "hardnessMultiplier": 1.1,
+  "recipeEnabled": true
+},{
+  "baseRegistryName": "create:shadow_steel_casing",
+  
+  "depth": 9,
+  "hardnessMultiplier": 1.1,
+  "recipeEnabled": true
+},{
+  "baseRegistryName": "create:refined_radiance_casing",
+  
+  "depth": 9,
+  "hardnessMultiplier": 1.1,
+  "recipeEnabled": true
+}
+]

@@ -16,7 +16,7 @@
 			"power": "hacker:invis_proxy"
 		}
 	},
-	"shaderInv": {
+	"shader_inv": {
 		"type": "origins:shader",
 		"shader": "minecraft:shaders/post/blit.json",
 		"condition": {
