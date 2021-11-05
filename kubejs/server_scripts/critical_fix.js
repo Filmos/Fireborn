@@ -30,4 +30,12 @@ deepSearch = function(object, lookingFor, maxLevel, prefix) {
     if((key + " ][ " + object[key]).toLowerCase().indexOf(lookingFor.toLowerCase())!=-1) console.info((newPrefix + " ][ " + object[key]).replace(/\n/g, " "))
     try {deepSearch(object[key], lookingFor, maxLevel-1, newPrefix)} catch(error) {continue}
   }
-}
+};
+
+let unownedFix = function(event) {
+	if(event.block.entity && event.block.entity.owner && (event.block.entity.owner.name == "owner" || event.block.entity.owner.UUID == "ownerUUID")) {
+		event.server.runCommandSilent(`/execute as ${event.entity.name} run data merge block ${event.block.x} ${event.block.y} ${event.block.z} {owner:"${event.entity.name}",ownerUUID:"${event.entity.id}"}`)
+	}
+};
+onEvent('block.right_click', unownedFix)
+onEvent('block.left_click', unownedFix)
