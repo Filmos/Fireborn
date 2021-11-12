@@ -32,10 +32,18 @@ deepSearch = function(object, lookingFor, maxLevel, prefix) {
   }
 };
 
+let isUnowned = (block) => (block.entityData && (block.entityData.owner == "owner" || block.entityData.ownerUUID == "ownerUUID"))
+let setOwned = (block, entity) => {
+	block.entity.setOwner(entity.id, entity.name)
+}
 let unownedFix = function(event) {
-	if(event.block.entity && event.block.entity.owner && (event.block.entity.owner.name == "owner" || event.block.entity.owner.UUID == "ownerUUID")) {
-		event.server.runCommandSilent(`/execute as ${event.entity.name} run data merge block ${event.block.x} ${event.block.y} ${event.block.z} {owner:"${event.entity.name}",ownerUUID:"${event.entity.id}"}`)
-	}
+	if(isUnowned(event.block)) setOwned(event.block, event.entity)
 };
+onEvent('block.place', event => {
+	event.server.scheduleInTicks(20, event.server, callback => {
+		unownedFix(event)
+	})
+	
+})
 onEvent('block.right_click', unownedFix)
 onEvent('block.left_click', unownedFix)
