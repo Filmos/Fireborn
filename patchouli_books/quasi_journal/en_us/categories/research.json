@@ -1,0 +1,5 @@
+{
+    "name": "Research",
+    "description": "The research system allows you to invest various resources to add new content to the server.",
+    "icon": "kubejs:research_results"
+}

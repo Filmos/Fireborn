@@ -1,0 +1,68 @@
+{
+    "name": "Basic research",
+    "icon": "minecraft:writable_book",
+    "category": "patchouli:research",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "To start your research project you need to grab a Book and Quill, write out what do you intent to discover, and sign it.$(br2)When writing your intentions remember that the cost of research increses with complexity and potential power of the discovery you want to achieve."
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "crafttweaker:research_book",
+            "text": "Then you have to upgrade your book into a research notebook with the recipe above.",
+            "title": "Research Notebook"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "In order to do proper research you need to craft research plans. In place of \"Any Item\" use the item you want to research, this will be saved in the plan itself.$(br2)Remember that the items you use should be correlated to what you are trying to achieve, otherwise the whole project may not succeed."
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "crafttweaker:blank_research_plan",
+            "recipe2": "crafttweaker:item.kubejs.destructive_research_plan_jei",
+            "title": "Research Plan"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "crafttweaker:item.kubejs.non_invasive_research_plan_jei",
+            "text": "There are different kind of plans you can use. For example, the Non-Invasive Research Plan won't consume the item you are researching, but will result in lower efficiency and lower cap.",
+            "title": "Research Plan"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "crafttweaker:research_results",
+            "text": "Now comes the important part. You need to surround the plan with Quasi Materials. Use of different materials will affect the result, and you will have to think carefully to achieve the best of them",
+            "title": "Research Results"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Research results carry two sets of variables (research value and research cap), one for mechanical (Stability of used materials), and one for magical research (Potential of used materials).$(br2)Research cap is the maximum of the materials, multiplied by the plan's cap.$(br2)Research value is a sum of all materials, multiplied by the plan's efficiency, and limited by the cap."
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "crafttweaker:add_research_results",
+            "text": "Once you have your results, you can add them to the notebook. You can add multiple results, with research of the same or different items, but you need to remember about one thing.",
+            "title": "Adding Results"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "When adding research results of items already in the notebook, the cap still applies. That means that the final value will be equal to results value plus notebook value, limited to results cap.$(br2)This is why you have to plan out your research, or you will lose a lot of value."
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "crafttweaker:research_copying_jei",
+            "text": "When you have done all the research you wanted, you can go to the final step. But before that, it may be worth it to make a copy of your notebook.",
+            "title": "Making a Copy"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "The final step requires you to commit your notebook by $(k)doing something I completely forgot how to do, but you should be able to figure that out on your own, right?$(). Once you have done that, it may take up to 96 real-time hours until the process is finalized. $(br2)After that time you will know if the research succeeded or failed. On success, what you intented to achieve will be added. On failure, you won't gain anything."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "In both cases you will lose your notebook, so making a copy is recommended.$(br2)To increase your chances of success, you should try to maximize your research value, and try researching multiple items relevant to your intention."
+        }
+    ],
+    "sortnum": 0
+}
