@@ -34,6 +34,9 @@ craftingTable.addShaped("research_book", <item:minecraft:written_book>.withTag({
 });
 
 
+public function extractDouble(tag as IData[string], key as string) as double {
+  return tag[key].asNumber().getDouble();
+}
 
 // Declaring research plans
 function newResearchPlan(plan as IItemStack, mult as double, cap as double, rec as IIngredient[][]) as int {
@@ -44,8 +47,8 @@ function newResearchPlan(plan as IItemStack, mult as double, cap as double, rec 
           var tag = stack.tag.asMap();  
           tooltip.remove(2);
           tooltip.remove(1);
-          tooltip.insert(1, MCTextComponent.createStringTextComponent("\u00A77Research Multiplier: \u00A7f"+(tag["researchMult"] as DoubleData).getDouble()));
-          tooltip.insert(2, MCTextComponent.createStringTextComponent("\u00A77Research Cap: \u00A7f"+(tag["researchCap"] as DoubleData).getDouble()));
+          tooltip.insert(1, MCTextComponent.createStringTextComponent("\u00A77Research Multiplier: \u00A7f"+extractDouble(tag, "researchMult")));
+          tooltip.insert(2, MCTextComponent.createStringTextComponent("\u00A77Research Cap: \u00A7f"+extractDouble(tag, "researchCap")));
           if((stack.tag as MapData).getAt("researchTarget") != null) {tooltip.insert(1, MCTextComponent.createStringTextComponent("\u00A77Research: \u00A7b"+tag["researchTarget"].getString()));}
       }
   }, (stack as IItemStack, tooltip as stdlib.List<MCTextComponent>, isAdvanced as bool) as void => {
@@ -53,10 +56,10 @@ function newResearchPlan(plan as IItemStack, mult as double, cap as double, rec 
           var tag = stack.tag.asMap();
           tooltip.remove(2);
           tooltip.remove(1);
-          if((stack.tag as MapData).getAt("researchTarget") != null) {tooltip.insert(1, MCTextComponent.createStringTextComponent("\u00A7b"+tag["researchTarget"].getString()+" \u00A78["+(tag["researchMult"] as DoubleData).getDouble()+"/"+(tag["researchCap"] as DoubleData).getDouble()+"]"));}
+          if((stack.tag as MapData).getAt("researchTarget") != null) {tooltip.insert(1, MCTextComponent.createStringTextComponent("\u00A7b"+tag["researchTarget"].getString()+" \u00A78["+extractDouble(tag, "researchMult")+"/"+extractDouble(tag, "researchCap")+"]"));}
           else {
-              tooltip.insert(1, MCTextComponent.createStringTextComponent("\u00A77Research Multiplier: \u00A7f"+(tag["researchMult"] as DoubleData).getDouble()));
-              tooltip.insert(2, MCTextComponent.createStringTextComponent("\u00A77Research Cap: \u00A7f"+(tag["researchCap"] as DoubleData).getDouble()));
+              tooltip.insert(1, MCTextComponent.createStringTextComponent("\u00A77Research Multiplier: \u00A7f"+extractDouble(tag, "researchMult")));
+              tooltip.insert(2, MCTextComponent.createStringTextComponent("\u00A77Research Cap: \u00A7f"+extractDouble(tag, "researchCap")));
           }
       }
   });
@@ -141,11 +144,11 @@ craftingTable.addShaped("research_results", <item:kubejs:research_results>, [
         }
     }}
     var tag = inputs[1][1].tag.asMap();
-    //stabSum = math.floor(stabSum * (tag["researchMult"] as DoubleData).getDouble());
-    stabSum = floor(stabSum * (tag["researchMult"] as DoubleData).getDouble());
-    potSum = floor(potSum * (tag["researchMult"] as DoubleData).getDouble());
-    stabMax = floor(stabMax * (tag["researchCap"] as DoubleData).getDouble());
-    potMax = floor(potMax * (tag["researchCap"] as DoubleData).getDouble());
+    //stabSum = math.floor(stabSum * extractDouble(tag, "researchMult"));
+    stabSum = floor(stabSum * extractDouble(tag, "researchMult"));
+    potSum = floor(potSum * extractDouble(tag, "researchMult"));
+    stabMax = floor(stabMax * extractDouble(tag, "researchCap"));
+    potMax = floor(potMax * extractDouble(tag, "researchCap"));
     
     if(stabSum > stabMax) {stabSum = stabMax;}
     if(potSum > potMax) {potSum = potMax;}
@@ -174,12 +177,12 @@ var isResultValid = (plan as IItemStack) as bool => {
     if(!isResultValid(stack)) {tooltip.insert(1, "\u00A7cInvalid"); return;}
     var tag = stack.tag.asMap();
     tooltip.insert(1, MCTextComponent.createStringTextComponent("\u00A77Research: \u00A7b"+tag["researchTarget"].getString()));
-    tooltip.insert(2, MCTextComponent.createStringTextComponent("\u00A77Mechanical Research: \u00A75"+(tag["researchMechanical"] as DoubleData).getDouble()+"/"+(tag["researchMechanicalCap"] as DoubleData).getDouble()));
-    tooltip.insert(3, MCTextComponent.createStringTextComponent("\u00A77Magical Research: \u00A7d"+(tag["researchMagical"] as DoubleData).getDouble()+"/"+(tag["researchMagicalCap"] as DoubleData).getDouble()));
+    tooltip.insert(2, MCTextComponent.createStringTextComponent("\u00A77Mechanical Research: \u00A75"+extractDouble(tag, "researchMechanical")+"/"+extractDouble(tag, "researchMechanicalCap")));
+    tooltip.insert(3, MCTextComponent.createStringTextComponent("\u00A77Magical Research: \u00A7d"+extractDouble(tag, "researchMagical")+"/"+extractDouble(tag, "researchMagicalCap")));
 }, (stack as IItemStack, tooltip as stdlib.List<MCTextComponent>, isAdvanced as bool) as void => {
     if(!isResultValid(stack)) {tooltip.insert(1, "\u00A7cInvalid"); return;}
     var tag = stack.tag.asMap();
-    tooltip.insert(1, MCTextComponent.createStringTextComponent("\u00A7b"+tag["researchTarget"].getString()+" \u00A78[\u00A75"+(tag["researchMechanical"] as DoubleData).getDouble()+"/"+(tag["researchMechanicalCap"] as DoubleData).getDouble()+"\u00A78, \u00A7d"+(tag["researchMagical"] as DoubleData).getDouble()+"/"+(tag["researchMagicalCap"] as DoubleData).getDouble()+"\u00A78]"));
+    tooltip.insert(1, MCTextComponent.createStringTextComponent("\u00A7b"+tag["researchTarget"].getString()+" \u00A78[\u00A75"+extractDouble(tag, "researchMechanical")+"/"+extractDouble(tag, "researchMechanicalCap")+"\u00A78, \u00A7d"+extractDouble(tag, "researchMagical")+"/"+extractDouble(tag, "researchMagicalCap")+"\u00A78]"));
 });
 
 
@@ -216,18 +219,18 @@ craftingTable.addShaped("add_research_results", <item:minecraft:written_book>.wi
     
     var research = result.tag.asMap();
     var thisTarget = (research["researchTarget"] as StringData).getString();
-    var thisMechanical = (research["researchMechanical"] as DoubleData).getDouble();
-    var thisMagical = (research["researchMagical"] as DoubleData).getDouble();
+    var thisMechanical = extractDouble(research, "researchMechanical");
+    var thisMagical = extractDouble(research, "researchMagical");
     
     var bookTag = book.tag.asMap();
     var progress = bookTag["researchProgress"].asMap();
     if((bookTag["researchProgress"] as MapData).getAt(thisTarget) != null) {
-      var thisMechanicalCap = (research["researchMechanicalCap"] as DoubleData).getDouble();
-      var thisMagicalCap = (research["researchMagicalCap"] as DoubleData).getDouble();
+      var thisMechanicalCap = extractDouble(research, "researchMechanicalCap");
+      var thisMagicalCap = extractDouble(research, "researchMagicalCap");
       
       var thisProgress = progress[thisTarget].asMap();
-      var allMechanical = (thisProgress["mechanical"] as DoubleData).getDouble();
-      var allMagical = (thisProgress["magical"] as DoubleData).getDouble();
+      var allMechanical = extractDouble(thisProgress, "mechanical");
+      var allMagical = extractDouble(thisProgress, "magical");
       
       if(allMechanical < thisMechanicalCap) {
         thisMechanical += allMechanical;
@@ -253,8 +256,8 @@ craftingTable.addShaped("add_research_results", <item:minecraft:written_book>.wi
     var newPageClear = "RESEARCH ";
     for key, value in progress {
       var v = value.asMap();
-      var mechanical = (v["mechanical"] as DoubleData).getDouble();
-      var magical = (v["magical"] as DoubleData).getDouble();
+      var mechanical = extractDouble(v, "mechanical");
+      var magical = extractDouble(v, "magical");
       
       var mechanicalText = getResearchLevel(mechanical);
       var magicalText = getResearchLevel(magical);
