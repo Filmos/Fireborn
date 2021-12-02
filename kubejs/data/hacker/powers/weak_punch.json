@@ -4,7 +4,7 @@
 		"name": "Weak punch",
 		"attribute": "minecraft:generic.attack_damage",
 		"operation": "multiply_total",
-		"value": 0.9
+		"value": 0.8
 	},
 	"hidden": false,
 	"name":"Weak punch",

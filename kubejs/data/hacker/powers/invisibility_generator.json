@@ -7,23 +7,23 @@
 			"type": "origins:power_active",
 			"power": "hacker:invis_proxy"
 		}
-	},
+	}, 	
 	"shader": {
-		"type": "origins:shader",
-		"shader": "minecraft:shaders/post/desaturate.json",
-		"condition": {
-			"type": "origins:power_active",
-			"power": "hacker:invis_proxy"
-		}
+    "type":"origins:shader",
+    "shader":"minecraft:shaders/post/desaturate.json",
+    "condition":{
+        "type":"origins:power_active",
+        "power":"hacker:invis_proxy"
+    }
 	},
-	"shader_inv": {
-		"type": "origins:shader",
-		"shader": "minecraft:shaders/post/blit.json",
-		"condition": {
-			"type": "origins:power_active",
-			"power": "hacker:invis_proxy",
-			"inverted": true
-		}
+	"anti-shader": {
+	"type":"origins:shader",
+	"shader":"minecraft:shaders/post/color_convolve.json",
+	"condition":{
+		"type":"origins:power_active",
+		"power":"hacker:invis_proxy",
+		"inverted": true
+	}
 	},
 	"name": "Invisibility",
 	"description": "You can be invisibile."
