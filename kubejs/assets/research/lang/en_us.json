@@ -11,6 +11,11 @@
   "modifier.tconstruct.blue_extra_upgrade.description": "Ask your modpack maker to provide a resource pack giving this better lore",
   "modifier.tconstruct.extra_ability": "Magical",
   "modifier.tconstruct.extra_ability.flavor": "I wish for more wishes!",
-  "modifier.tconstruct.extra_ability.description": "A wish grants your tool another ability slot"
+  "modifier.tconstruct.extra_ability.description": "A wish grants your tool another ability slot",
+  
+  "recipe.tconstruct.modifier.decapitated.level_2": "Decapitated requires a different recipe for the first level",
+  "recipe.tconstruct.modifier.resurrected.level_2": "Resurrected requires a different recipe for the first level",
+  "recipe.tconstruct.modifier.reach.level_2": "Reach requires a different recipe for the first level",
+  "recipe.tconstruct.modifier.reach.level_3": "Reach requires a different recipe for the first two levels"
 }
 

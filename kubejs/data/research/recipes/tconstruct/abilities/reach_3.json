@@ -1,0 +1,30 @@
+{
+  "type": "tconstruct:modifier",
+  "inputs": [
+    {
+      "item": "entangled:block"
+    },
+    {
+      "item": "entangled:block"
+    },
+    {
+      "item": "betterendforge:ender_block"
+    },
+    {
+      "item": "betterendforge:ender_block"
+    }
+  ],
+  "tools": {
+    "tag": "tconstruct:modifiable"
+  },
+  "requirements": {
+    "name": "tconstruct:reach",
+    "level": 2,
+    "error": "recipe.tconstruct.modifier.reach.level_3"
+  },
+  "result": {
+    "name": "tconstruct:reach",
+    "level": 1
+  },
+  "max_level": 3
+}

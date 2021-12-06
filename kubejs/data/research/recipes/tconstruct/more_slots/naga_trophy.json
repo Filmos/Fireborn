@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:modifier",
+  "inputs": [
+    {
+      "item": "twilightforest:naga_trophy"
+    }
+  ],
+  "tools": {
+    "tag": "tconstruct:modifiable"
+  },
+  "requirements": {
+    "name": "tconstruct:recapitated",
+    "level": 1,
+    "error": "recipe.tconstruct.modifier.decapitated.level_2"
+  },
+  "result": {
+    "name": "tconstruct:recapitated",
+    "level": 1
+  },
+  "max_level": 2
+}

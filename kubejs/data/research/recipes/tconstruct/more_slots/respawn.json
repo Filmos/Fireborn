@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:modifier",
+  "inputs": [
+    {
+      "item": "minecraft:respawn_anchor"
+    }
+  ],
+  "tools": {
+    "tag": "tconstruct:modifiable"
+  },
+  "requirements": {
+    "name": "tconstruct:resurrected",
+    "level": 1,
+    "error": "recipe.tconstruct.modifier.resurrected.level_2"
+  },
+  "result": {
+    "name": "tconstruct:resurrected",
+    "level": 1
+  },
+  "max_level": 2
+}
